@@ -1,0 +1,8 @@
+#k_daoshin
+##d_myion ###################################
+###c_myion
+277 = {	#MYION
+	culture = realm
+	religion = immaculate_philosophy
+	holding = tribal_holding
+}

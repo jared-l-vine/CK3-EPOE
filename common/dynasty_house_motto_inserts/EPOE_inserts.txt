@@ -1,0 +1,69 @@
+﻿realm_noun = {
+	realm = {
+		trigger = {
+		}
+	}
+	empress = {
+		trigger = {
+		}
+	}
+	dragons = {
+		trigger = {
+		}
+	}
+	daanad = {
+		trigger = {
+		}
+	}
+	hesiesh = {
+		trigger = {
+		}
+	}
+	mela = {
+		trigger = {
+		}
+	}
+	pasiap = {
+		trigger = {
+		}
+	}
+	sextes_jylis = {
+		trigger = {
+		}
+	}
+}
+
+the_realm_noun = {
+	the_realm = {
+		trigger = {
+		}
+	}
+	the_empress = {
+		trigger = {
+		}
+	}
+	the_dragons = {
+		trigger = {
+		}
+	}
+	daanad = {
+		trigger = {
+		}
+	}
+	hesiesh = {
+		trigger = {
+		}
+	}
+	mela = {
+		trigger = {
+		}
+	}
+	pasiap = {
+		trigger = {
+		}
+	}
+	sextes_jylis = {
+		trigger = {
+		}
+	}
+}

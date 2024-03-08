@@ -1,0 +1,91 @@
+﻿100848 = {
+	name = "dynn_Cathak"
+	culture = "realm"
+	motto = dynn_Cathak_motto
+}
+
+110848 = {
+	name = "dynn_Mnemon"
+	culture = "realm"
+	motto = dynn_Mnemon_motto
+}
+
+120848 = {
+	name = "dynn_Peleps"
+	culture = "realm"
+	motto = dynn_Peleps_motto
+}
+
+130848 = {
+	name = "dynn_Tepet"
+	culture = "realm"
+	motto = dynn_Tepet_motto
+}
+
+140848 = {
+	name = "dynn_Vneef"
+	culture = "realm"
+	motto = dynn_Vneef_motto
+}
+
+150848 = {
+	name = "dynn_Sesus"
+	culture = "realm"
+	motto = dynn_Sesus_motto
+}
+
+160848 = {
+	name = "dynn_Ledaal"
+	culture = "realm"
+	motto = dynn_Ledaal_motto
+}
+
+170848 = {
+	name = "dynn_Ragara"
+	culture = "realm"
+	motto = dynn_Ragara_motto
+}
+
+180848 = {
+	name = "dynn_Nellens"
+	culture = "realm"
+	motto = dynn_Nellens_motto
+}
+
+190848 = {
+	name = "dynn_Cynis"
+	culture = "realm"
+	motto = dynn_Cynis_motto
+}
+
+200848 = {
+	name = "dynn_Iselsi"
+	culture = "realm"
+	motto = dynn_Iselsi_motto
+}
+
+12340 = {
+	name = "dynn_Ferem"
+	culture = "cheraki"
+}
+
+12341 = {
+	name = "dynn_Margard"
+	culture = "cheraki"
+}
+
+12342 = {
+	name = "dynn_Japor"
+	culture = "cheraki"
+}
+
+12343 = {
+	name = "dynn_Nandorum"
+	culture = "cheraki"
+}
+
+# Keeping Prydain to dodge a stubborn error.
+1029001 = {
+	name = "dynn_Prydain"
+	culture = "welsh"
+}

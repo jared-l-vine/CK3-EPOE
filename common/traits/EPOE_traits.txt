@@ -1,0 +1,867 @@
+﻿# Standard Values
+@pos_compat_high = 30
+@pos_compat_medium = 15
+@pos_compat_low = 5
+
+@neg_compat_high = -30
+@neg_compat_medium = -15
+@neg_compat_low = -5
+
+lifestyle_fire_aspect = {
+	opposites = {
+		lifestyle_earth_aspect
+		lifestyle_air_aspect
+		lifestyle_water_aspect
+		lifestyle_wood_aspect
+	}
+
+	category = lifestyle
+	icon = dragon_blooded.dds
+
+	# Modifiers
+	courtly_opinion = 5
+	same_opinion = 10
+
+	intrigue = 3
+	stewardship = 1
+	diplomacy = 3
+	martial = 1
+	learning = 1
+	prowess = 3
+	life_expectancy = 100
+	health = 0.5
+	dread_gain_mult = 0.1
+
+	flag = exaltation
+	flag = dragon_blooded
+
+	tracks = {
+		essence = {
+			25 = {
+				intrigue = 2
+				stewardship = 1
+				diplomacy = 2
+				martial = 1
+				learning = 1
+				prowess = 3
+				life_expectancy = 100
+				dread_gain_mult = 0.1
+			}
+			50 = {
+				intrigue = 2
+				stewardship = 1
+				diplomacy = 2
+				martial = 1
+				learning = 1
+				prowess = 3
+				life_expectancy = 100
+				dread_gain_mult = 0.1
+			}
+			75 = {
+				intrigue = 2
+				stewardship = 1
+				diplomacy = 2
+				martial = 1
+				learning = 1
+				prowess = 3
+				life_expectancy = 100
+				dread_gain_mult = 0.1
+			}
+			100 = {
+				intrigue = 2
+				stewardship = 1
+				diplomacy = 2
+				martial = 1
+				learning = 1
+				prowess = 3
+				life_expectancy = 100
+				dread_gain_mult = 0.1
+			}
+		}
+	}
+
+	ruler_designer_cost = 20
+
+	# Loc
+	name = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					exists = this
+					has_trait_xp = {
+						trait = lifestyle_fire_aspect
+						value >= 100
+					}
+				}
+				desc = trait_fire_aspect_5
+			}
+			triggered_desc = {
+				trigger = {
+					exists = this
+					has_trait_xp = {
+						trait = lifestyle_fire_aspect
+						value >= 75
+					}
+				}
+				desc = trait_fire_aspect_4
+			}
+			triggered_desc = {
+				trigger = {
+					exists = this
+					has_trait_xp = {
+						trait = lifestyle_fire_aspect
+						value >= 50
+					}
+				}
+				desc = trait_fire_aspect_3
+			}
+			triggered_desc = {
+				trigger = { 
+					exists = this
+					has_trait_xp = {
+						trait = lifestyle_fire_aspect
+						value >= 25
+					}
+				}
+				desc = trait_fire_aspect_2
+			}
+			#Eager Reveler
+			desc = trait_fire_aspect_1
+		}
+	}
+
+	# Loc
+	desc = {
+		first_valid = {
+			#The trait can never go higher than the first level if it's not assigned to a character
+			triggered_desc = {
+				trigger = { 
+					NOT = { exists = this } 
+				}
+				desc = trait_fire_aspect_1_desc
+			}
+			triggered_desc = {
+				trigger = { 
+					has_trait_xp = {
+						trait = lifestyle_fire_aspect
+						value >= 100
+					}
+				}
+				desc = trait_fire_aspect_5_character_desc
+			}
+			triggered_desc = {
+				trigger = { 
+					has_trait_xp = {
+						trait = lifestyle_fire_aspect
+						value >= 75
+					}
+				}
+				desc = trait_fire_aspect_4_character_desc
+			}
+			triggered_desc = {
+				trigger = { 
+					has_trait_xp = {
+						trait = lifestyle_fire_aspect
+						value >= 50
+					}
+				}
+				desc = trait_fire_aspect_3_character_desc
+			}
+			triggered_desc = {
+				trigger = { 
+					has_trait_xp = {
+						trait = lifestyle_fire_aspect
+						value >= 25
+					}
+				}
+				desc = trait_fire_aspect_2_character_desc
+			}
+			desc = trait_fire_aspect_1_character_desc
+		}
+	}
+}
+
+lifestyle_earth_aspect = {
+	opposites = {
+		lifestyle_fire_aspect
+		lifestyle_air_aspect
+		lifestyle_water_aspect
+		lifestyle_wood_aspect
+	}
+
+	category = lifestyle
+	icon = dragon_blooded.dds
+
+	# Modifiers
+	courtly_opinion = 5
+	same_opinion = 10
+
+	intrigue = 1
+	stewardship = 1
+	diplomacy = 1
+	martial = 1
+	learning = 1
+	prowess = 1
+	life_expectancy = 100
+	health = 0.5
+
+	flag = exaltation
+	flag = dragon_blooded
+
+	tracks = {
+		essence = {
+			25 = {
+				intrigue = 1
+				stewardship = 1
+				diplomacy = 1
+				martial = 1
+				learning = 1
+				prowess = 1
+				life_expectancy = 100
+				health = 0.1
+			}
+			50 = {
+				intrigue = 1
+				stewardship = 1
+				diplomacy = 1
+				martial = 1
+				learning = 1
+				prowess = 1
+				life_expectancy = 100
+				health = 0.1
+			}
+			75 = {
+				intrigue = 1
+				stewardship = 1
+				diplomacy = 1
+				martial = 1
+				learning = 1
+				prowess = 1
+				life_expectancy = 100
+				health = 0.1
+			}
+			100 = {
+				intrigue = 1
+				stewardship = 1
+				diplomacy = 1
+				martial = 1
+				learning = 1
+				prowess = 1
+				life_expectancy = 100
+				health = 0.1
+			}
+		}
+	}
+
+	ruler_designer_cost = 20
+
+	# Loc
+	name = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					exists = this
+					has_trait_xp = {
+						trait = lifestyle_earth_aspect
+						value >= 100
+					}
+				}
+				desc = trait_earth_aspect_5
+			}
+			triggered_desc = {
+				trigger = {
+					exists = this
+					has_trait_xp = {
+						trait = lifestyle_earth_aspect
+						value >= 75
+					}
+				}
+				desc = trait_earth_aspect_4
+			}
+			triggered_desc = {
+				trigger = {
+					exists = this
+					has_trait_xp = {
+						trait = lifestyle_earth_aspect
+						value >= 50
+					}
+				}
+				desc = trait_earth_aspect_3
+			}
+			triggered_desc = {
+				trigger = { 
+					exists = this
+					has_trait_xp = {
+						trait = lifestyle_earth_aspect
+						value >= 25
+					}
+				}
+				desc = trait_earth_aspect_2
+			}
+			#Eager Reveler
+			desc = trait_earth_aspect_1
+		}
+	}
+
+	# Loc
+	desc = {
+		first_valid = {
+			#The trait can never go higher than the first level if it's not assigned to a character
+			triggered_desc = {
+				trigger = { 
+					NOT = { exists = this } 
+				}
+				desc = trait_earth_aspect_1_desc
+			}
+			triggered_desc = {
+				trigger = { 
+					has_trait_xp = {
+						trait = lifestyle_earth_aspect
+						value >= 100
+					}
+				}
+				desc = trait_earth_aspect_5_character_desc
+			}
+			triggered_desc = {
+				trigger = { 
+					has_trait_xp = {
+						trait = lifestyle_earth_aspect
+						value >= 75
+					}
+				}
+				desc = trait_earth_aspect_4_character_desc
+			}
+			triggered_desc = {
+				trigger = { 
+					has_trait_xp = {
+						trait = lifestyle_earth_aspect
+						value >= 50
+					}
+				}
+				desc = trait_earth_aspect_3_character_desc
+			}
+			triggered_desc = {
+				trigger = { 
+					has_trait_xp = {
+						trait = lifestyle_earth_aspect
+						value >= 25
+					}
+				}
+				desc = trait_earth_aspect_2_character_desc
+			}
+			desc = trait_earth_aspect_1_character_desc
+		}
+	}
+}
+
+lifestyle_air_aspect = {
+	opposites = {
+		lifestyle_fire_aspect
+		lifestyle_earth_aspect
+		lifestyle_water_aspect
+		lifestyle_wood_aspect
+	}
+
+	category = lifestyle
+	icon = dragon_blooded.dds
+
+	# Modifiers
+	courtly_opinion = 5
+	same_opinion = 10
+
+	intrigue = 1
+	stewardship = 1
+	diplomacy = 1
+	martial = 1
+	learning = 1
+	prowess = 1
+	life_expectancy = 100
+	health = 0.5
+
+	flag = exaltation
+	flag = dragon_blooded
+
+	tracks = {
+		essence = {
+			25 = {
+				intrigue = 1
+				stewardship = 1
+				diplomacy = 1
+				martial = 1
+				learning = 1
+				prowess = 1
+				life_expectancy = 100
+			}
+			50 = {
+				intrigue = 1
+				stewardship = 1
+				diplomacy = 1
+				martial = 1
+				learning = 1
+				prowess = 1
+				life_expectancy = 100
+			}
+			75 = {
+				intrigue = 1
+				stewardship = 1
+				diplomacy = 1
+				martial = 1
+				learning = 1
+				prowess = 1
+				life_expectancy = 100
+			}
+			100 = {
+				intrigue = 1
+				stewardship = 1
+				diplomacy = 1
+				martial = 1
+				learning = 1
+				prowess = 1
+				life_expectancy = 100
+			}
+		}
+	}
+
+	ruler_designer_cost = 20
+
+	# Loc
+	name = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					exists = this
+					has_trait_xp = {
+						trait = lifestyle_air_aspect
+						value >= 100
+					}
+				}
+				desc = trait_air_aspect_5
+			}
+			triggered_desc = {
+				trigger = {
+					exists = this
+					has_trait_xp = {
+						trait = lifestyle_air_aspect
+						value >= 75
+					}
+				}
+				desc = trait_air_aspect_4
+			}
+			triggered_desc = {
+				trigger = {
+					exists = this
+					has_trait_xp = {
+						trait = lifestyle_air_aspect
+						value >= 50
+					}
+				}
+				desc = trait_air_aspect_3
+			}
+			triggered_desc = {
+				trigger = { 
+					exists = this
+					has_trait_xp = {
+						trait = lifestyle_air_aspect
+						value >= 25
+					}
+				}
+				desc = trait_air_aspect_2
+			}
+			#Eager Reveler
+			desc = trait_air_aspect_1
+		}
+	}
+
+	# Loc
+	desc = {
+		first_valid = {
+			#The trait can never go higher than the first level if it's not assigned to a character
+			triggered_desc = {
+				trigger = { 
+					NOT = { exists = this } 
+				}
+				desc = trait_air_aspect_1_desc
+			}
+			triggered_desc = {
+				trigger = { 
+					has_trait_xp = {
+						trait = lifestyle_air_aspect
+						value >= 100
+					}
+				}
+				desc = trait_air_aspect_5_character_desc
+			}
+			triggered_desc = {
+				trigger = { 
+					has_trait_xp = {
+						trait = lifestyle_air_aspect
+						value >= 75
+					}
+				}
+				desc = trait_air_aspect_4_character_desc
+			}
+			triggered_desc = {
+				trigger = { 
+					has_trait_xp = {
+						trait = lifestyle_air_aspect
+						value >= 50
+					}
+				}
+				desc = trait_air_aspect_3_character_desc
+			}
+			triggered_desc = {
+				trigger = { 
+					has_trait_xp = {
+						trait = lifestyle_air_aspect
+						value >= 25
+					}
+				}
+				desc = trait_air_aspect_2_character_desc
+			}
+			desc = trait_air_aspect_1_character_desc
+		}
+	}
+}
+
+lifestyle_water_aspect = {
+	opposites = {
+		lifestyle_fire_aspect
+		lifestyle_earth_aspect
+		lifestyle_air_aspect
+		lifestyle_wood_aspect
+	}
+
+	category = lifestyle
+	icon = dragon_blooded.dds
+
+	# Modifiers
+	courtly_opinion = 5
+	same_opinion = 10
+
+	intrigue = 1
+	stewardship = 1
+	diplomacy = 1
+	martial = 1
+	learning = 1
+	prowess = 1
+	life_expectancy = 100
+	health = 0.5
+	naval_movement_speed_mult = 0.2
+
+	flag = exaltation
+	flag = dragon_blooded
+
+	tracks = {
+		essence = {
+			25 = {
+				intrigue = 1
+				stewardship = 1
+				diplomacy = 1
+				martial = 1
+				learning = 1
+				prowess = 1
+				life_expectancy = 100
+				naval_movement_speed_mult = 0.2
+			}
+			50 = {
+				intrigue = 1
+				stewardship = 1
+				diplomacy = 1
+				martial = 1
+				learning = 1
+				prowess = 1
+				life_expectancy = 100
+				naval_movement_speed_mult = 0.2
+			}
+			75 = {
+				intrigue = 1
+				stewardship = 1
+				diplomacy = 1
+				martial = 1
+				learning = 1
+				prowess = 1
+				life_expectancy = 100
+				naval_movement_speed_mult = 0.2
+			}
+			100 = {
+				intrigue = 1
+				stewardship = 1
+				diplomacy = 1
+				martial = 1
+				learning = 1
+				prowess = 1
+				life_expectancy = 100
+				naval_movement_speed_mult = 0.2
+			}
+		}
+	}
+
+	ruler_designer_cost = 20
+
+	# Loc
+	name = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					exists = this
+					has_trait_xp = {
+						trait = lifestyle_water_aspect
+						value >= 100
+					}
+				}
+				desc = trait_water_aspect_5
+			}
+			triggered_desc = {
+				trigger = {
+					exists = this
+					has_trait_xp = {
+						trait = lifestyle_water_aspect
+						value >= 75
+					}
+				}
+				desc = trait_water_aspect_4
+			}
+			triggered_desc = {
+				trigger = {
+					exists = this
+					has_trait_xp = {
+						trait = lifestyle_water_aspect
+						value >= 50
+					}
+				}
+				desc = trait_water_aspect_3
+			}
+			triggered_desc = {
+				trigger = { 
+					exists = this
+					has_trait_xp = {
+						trait = lifestyle_water_aspect
+						value >= 25
+					}
+				}
+				desc = trait_water_aspect_2
+			}
+			#Eager Reveler
+			desc = trait_water_aspect_1
+		}
+	}
+
+	# Loc
+	desc = {
+		first_valid = {
+			#The trait can never go higher than the first level if it's not assigned to a character
+			triggered_desc = {
+				trigger = { 
+					NOT = { exists = this } 
+				}
+				desc = trait_water_aspect_1_desc
+			}
+			triggered_desc = {
+				trigger = { 
+					has_trait_xp = {
+						trait = lifestyle_water_aspect
+						value >= 100
+					}
+				}
+				desc = trait_water_aspect_5_character_desc
+			}
+			triggered_desc = {
+				trigger = { 
+					has_trait_xp = {
+						trait = lifestyle_water_aspect
+						value >= 75
+					}
+				}
+				desc = trait_water_aspect_4_character_desc
+			}
+			triggered_desc = {
+				trigger = { 
+					has_trait_xp = {
+						trait = lifestyle_water_aspect
+						value >= 50
+					}
+				}
+				desc = trait_water_aspect_3_character_desc
+			}
+			triggered_desc = {
+				trigger = { 
+					has_trait_xp = {
+						trait = lifestyle_water_aspect
+						value >= 25
+					}
+				}
+				desc = trait_water_aspect_2_character_desc
+			}
+			desc = trait_water_aspect_1_character_desc
+		}
+	}
+}
+
+lifestyle_wood_aspect = {
+	opposites = {
+		lifestyle_fire_aspect
+		lifestyle_earth_aspect
+		lifestyle_air_aspect
+		lifestyle_water_aspect
+	}
+
+	category = lifestyle
+	icon = dragon_blooded.dds
+
+	# Modifiers
+	courtly_opinion = 5
+	same_opinion = 10
+
+	intrigue = 1
+	stewardship = 1
+	diplomacy = 1
+	martial = 1
+	learning = 1
+	prowess = 1
+	life_expectancy = 100
+	health = 0.5
+
+	flag = exaltation
+	flag = dragon_blooded
+
+	tracks = {
+		essence = {
+			25 = {
+				intrigue = 1
+				stewardship = 1
+				diplomacy = 1
+				martial = 1
+				learning = 1
+				prowess = 1
+				life_expectancy = 100
+			}
+			50 = {
+				intrigue = 1
+				stewardship = 1
+				diplomacy = 1
+				martial = 1
+				learning = 1
+				prowess = 1
+				life_expectancy = 100
+			}
+			75 = {
+				intrigue = 1
+				stewardship = 1
+				diplomacy = 1
+				martial = 1
+				learning = 1
+				prowess = 1
+				life_expectancy = 100
+			}
+			100 = {
+				intrigue = 1
+				stewardship = 1
+				diplomacy = 1
+				martial = 1
+				learning = 1
+				prowess = 1
+				life_expectancy = 100
+			}
+		}
+	}
+
+	ruler_designer_cost = 20
+
+	# Loc
+	name = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					exists = this
+					has_trait_xp = {
+						trait = lifestyle_wood_aspect
+						value >= 100
+					}
+				}
+				desc = trait_wood_aspect_5
+			}
+			triggered_desc = {
+				trigger = {
+					exists = this
+					has_trait_xp = {
+						trait = lifestyle_wood_aspect
+						value >= 75
+					}
+				}
+				desc = trait_wood_aspect_4
+			}
+			triggered_desc = {
+				trigger = {
+					exists = this
+					has_trait_xp = {
+						trait = lifestyle_wood_aspect
+						value >= 50
+					}
+				}
+				desc = trait_wood_aspect_3
+			}
+			triggered_desc = {
+				trigger = { 
+					exists = this
+					has_trait_xp = {
+						trait = lifestyle_wood_aspect
+						value >= 25
+					}
+				}
+				desc = trait_wood_aspect_2
+			}
+			#Eager Reveler
+			desc = trait_wood_aspect_1
+		}
+	}
+
+	# Loc
+	desc = {
+		first_valid = {
+			#The trait can never go higher than the first level if it's not assigned to a character
+			triggered_desc = {
+				trigger = { 
+					NOT = { exists = this } 
+				}
+				desc = trait_wood_aspect_1_desc
+			}
+			triggered_desc = {
+				trigger = { 
+					has_trait_xp = {
+						trait = lifestyle_wood_aspect
+						value >= 100
+					}
+				}
+				desc = trait_wood_aspect_5_character_desc
+			}
+			triggered_desc = {
+				trigger = { 
+					has_trait_xp = {
+						trait = lifestyle_wood_aspect
+						value >= 75
+					}
+				}
+				desc = trait_wood_aspect_4_character_desc
+			}
+			triggered_desc = {
+				trigger = { 
+					has_trait_xp = {
+						trait = lifestyle_wood_aspect
+						value >= 50
+					}
+				}
+				desc = trait_wood_aspect_3_character_desc
+			}
+			triggered_desc = {
+				trigger = { 
+					has_trait_xp = {
+						trait = lifestyle_wood_aspect
+						value >= 25
+					}
+				}
+				desc = trait_wood_aspect_2_character_desc
+			}
+			desc = trait_wood_aspect_1_character_desc
+		}
+	}
+}

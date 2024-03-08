@@ -1,0 +1,77 @@
+﻿realm = {
+	color = realm
+	
+	ethos = ethos_courtly
+	heritage = heritage_shogunate
+	language = language_high_realm
+	martial_custom = martial_custom_equal
+	traditions = {
+		tradition_hereditary_hierarchy
+		tradition_ruling_caste
+		tradition_female_only_inheritance
+		tradition_mystical_ancestors
+	}
+	
+	name_list = name_list_realm
+	
+	coa_gfx = { chinese_group_coa_gfx }
+	building_gfx = { indian_building_gfx }
+	clothing_gfx = { mongol_clothing_gfx }
+	unit_gfx = { mongol_unit_gfx }
+
+	ethnicities = {
+		10 = asian
+	}
+}
+
+lookshyan = {
+	color = realm
+	
+	ethos = ethos_bellicose
+	heritage = heritage_shogunate
+	language = language_high_realm
+	martial_custom = martial_custom_equal
+	traditions = {
+		tradition_hereditary_hierarchy
+		tradition_ruling_caste
+		tradition_female_only_inheritance
+		tradition_mystical_ancestors
+	}
+	
+	name_list = name_list_realm
+	
+	coa_gfx = { chinese_group_coa_gfx }
+	building_gfx = { indian_building_gfx }
+	clothing_gfx = { mongol_clothing_gfx }
+	unit_gfx = { mongol_unit_gfx }
+
+	ethnicities = {
+		10 = asian
+	}
+}
+
+cheraki = {
+	color = realm
+	
+	ethos = ethos_courtly
+	heritage = heritage_shogunate
+	language = language_high_realm
+	martial_custom = martial_custom_equal
+	traditions = {
+		tradition_hereditary_hierarchy
+		tradition_ruling_caste
+		tradition_female_only_inheritance
+		tradition_mystical_ancestors
+	}
+	
+	name_list = name_list_realm
+	
+	coa_gfx = { chinese_group_coa_gfx }
+	building_gfx = { indian_building_gfx }
+	clothing_gfx = { mongol_clothing_gfx }
+	unit_gfx = { mongol_unit_gfx }
+
+	ethnicities = {
+		10 = asian
+	}
+}

@@ -1,0 +1,5 @@
+﻿# Vassals
+exaltation_trait = {
+	base = traits
+	conditions = { group_equivalence = exaltation }
+}

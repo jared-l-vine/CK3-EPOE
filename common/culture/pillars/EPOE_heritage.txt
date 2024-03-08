@@ -1,0 +1,19 @@
+﻿heritage_shogunate = {
+	type = heritage
+}
+
+heritage_northern = {
+	type = heritage
+}
+
+heritage_eastern = {
+	type = heritage
+}
+
+heritage_western = {
+	type = heritage
+}
+
+heritage_southern = {
+	type = heritage
+}

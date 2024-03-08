@@ -1,0 +1,21 @@
+﻿#####################################################################
+# EFFECT LIST
+#####################################################################
+
+gain_exaltation_xp = {
+	$CHARACTER$ = {
+		every_character_trait = {
+			limit = {
+				has_trait_flag = exaltation
+			}
+			prev = {
+				add_trait_xp = {
+					trait = prev
+					value = {
+						$XP$
+					}
+				}
+			}
+		}
+	}
+}

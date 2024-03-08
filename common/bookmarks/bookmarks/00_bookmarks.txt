@@ -1,0 +1,25 @@
+﻿bm_768_realm = {
+	start_date = 768.10.1
+	is_playable = yes
+	group = bm_group_768
+
+	weight = { value = 100 }
+
+	# Shou Dun
+	character = {
+		name = "bookmark_realm_shou_dun"
+		dynasty = 100848
+		dynasty_splendor_level = 1
+		type = male
+		birth = 741.1.1
+		title = c_bittern
+		government = imperial_government
+		culture = realm
+		religion = "immaculate_philosophy"
+		difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_EASY"
+		history_id = 20842
+		position = { 250 750 }
+
+		animation = happiness
+	}
+}

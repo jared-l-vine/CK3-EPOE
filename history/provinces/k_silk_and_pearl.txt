@@ -1,0 +1,90 @@
+#k_silk_and_pearl
+##d_voice_of_the_tides ###################################
+###c_tongma
+163 = {	#TARAD
+	culture = realm
+	religion = immaculate_philosophy
+	holding = tribal_holding
+}
+183 = {	#KAMOS
+	culture = realm
+	religion = immaculate_philosophy
+	holding = tribal_holding
+}
+
+###c_bittern
+184 = {	#BITTERN
+	culture = realm
+	religion = immaculate_philosophy
+	holding = castle_holding
+}
+194 = {	#MIRTA
+	culture = realm
+	religion = immaculate_philosophy
+	holding = tribal_holding
+}
+213 = {	#LUON
+	culture = realm
+	religion = immaculate_philosophy
+	holding = tribal_holding
+}
+
+##d_pious_hearth ###################################
+###c_kaijin
+174 = {	#GANDAU
+	culture = realm
+	religion = immaculate_philosophy
+	holding = tribal_holding
+}
+211 = {	#THRICE-REDEEMED
+	culture = realm
+	religion = immaculate_philosophy
+	holding = tribal_holding
+}
+198 = {	#DORDORAN
+	culture = realm
+	religion = immaculate_philosophy
+	holding = tribal_holding
+}
+
+###c_golden_ridge
+142 = {	#SHRIKE
+	culture = realm
+	religion = immaculate_philosophy
+	holding = castle_holding
+}
+145 = {	#GRACE-AND-OMENS
+	culture = realm
+	religion = immaculate_philosophy
+	holding = tribal_holding
+}
+149 = {	#CHIRRUP
+	culture = realm
+	religion = immaculate_philosophy
+	holding = tribal_holding
+}
+
+##d_stone_root ###################################
+###c_estarjas
+159 = {	#TUJAY
+	culture = realm
+	religion = immaculate_philosophy
+	holding = tribal_holding
+}
+199 = {	#GODEN
+	culture = realm
+	religion = immaculate_philosophy
+	holding = tribal_holding
+}
+
+###c_parten
+188 = {	#AJIRAN
+	culture = realm
+	religion = immaculate_philosophy
+	holding = castle_holding
+}
+164 = {	#KERUK
+	culture = realm
+	religion = immaculate_philosophy
+	holding = tribal_holding
+}

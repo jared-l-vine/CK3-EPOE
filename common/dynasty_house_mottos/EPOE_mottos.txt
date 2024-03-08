@@ -1,0 +1,14 @@
+﻿x_children_of_y = {
+	insert = noun_immaterial
+	insert = the_realm_noun
+	trigger = {
+		has_culture = culture:realm
+	}
+}
+
+realm_protect_me = {
+	insert = realm_noun
+	trigger = {
+		has_culture = culture:realm
+	}
+}

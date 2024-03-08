@@ -1,0 +1,13 @@
+#k_imperial
+##d_imperial ###################################
+###c_scarlet
+153 = {	#IMPERIAL CITY
+	culture = realm
+	religion = immaculate_philosophy
+	holding = tribal_holding
+}
+173 = {	#EMINENCE'S SHADOW
+	culture = realm
+	religion = immaculate_philosophy
+	holding = tribal_holding
+}

@@ -1,0 +1,9 @@
+texticon = {
+	icon = immaculate_philosophy_icon
+	iconsize = {
+		texture = "gfx/interface/icons/faith/immaculate_philosophy.dds"	
+		size = { 25 25 }
+		offset = { 0 6 }
+		fontsize = 16
+	}
+}

@@ -1,0 +1,52 @@
+e_realm = {
+	1.1.1 = { change_development_level = 6 }
+	1.1.1 = { government = imperial_government }
+}
+
+k_silk_and_pearl = {
+	1.1.1 = { change_development_level = 6 }
+	1.1.1 = { government = imperial_government }
+}
+
+d_voice_of_the_tides = {
+	1.1.1 = { change_development_level = 6 }
+	1.1.1 = { government = imperial_government }
+}
+
+c_bittern = {
+	1.1.1 = { change_development_level = 6 }
+	1.1.1 = { government = imperial_government }
+	560.1.1 = {
+		holder = 166423
+	}
+	587.1.1 = {
+		holder = 166424
+	}
+	618.1.1 = {
+		holder = 166425
+	}
+	641.1.1 = {
+		holder = 166426
+	}
+	653.1.1 = {
+		holder = 166427
+	}
+	666.1.1 = {
+		holder = 166428
+	}
+	681.1.1 = {
+		holder = 166429
+	}
+	696.1.1 = {
+		holder = 166430
+	}
+	712.1.1 = {
+		holder = 166431
+	}
+	730.1.1 = {
+		holder = 166432
+	}
+	768.1.1 = {
+		holder = 20842
+	}
+}

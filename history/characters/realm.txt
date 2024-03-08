@@ -1,0 +1,170 @@
+﻿20842 = {
+	name = "Shou Dun"
+	dynasty = 100848
+	religion = "immaculate_philosophy"
+	culture = realm
+	father = 166432
+
+	trait = brave
+	trait = lustful
+	trait = impatient
+
+	741.1.1 = {
+		birth = "741.1.1"
+	}
+	756.1.1 = {
+		effect = {
+			add_trait = lifestyle_fire_aspect
+		}
+	}
+	761.1.1 = {
+		effect = {
+			gain_exaltation_xp = {
+				CHARACTER = this
+				XP = 50
+			}
+		}
+	}
+	791.1.1 = {
+		death = "791.1.1"
+	}
+}
+
+166423 = {
+	name = "Guanareme"
+	dynasty = 100848
+	religion = "immaculate_philosophy"
+	culture = realm
+	533.1.1 = {
+		birth = "533.1.1"
+	}
+	579.1.1 = {
+		death = "579.1.1"
+	}
+}
+
+166424 = {
+	name = "AN_aterve"
+	dynasty = 100848
+	religion = "immaculate_philosophy"
+	culture = realm
+	father = 166423
+	552.1.1 = {
+		birth = "552.1.1"
+	}
+	608.1.1 = {
+		death = "608.1.1"
+	}
+}
+
+166425 = {
+	name = "Zonzamas"
+	dynasty = 100848
+	religion = "immaculate_philosophy"
+	culture = realm
+	father = 166424
+	569.1.1 = {
+		birth = "569.1.1"
+	}
+	631.1.1 = {
+		death = "631.1.1"
+	}
+}
+
+166426 = {
+	name = "TitaN_e"
+	dynasty = 100848
+	religion = "immaculate_philosophy"
+	culture = realm
+	father = 166425
+	592.1.1 = {
+		birth = "592.1.1"
+	}
+	643.1.1 = {
+		death = "643.1.1"
+	}
+}
+
+166427 = {
+	name = "Ayoze"
+	dynasty = 100848
+	religion = "immaculate_philosophy"
+	culture = realm
+	father = 166426
+	613.1.1 = {
+		birth = "613.1.1"
+	}
+	666.1.1 = {
+		death = "666.1.1"
+	}
+}
+
+166428 = {
+	name = "Dardamo"
+	dynasty = 100848
+	religion = "immaculate_philosophy"
+	culture = realm
+	father = 166427
+	638.1.1 = {
+		birth = "638.1.1"
+	}
+	681.1.1 = {
+		death = "681.1.1"
+	}
+}
+
+166429 = {
+	name = "Betzenuhya"
+	dynasty = 100848
+	religion = "immaculate_philosophy"
+	culture = realm
+	father = 166428
+	657.1.1 = {
+		birth = "657.1.1"
+	}
+	696.1.1 = {
+		death = "696.1.1"
+	}
+}
+
+166430 = {
+	name = "GuardafI_a"
+	dynasty = 100848
+	religion = "immaculate_philosophy"
+	culture = realm
+	father = 166429
+	679.1.1 = {
+		birth = "679.1.1"
+	}
+	712.1.1 = {
+		death = "712.1.1"
+	}
+}
+
+166431 = {
+	name = "Imobach"
+	dynasty = 100848
+	religion = "immaculate_philosophy"
+	culture = realm
+	father = 166430
+	696.1.1 = {
+		birth = "696.1.1"
+	}
+	738.1.1 = {
+		death = "738.1.1"
+	}
+}
+
+166432 = {
+	name = "AdxoN_a"
+	dynasty = 100848
+	religion = "immaculate_philosophy"
+	culture = realm
+	father = 166431
+	719.1.1 = {
+		birth = "719.1.1"
+	}
+	768.1.1 = {
+		death = "768.1.1"
+	}
+}

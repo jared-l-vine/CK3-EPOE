@@ -1,0 +1,76 @@
+realm_empire_holder = {
+	type = character
+	special = holder
+	tier = empire
+	priority = 26
+	governments = { imperial_government }
+	heritages = { heritage_shogunate }
+}
+
+realm_kingdom_holder = {
+	type = character
+	special = holder
+	tier = kingdom
+	priority = 26
+	governments = { imperial_government }
+	heritages = { heritage_shogunate }
+}
+
+realm_kingdom = {
+	type = title
+	tier = kingdom
+	priority = 26
+	governments = { imperial_government }
+	heritages = { heritage_shogunate }
+}
+
+realm_duchy_holder = {
+	type = character
+	special = holder
+	tier = duchy
+	priority = 26
+	governments = { imperial_government }
+	heritages = { heritage_shogunate }
+}
+
+realm_duchy = {
+	type = title
+	tier = duchy
+	priority = 26
+	governments = { imperial_government }
+	heritages = { heritage_shogunate }
+}
+
+realm_county_holder = {
+	type = character
+	special = holder
+	tier = county
+	priority = 26
+	governments = { imperial_government }
+	heritages = { heritage_shogunate }
+}
+
+realm_county = {
+	type = title
+	tier = county
+	priority = 26
+	governments = { imperial_government }
+	heritages = { heritage_shogunate }
+}
+
+realm_barony_holder = {
+	type = character
+	special = holder
+	tier = barony
+	priority = 26
+	governments = { imperial_government }
+	heritages = { heritage_shogunate }
+}
+
+realm_barony = {
+	type = title
+	tier = barony
+	priority = 26
+	governments = { imperial_government }
+	heritages = { heritage_shogunate }
+}
