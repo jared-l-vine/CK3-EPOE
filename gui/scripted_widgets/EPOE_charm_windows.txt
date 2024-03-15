@@ -1,0 +1,1 @@
+gui/window_character_charms.gui = character_charm_window

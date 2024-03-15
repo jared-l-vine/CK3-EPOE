@@ -1,0 +1,58 @@
+﻿charms_remaining_purchases = {
+	scope = character
+	value = charms_max_purchases
+
+	subtract = charms_purchased
+}
+
+charms_purchased = {
+	scope = character
+	value = 0
+
+	every_in_list = {
+		variable = purchased_charms
+		add = 1
+	}
+}
+
+charms_max_purchases = {
+	scope = character
+	value = 0
+
+	every_character_trait = {
+		limit = {
+			has_trait_flag = exaltation
+		}
+		add = 5
+
+		prev = {
+			if = {
+				limit = {
+					has_trait_xp = { trait = prev track = essence value >= 25 }
+				}
+				add = 5
+			}
+
+			if = {
+				limit = {
+					has_trait_xp = { trait = prev track = essence value >= 50 }
+				}
+				add = 5
+			}
+
+			if = {
+				limit = {
+					has_trait_xp = { trait = prev track = essence value >= 75 }
+				}
+				add = 5
+			}
+
+			if = {
+				limit = {
+					has_trait_xp = { trait = prev track = essence value >= 100 }
+				}
+				add = 5
+			}
+		}
+	}
+}

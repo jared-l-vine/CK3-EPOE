@@ -1,0 +1,55 @@
+﻿EPOE_story_charm_ox_body_technique = {
+	on_setup = {
+		story_owner = {
+			add_character_modifier = ox_body_technique_modifier
+		}
+	}
+	on_end = {
+		story_owner = {
+			remove_character_modifier = ox_body_technique_modifier
+		}
+	}
+	on_owner_death = {}
+}
+
+EPOE_story_charm_type_ox_body_technique = {
+	on_setup = {
+		set_variable = {
+			name  = charm_name
+			value = flag:ox_body_technique
+		}
+		set_variable = {
+			name  = charm_ability
+			value = flag:resistance_ability
+		}
+		add_to_global_variable_list = {
+		   name = global_charm_type_list
+		   target = this
+		}
+	}
+}
+
+EPOE_story_charm_melee_excellency = {
+	on_setup = {
+	}
+	on_end = {
+	}
+	on_owner_death = {}
+}
+
+EPOE_story_charm_type_melee_excellency = {
+	on_setup = {
+		set_variable = {
+			name  = charm_name
+			value = flag:melee_excellency
+		}
+		set_variable = {
+			name  = charm_ability
+			value = flag:melee_ability
+		}
+		add_to_global_variable_list = {
+		   name = global_charm_type_list
+		   target = this
+		}
+	}
+}

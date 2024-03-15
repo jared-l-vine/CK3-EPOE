@@ -3,521 +3,5315 @@
 @always_primary_score = 1000
 
 e_realm = {
-	color = { 209 63 44 }
-	
-	capital = c_scarlet # Scarlet Prefecture
-
-	ai_primary_priority = {
-		if = {
-			limit = {
-				OR = {
-					culture = culture:realm
+	color = { 196 44 0 }
+	k_temp_photon_magnetite = {
+		color = { 26 112 126 }
+		d_temp_energetic_pika = {
+			color = { 133 0 81 }
+			c_temp_lightning_sunshine = {
+				color = { 137 119 57 }
+				b_temp_peach_fog = {
+					color = { 57 170 137 }
+					province = 6
+				}
+				b_temp_torrent_owl = {
+					color = { 113 231 197 }
+					province = 8
+				}
+				b_temp_unworldly_orangutan = {
+					color = { 46 98 47 }
+					province = 12
+				}
+				b_temp_mercury_barometric_pressure = {
+					color = { 57 170 78 }
+					province = 17
 				}
 			}
-			add = @correct_culture_primary_score
-		}
-	}
-
-	k_imperial = {
-		definite_form = yes
-
-		color = { 239 42 22 }
-
-		capital = c_scarlet # Scarlet Prefecture
-
-		ai_primary_priority = {
-			if = {
-				limit = {
-					OR = {
-						culture = culture:realm
-					}
+			c_temp_incomprehensible_metal = {
+				color = { 57 68 137 }
+				b_temp_obsidian_aurora = {
+					color = { 117 90 80 }
+					province = 13
 				}
-				add = @correct_culture_primary_score
-			}
-		}
-
-		d_imperial = {
-			definite_form = yes
-
-			color = { 239 42 22 }
-
-			capital = c_scarlet # Scarlet Prefecture
-
-			c_scarlet = {
-				color = { 239 42 22 }
-				
-				b_imperial_city = {
-					definite_form = yes
-
-					province = 153
-					
-					color = { 239 42 22 }
+				b_temp_undefinable_sand = {
+					color = { 49 195 152 }
+					province = 23
 				}
-
-				b_eminences_shadow = {
-					province = 173
-					
-					color = { 239 42 22 }
+				b_temp_black_bamboo = {
+					color = { 131 103 24 }
+					province = 26
+				}
+				b_temp_indigo_crystal = {
+					color = { 139 141 47 }
+					province = 40
 				}
 			}
-		}
-	}
-	
-
-	k_silk_and_pearl = {
-		color = { 65 57 192 }
-
-		capital = c_bittern
-
-		ai_primary_priority = {
-			if = {
-				limit = {
-					OR = {
-						culture = culture:realm
-					}
+			c_temp_bamboo_azurite = {
+				color = { 137 57 59 }
+				b_temp_immaterial_selenite = {
+					color = { 99 38 15 }
+					province = 14
 				}
-				add = @correct_culture_primary_score
-			}
-		}
-
-		d_voice_of_the_tides = {
-			color = { 42 127 201 }
-			
-			capital = c_bittern
-
-			c_tongma = {
-				color = { 22 107 181 }
-				
-				b_tarad = {
-					province = 163
-					
-					color = { 22 107 181 }
+				b_temp_opal_lava = {
+					color = { 95 46 98 }
+					province = 18
 				}
-
-				b_kamos = {
-					province = 183
-					
-					color = { 22 107 181 }
+				b_temp_untouchable_gaur = {
+					color = { 148 46 8 }
+					province = 30
+				}
+				b_temp_adventurous_squall = {
+					color = { 97 61 39 }
+					province = 36
 				}
 			}
-
-			c_bittern = {
-				color = { 22 107 181 }
-				
-				b_bittern = {
-					province = 184
-					
-					color = { 22 107 181 }
+			c_temp_shadow_agate = {
+				color = { 104 57 137 }
+				b_temp_awe-inspiring_jasper = {
+					color = { 185 102 51 }
+					province = 48
 				}
-
-				b_mirta = {
-					province = 194
-					
-					color = { 22 107 181 }
+				b_temp_blaze_fluorite = {
+					color = { 185 176 51 }
+					province = 51
 				}
-
-				b_luon = {
-					province = 213
-					
-					color = { 22 107 181 }
+				b_temp_magma_fennec_fox = {
+					color = { 185 133 35 }
+					province = 73
+				}
+				b_temp_captivating_aurora = {
+					color = { 124 118 35 }
+					province = 120
 				}
 			}
 		}
-
-		d_pious_hearth = {
-			c_kaijin = {
-				color = { 22 107 181 }
-
-				b_gandau = {
+		d_temp_coral_selenite = {
+			color = { 133 71 0 }
+			c_temp_selenite_volcano = {
+				color = { 57 169 39 }
+				b_temp_dramatic_barometric_pressure = {
+					color = { 248 82 139 }
+					province = 9
+				}
+				b_temp_stubborn_tornado = {
+					color = { 131 158 49 }
+					province = 19
+				}
+				b_temp_unmanifest_lightning = {
+					color = { 77 93 28 }
+					province = 20
+				}
+				b_temp_rich_diamond = {
+					color = { 119 112 91 }
+					province = 34
+				}
+			}
+			c_temp_moonstone_coral = {
+				color = { 121 221 165 }
+				b_temp_plasma_jade = {
+					color = { 93 118 17 }
+					province = 22
+				}
+				b_temp_callous_yak = {
+					color = { 5 88 102 }
+					province = 24
+				}
+				b_temp_teal_cirrus = {
+					color = { 166 170 188 }
+					province = 32
+				}
+				b_temp_quasar_obsidian = {
+					color = { 111 27 129 }
+					province = 38
+				}
+			}
+			c_temp_yellow_precipitation = {
+				color = { 121 164 221 }
+				b_temp_time-defying_snow = {
+					color = { 239 159 27 }
+					province = 41
+				}
+				b_temp_cyclone_gale = {
+					color = { 14 65 31 }
+					province = 50
+				}
+				b_temp_unseen_thunderstorm = {
+					color = { 103 71 69 }
+					province = 67
+				}
+				b_temp_spectacular_neutron = {
+					color = { 57 129 27 }
+					province = 92
+				}
+			}
+			c_temp_inconceivable_sulfur = {
+				color = { 221 121 158 }
+				b_temp_unseen_pangolin = {
+					color = { 65 14 23 }
+					province = 57
+				}
+				b_temp_detached_chital = {
+					color = { 145 37 31 }
+					province = 59
+				}
+				b_temp_alexandrite_peridot = {
+					color = { 27 129 93 }
+					province = 86
+				}
+			}
+		}
+		d_temp_optimistic_leopard = {
+			color = { 0 47 133 }
+			c_temp_restless_marmot = {
+				color = { 202 121 221 }
+				b_temp_tornado_dust_devil = {
+					color = { 152 189 40 }
+					province = 54
+				}
+				b_temp_clay_tapir = {
+					color = { 46 96 98 }
+					province = 70
+				}
+				b_temp_everlasting_onyx = {
+					color = { 72 87 176 }
+					province = 91
+				}
+				b_temp_orange_carnelian = {
+					color = { 50 208 235 }
+					province = 105
+				}
+			}
+			c_temp_moonlight_yak = {
+				color = { 88 43 191 }
+				b_temp_labradorite_breeze = {
+					color = { 50 235 186 }
+					province = 114
+				}
+				b_temp_modern_snowflake = {
+					color = { 92 107 133 }
+					province = 129
+				}
+				b_temp_respectful_torrent = {
+					color = { 34 193 151 }
+					province = 136
+				}
+				b_temp_pessimistic_microburst = {
+					color = { 145 31 51 }
+					province = 160
+				}
+				b_temp_silver_spinel = {
+					color = { 72 176 77 }
+					province = 168
+				}
+			}
+			c_temp_peridot_aquamarine = {
+				color = { 73 191 43 }
+				b_temp_crisp_plasma = {
+					color = { 234 206 152 }
+					province = 132
+				}
+				b_temp_tourmaline_crystal = {
+					color = { 234 175 152 }
 					province = 174
-					
-					color = { 22 107 181 }
 				}
-
-				b_thrice_renewed = {
-					province = 211
-					
-					color = { 22 107 181 }
+				b_temp_peach_raindrop = {
+					color = { 45 135 50 }
+					province = 204
 				}
-
-				b_dordoran = {
-					province = 198
-					
-					color = { 22 107 181 }
+				b_temp_disrespectful_magnetite = {
+					color = { 113 135 45 }
+					province = 255
 				}
 			}
-
-			c_golden_ridge = {
-				color = { 22 107 181 }
-
-				b_shrike = {
-					province = 142
-					
-					color = { 22 107 181 }
+			c_temp_coral_whirlwind = {
+				color = { 169 135 39 }
+				b_temp_intriguing_hurricane = {
+					color = { 20 138 158 }
+					province = 186
 				}
-
-				b_grace_and_omens = {
+				b_temp_respectful_solar_radiation = {
+					color = { 115 39 169 }
+					province = 217
+				}
+				b_temp_luminous_obsidian = {
+					color = { 152 215 234 }
+					province = 245
+				}
+				b_temp_stubborn_aventurine = {
+					color = { 169 46 39 }
+					province = 267
+				}
+			}
+		}
+		d_temp_glistening_rust = {
+			color = { 133 0 114 }
+			c_temp_dramatic_agate = {
+				color = { 221 182 121 }
+				b_temp_illusory_azurite = {
+					color = { 61 198 106 }
+					province = 107
+				}
+				b_temp_surreal_frost = {
+					color = { 15 166 65 }
+					province = 111
+				}
+				b_temp_unworldly_quartz = {
+					color = { 27 239 124 }
+					province = 140
+				}
+				b_temp_picturesque_volcano = {
+					color = { 239 126 27 }
+					province = 141
+				}
+				b_temp_metal_serpentine = {
+					color = { 239 27 139 }
+					province = 147
+				}
+			}
+			c_temp_omnipresent_sand = {
+				color = { 178 221 121 }
+				b_temp_mysterious_alexandrite = {
+					color = { 229 82 55 }
+					province = 182
+				}
+				b_temp_soothing_magnetite = {
+					color = { 126 161 123 }
+					province = 200
+				}
+				b_temp_ruby_stone = {
+					color = { 22 197 79 }
+					province = 236
+				}
+				b_temp_restless_iolite = {
+					color = { 38 150 75 }
+					province = 246
+				}
+				b_temp_magnetite_light = {
+					color = { 143 123 161 }
+					province = 259
+				}
+			}
+			c_temp_quartz_citrine = {
+				color = { 43 191 139 }
+				b_temp_black_turkish_angora_cat = {
+					color = { 34 193 43 }
+					province = 205
+				}
+				b_temp_air_ibex = {
+					color = { 176 72 156 }
+					province = 209
+				}
+				b_temp_minimalistic_photon = {
+					color = { 195 225 105 }
+					province = 240
+				}
+				b_temp_wood_quokka = {
+					color = { 156 152 234 }
+					province = 248
+				}
+			}
+			c_temp_radiant_citrine = {
+				color = { 221 134 121 }
+				b_temp_gold_diamond = {
+					color = { 229 161 55 }
+					province = 219
+				}
+				b_temp_incalculable_sunstone = {
+					color = { 132 229 55 }
+					province = 235
+				}
+				b_temp_zircon_gravity = {
+					color = { 123 142 161 }
+					province = 251
+				}
+			}
+		}
+	}
+	k_temp_lethargic_moonstone = {
+		color = { 255 171 59 }
+		d_temp_nonchalant_onyx = {
+			color = { 108 217 207 }
+			c_temp_tornado_leopard = {
+				color = { 60 216 201 }
+				b_temp_metal_earth = {
+					color = { 33 185 83 }
+					province = 21
+				}
+				b_temp_iolite_amber = {
+					color = { 33 218 177 }
+					province = 25
+				}
+				b_temp_lightning_sapphire = {
+					color = { 103 250 217 }
+					province = 28
+				}
+				b_temp_lightning_iolite = {
+					color = { 48 145 113 }
+					province = 29
+				}
+			}
+			c_temp_water_microburst = {
+				color = { 153 54 32 }
+				b_temp_emerald_solar_radiation = {
+					color = { 33 218 94 }
+					province = 33
+				}
+				b_temp_cerulean_petal = {
+					color = { 73 145 48 }
+					province = 42
+				}
+				b_temp_ambitious_thunderbolt = {
+					color = { 250 103 171 }
+					province = 58
+				}
+				b_temp_iolite_clear_sky = {
+					color = { 120 3 58 }
+					province = 81
+				}
+			}
+			c_temp_dramatic_owl = {
+				color = { 87 153 32 }
+				b_temp_mauve_nor'easter = {
+					color = { 207 194 227 }
+					province = 72
+				}
+				b_temp_closed-minded_kunzite = {
+					color = { 224 227 194 }
+					province = 75
+				}
+				b_temp_transcendent_ibex = {
+					color = { 54 118 21 }
+					province = 118
+				}
+				b_temp_turquoise_ice = {
+					color = { 94 198 39 }
 					province = 145
-					
-					color = { 22 107 181 }
 				}
-
-				b_churrip = {
-					province = 149
-					
-					color = { 22 107 181 }
+			}
+			c_temp_magma_loris = {
+				color = { 32 153 69 }
+				b_temp_incorporeal_ocelot = {
+					color = { 52 145 48 }
+					province = 127
+				}
+				b_temp_jasper_chital = {
+					color = { 83 123 91 }
+					province = 128
+				}
+				b_temp_dazzling_zephyr = {
+					color = { 184 198 39 }
+					province = 137
+				}
+				b_temp_vivid_leopard = {
+					color = { 125 135 13 }
+					province = 165
 				}
 			}
 		}
-
-		d_stone_root = {
-			c_estarjas = {
-				color = { 22 107 181 }
-
-				b_tujay = {
-					province = 159
-					
-					color = { 22 107 181 }
+		d_temp_monochromatic_tornado = {
+			color = { 130 217 108 }
+			c_temp_jade_aurora = {
+				color = { 151 216 60 }
+				b_temp_carnelian_bear = {
+					color = { 121 124 65 }
+					province = 31
 				}
-
-				b_goden = {
-					province = 199
-					
-					color = { 22 107 181 }
+				b_temp_restless_nectar = {
+					color = { 189 34 6 }
+					province = 55
+				}
+				b_temp_selfish_panda = {
+					color = { 89 52 45 }
+					province = 56
+				}
+				b_temp_generous_quokka = {
+					color = { 0 79 41 }
+					province = 77
 				}
 			}
-
-			c_parten = {
-				color = { 22 107 181 }
-
-				b_ajiran = {
-					province = 188
-					
-					color = { 22 107 181 }
+			c_temp_stubborn_gaur = {
+				color = { 216 155 60 }
+				b_temp_mesmerizing_muntjac = {
+					color = { 65 124 103 }
+					province = 39
 				}
-
-				b_keruk = {
+				b_temp_charcoal_diamond = {
+					color = { 89 45 84 }
+					province = 43
+				}
+				b_temp_jasper_aether = {
+					color = { 102 10 5 }
+					province = 49
+				}
+				b_temp_mesmerizing_vortex = {
+					color = { 164 25 147 }
+					province = 63
+				}
+			}
+			c_temp_adventurous_horse = {
+				color = { 62 216 60 }
+				b_temp_muted_sardonyx = {
+					color = { 236 133 151 }
+					province = 84
+				}
+				b_temp_sapphire_fox = {
+					color = { 217 124 205 }
+					province = 89
+				}
+				b_temp_rust_citrine = {
+					color = { 27 130 239 }
+					province = 108
+				}
+				b_temp_formless_sardonyx = {
+					color = { 225 39 72 }
+					province = 126
+				}
+			}
+			c_temp_ungrateful_elephant = {
+				color = { 32 103 153 }
+				b_temp_serene_gaur = {
+					color = { 82 199 142 }
+					province = 101
+				}
+				b_temp_silver_cobalt = {
+					color = { 138 224 93 }
+					province = 142
+				}
+				b_temp_earth_breeze = {
+					color = { 83 21 7 }
+					province = 148
+				}
+				b_temp_awe-inspiring_pika = {
+					color = { 29 94 28 }
+					province = 170
+				}
+			}
+		}
+		d_temp_ruby_calm = {
+			color = { 217 108 199 }
+			c_temp_starlight_azurite = {
+				color = { 153 107 32 }
+				b_temp_diamond_quokka = {
+					color = { 48 145 134 }
 					province = 164
-					
-					color = { 22 107 181 }
+				}
+				b_temp_nectar_gazelle = {
+					color = { 136 146 34 }
+					province = 196
+				}
+				b_temp_diamond_blizzard = {
+					color = { 150 43 20 }
+					province = 222
+				}
+				b_temp_labradorite_ocelot = {
+					color = { 79 48 145 }
+					province = 242
+				}
+			}
+			c_temp_restless_orangutan = {
+				color = { 32 96 153 }
+				b_temp_stingy_snow = {
+					color = { 226 123 96 }
+					province = 179
+				}
+				b_temp_captivating_raindrop = {
+					color = { 234 102 67 }
+					province = 187
+				}
+				b_temp_surreal_zircon = {
+					color = { 234 67 88 }
+					province = 201
+				}
+				b_temp_open-minded_cirrus = {
+					color = { 206 58 18 }
+					province = 202
+				}
+			}
+			c_temp_amber_tiger = {
+				color = { 153 32 57 }
+				b_temp_wood_ruby = {
+					color = { 234 96 67 }
+					province = 226
+				}
+				b_temp_cobalt_frost = {
+					color = { 99 69 100 }
+					province = 252
+				}
+				b_temp_moonstone_gazelle = {
+					color = { 14 192 228 }
+					province = 273
+				}
+				b_temp_photon_metal = {
+					color = { 122 25 4 }
+					province = 289
+				}
+			}
+			c_temp_ethereal_windchill = {
+				color = { 216 60 65 }
+				b_temp_majestic_ruby = {
+					color = { 144 101 91 }
+					province = 268
+				}
+				b_temp_enchanting_dhole = {
+					color = { 142 48 145 }
+					province = 291
+				}
+				b_temp_aether_crystal = {
+					color = { 145 117 48 }
+					province = 317
+				}
+				b_temp_crystal_lightning = {
+					color = { 109 48 145 }
+					province = 346
 				}
 			}
 		}
-	}
-	
-	k_daoshin = {
-		color = { 196 36 18 }
-		
-		capital = c_myion
-		
-		d_myion = {
-			color = { 42 127 201 }
-			
-			capital = c_myion
-			
-			c_myion = {
-				color = { 22 107 181 }
-				
-				b_myion = {
+		d_temp_tourmaline_obsidian = {
+			color = { 217 132 108 }
+			c_temp_mint_crystal = {
+				color = { 60 135 216 }
+				b_temp_timeless_marmot = {
+					color = { 196 255 149 }
+					province = 178
+				}
+				b_temp_dazzling_magma = {
+					color = { 68 91 198 }
+					province = 212
+				}
+				b_temp_sepia_polar_vortex = {
+					color = { 48 80 145 }
+					province = 218
+				}
+				b_temp_blue_metal = {
+					color = { 127 234 182 }
+					province = 241
+				}
+				b_temp_curious_coral = {
+					color = { 145 48 123 }
+					province = 262
+				}
+			}
+			c_temp_wood_starlight = {
+				color = { 75 32 153 }
+				b_temp_delicate_falcon = {
+					color = { 214 226 96 }
+					province = 195
+				}
+				b_temp_alexandrite_water = {
+					color = { 89 103 82 }
+					province = 197
+				}
+				b_temp_generous_ocelot = {
+					color = { 76 158 32 }
+					province = 223
+				}
+				b_temp_unworldly_warm_front = {
+					color = { 164 91 35 }
+					province = 224
+				}
+			}
+			c_temp_curious_aurora = {
+				color = { 153 32 133 }
+				b_temp_agate_caracal = {
+					color = { 180 82 134 }
+					province = 247
+				}
+				b_temp_citrine_petal = {
+					color = { 94 205 178 }
+					province = 257
+				}
+				b_temp_dramatic_citrine = {
+					color = { 198 112 68 }
 					province = 277
-					
-					color = { 22 107 181 }
+				}
+				b_temp_timeless_overcast = {
+					color = { 14 228 175 }
+					province = 284
+				}
+				b_temp_playful_owl = {
+					color = { 42 132 150 }
+					province = 312
+				}
+			}
+			c_temp_bamboo_pika = {
+				color = { 130 60 216 }
+				b_temp_zircon_mist = {
+					color = { 82 103 98 }
+					province = 260
+				}
+				b_temp_blue_sapphire = {
+					color = { 64 207 236 }
+					province = 300
+				}
+				b_temp_sepia_thunderbolt = {
+					color = { 16 136 160 }
+					province = 305
+				}
+				b_temp_lightning_elephant = {
+					color = { 48 145 104 }
+					province = 338
 				}
 			}
 		}
 	}
-
-	k_placeholder = {
-		color = { 1 1 1 }
-
-		d_placeholder = {
-			color = { 1 1 1 }
-
-			c_placeholder = {
-				color = { 1 1 1 }
-
-				b_6 = { province = 6 color = { 1 1 1 } }
-				b_8 = { province = 8 color = { 1 1 1 } }
-				b_11 = { province = 11 color = { 1 1 1 } }
-				b_14 = { province = 14 color = { 1 1 1 } }
-				b_15 = { province = 15 color = { 1 1 1 } }
-				b_16 = { province = 16 color = { 1 1 1 } }
-				b_17 = { province = 17 color = { 1 1 1 } }
-				b_18 = { province = 18 color = { 1 1 1 } }
-				b_19 = { province = 19 color = { 1 1 1 } }
-				b_20 = { province = 20 color = { 1 1 1 } }
-				b_22 = { province = 22 color = { 1 1 1 } }
-				b_23 = { province = 23 color = { 1 1 1 } }
-				b_24 = { province = 24 color = { 1 1 1 } }
-				b_25 = { province = 25 color = { 1 1 1 } }
-				b_26 = { province = 26 color = { 1 1 1 } }
-				b_27 = { province = 27 color = { 1 1 1 } }
-				b_28 = { province = 28 color = { 1 1 1 } }
-				b_29 = { province = 29 color = { 1 1 1 } }
-				b_30 = { province = 30 color = { 1 1 1 } }
-				b_31 = { province = 31 color = { 1 1 1 } }
-				b_32 = { province = 32 color = { 1 1 1 } }
-				b_33 = { province = 33 color = { 1 1 1 } }
-				b_34 = { province = 34 color = { 1 1 1 } }
-				b_35 = { province = 35 color = { 1 1 1 } }
-				b_36 = { province = 36 color = { 1 1 1 } }
-				b_37 = { province = 37 color = { 1 1 1 } }
-				b_38 = { province = 38 color = { 1 1 1 } }
-				b_39 = { province = 39 color = { 1 1 1 } }
-				b_40 = { province = 40 color = { 1 1 1 } }
-				b_41 = { province = 41 color = { 1 1 1 } }
-				b_42 = { province = 42 color = { 1 1 1 } }
-				b_43 = { province = 43 color = { 1 1 1 } }
-				b_44 = { province = 44 color = { 1 1 1 } }
-				b_46 = { province = 46 color = { 1 1 1 } }
-				b_47 = { province = 47 color = { 1 1 1 } }
-				b_49 = { province = 49 color = { 1 1 1 } }
-				b_50 = { province = 50 color = { 1 1 1 } }
-				b_51 = { province = 51 color = { 1 1 1 } }
-				b_52 = { province = 52 color = { 1 1 1 } }
-				b_53 = { province = 53 color = { 1 1 1 } }
-				b_54 = { province = 54 color = { 1 1 1 } }
-				b_55 = { province = 55 color = { 1 1 1 } }
-				b_56 = { province = 56 color = { 1 1 1 } }
-				b_57 = { province = 57 color = { 1 1 1 } }
-				b_58 = { province = 58 color = { 1 1 1 } }
-				b_59 = { province = 59 color = { 1 1 1 } }
-				b_60 = { province = 60 color = { 1 1 1 } }
-				b_61 = { province = 61 color = { 1 1 1 } }
-				b_62 = { province = 62 color = { 1 1 1 } }
-				b_64 = { province = 64 color = { 1 1 1 } }
-				b_65 = { province = 65 color = { 1 1 1 } }
-				b_66 = { province = 66 color = { 1 1 1 } }
-				b_67 = { province = 67 color = { 1 1 1 } }
-				b_68 = { province = 68 color = { 1 1 1 } }
-				b_69 = { province = 69 color = { 1 1 1 } }
-				b_70 = { province = 70 color = { 1 1 1 } }
-				b_71 = { province = 71 color = { 1 1 1 } }
-				b_72 = { province = 72 color = { 1 1 1 } }
-				b_73 = { province = 73 color = { 1 1 1 } }
-				b_74 = { province = 74 color = { 1 1 1 } }
-				b_75 = { province = 75 color = { 1 1 1 } }
-				b_76 = { province = 76 color = { 1 1 1 } }
-				b_77 = { province = 77 color = { 1 1 1 } }
-				b_78 = { province = 78 color = { 1 1 1 } }
-				b_79 = { province = 79 color = { 1 1 1 } }
-				b_80 = { province = 80 color = { 1 1 1 } }
-				b_81 = { province = 81 color = { 1 1 1 } }
-				b_82 = { province = 82 color = { 1 1 1 } }
-				b_83 = { province = 83 color = { 1 1 1 } }
-				b_84 = { province = 84 color = { 1 1 1 } }
-				b_85 = { province = 85 color = { 1 1 1 } }
-				b_86 = { province = 86 color = { 1 1 1 } }
-				b_87 = { province = 87 color = { 1 1 1 } }
-				b_88 = { province = 88 color = { 1 1 1 } }
-				b_89 = { province = 89 color = { 1 1 1 } }
-				b_90 = { province = 90 color = { 1 1 1 } }
-				b_91 = { province = 91 color = { 1 1 1 } }
-				b_93 = { province = 93 color = { 1 1 1 } }
-				b_94 = { province = 94 color = { 1 1 1 } }
-				b_95 = { province = 95 color = { 1 1 1 } }
-				b_96 = { province = 96 color = { 1 1 1 } }
-				b_97 = { province = 97 color = { 1 1 1 } }
-				b_98 = { province = 98 color = { 1 1 1 } }
-				b_99 = { province = 99 color = { 1 1 1 } }
-				b_100 = { province = 100 color = { 1 1 1 } }
-				b_101 = { province = 101 color = { 1 1 1 } }
-				b_102 = { province = 102 color = { 1 1 1 } }
-				b_103 = { province = 103 color = { 1 1 1 } }
-				b_104 = { province = 104 color = { 1 1 1 } }
-				b_105 = { province = 105 color = { 1 1 1 } }
-				b_106 = { province = 106 color = { 1 1 1 } }
-				b_107 = { province = 107 color = { 1 1 1 } }
-				b_108 = { province = 108 color = { 1 1 1 } }
-				b_109 = { province = 109 color = { 1 1 1 } }
-				b_110 = { province = 110 color = { 1 1 1 } }
-				b_111 = { province = 111 color = { 1 1 1 } }
-				b_113 = { province = 113 color = { 1 1 1 } }
-				b_114 = { province = 114 color = { 1 1 1 } }
-				b_115 = { province = 115 color = { 1 1 1 } }
-				b_116 = { province = 116 color = { 1 1 1 } }
-				b_118 = { province = 118 color = { 1 1 1 } }
-				b_119 = { province = 119 color = { 1 1 1 } }
-				b_120 = { province = 120 color = { 1 1 1 } }
-				b_121 = { province = 121 color = { 1 1 1 } }
-				b_124 = { province = 124 color = { 1 1 1 } }
-				b_126 = { province = 126 color = { 1 1 1 } }
-				b_127 = { province = 127 color = { 1 1 1 } }
-				b_128 = { province = 128 color = { 1 1 1 } }
-				b_129 = { province = 129 color = { 1 1 1 } }
-				b_133 = { province = 133 color = { 1 1 1 } }
-				b_134 = { province = 134 color = { 1 1 1 } }
-				b_135 = { province = 135 color = { 1 1 1 } }
-				b_139 = { province = 139 color = { 1 1 1 } }
-				b_140 = { province = 140 color = { 1 1 1 } }
-				b_141 = { province = 141 color = { 1 1 1 } }
-				b_143 = { province = 143 color = { 1 1 1 } }
-				b_144 = { province = 144 color = { 1 1 1 } }
-				b_146 = { province = 146 color = { 1 1 1 } }
-				b_147 = { province = 147 color = { 1 1 1 } }
-				b_148 = { province = 148 color = { 1 1 1 } }
-				b_150 = { province = 150 color = { 1 1 1 } }
-				b_151 = { province = 151 color = { 1 1 1 } }
-				b_152 = { province = 152 color = { 1 1 1 } }
-				b_154 = { province = 154 color = { 1 1 1 } }
-				b_155 = { province = 155 color = { 1 1 1 } }
-				b_156 = { province = 156 color = { 1 1 1 } }
-				b_157 = { province = 157 color = { 1 1 1 } }
-				b_160 = { province = 160 color = { 1 1 1 } }
-				b_162 = { province = 162 color = { 1 1 1 } }
-				b_165 = { province = 165 color = { 1 1 1 } }
-				b_166 = { province = 166 color = { 1 1 1 } }
-				b_167 = { province = 167 color = { 1 1 1 } }
-				b_169 = { province = 169 color = { 1 1 1 } }
-				b_170 = { province = 170 color = { 1 1 1 } }
-				b_171 = { province = 171 color = { 1 1 1 } }
-				b_172 = { province = 172 color = { 1 1 1 } }
-				b_175 = { province = 175 color = { 1 1 1 } }
-				b_176 = { province = 176 color = { 1 1 1 } }
-				b_177 = { province = 177 color = { 1 1 1 } }
-				b_179 = { province = 179 color = { 1 1 1 } }
-				b_180 = { province = 180 color = { 1 1 1 } }
-				b_181 = { province = 181 color = { 1 1 1 } }
-				b_182 = { province = 182 color = { 1 1 1 } }
-				b_185 = { province = 185 color = { 1 1 1 } }
-				b_187 = { province = 187 color = { 1 1 1 } }
-				b_189 = { province = 189 color = { 1 1 1 } }
-				b_190 = { province = 190 color = { 1 1 1 } }
-				b_191 = { province = 191 color = { 1 1 1 } }
-				b_192 = { province = 192 color = { 1 1 1 } }
-				b_193 = { province = 193 color = { 1 1 1 } }
-				b_195 = { province = 195 color = { 1 1 1 } }
-				b_196 = { province = 196 color = { 1 1 1 } }
-				b_197 = { province = 197 color = { 1 1 1 } }
-				b_200 = { province = 200 color = { 1 1 1 } }
-				b_201 = { province = 201 color = { 1 1 1 } }
-				b_203 = { province = 203 color = { 1 1 1 } }
-				b_205 = { province = 205 color = { 1 1 1 } }
-				b_206 = { province = 206 color = { 1 1 1 } }
-				b_207 = { province = 207 color = { 1 1 1 } }
-				b_208 = { province = 208 color = { 1 1 1 } }
-				b_209 = { province = 209 color = { 1 1 1 } }
-				b_210 = { province = 210 color = { 1 1 1 } }
-				b_212 = { province = 212 color = { 1 1 1 } }
-				b_214 = { province = 214 color = { 1 1 1 } }
-				b_215 = { province = 215 color = { 1 1 1 } }
-				b_216 = { province = 216 color = { 1 1 1 } }
-				b_217 = { province = 217 color = { 1 1 1 } }
-				b_218 = { province = 218 color = { 1 1 1 } }
-				b_220 = { province = 220 color = { 1 1 1 } }
-				b_221 = { province = 221 color = { 1 1 1 } }
-				b_222 = { province = 222 color = { 1 1 1 } }
-				b_223 = { province = 223 color = { 1 1 1 } }
-				b_225 = { province = 225 color = { 1 1 1 } }
-				b_226 = { province = 226 color = { 1 1 1 } }
-				b_227 = { province = 227 color = { 1 1 1 } }
-				b_228 = { province = 228 color = { 1 1 1 } }
-				b_229 = { province = 229 color = { 1 1 1 } }
-				b_230 = { province = 230 color = { 1 1 1 } }
-				b_231 = { province = 231 color = { 1 1 1 } }
-				b_232 = { province = 232 color = { 1 1 1 } }
-				b_234 = { province = 234 color = { 1 1 1 } }
-				b_235 = { province = 235 color = { 1 1 1 } }
-				b_236 = { province = 236 color = { 1 1 1 } }
-				b_237 = { province = 237 color = { 1 1 1 } }
-				b_238 = { province = 238 color = { 1 1 1 } }
-				b_239 = { province = 239 color = { 1 1 1 } }
-				b_240 = { province = 240 color = { 1 1 1 } }
-				b_241 = { province = 241 color = { 1 1 1 } }
-				b_242 = { province = 242 color = { 1 1 1 } }
-				b_243 = { province = 243 color = { 1 1 1 } }
-				b_244 = { province = 244 color = { 1 1 1 } }
-				b_245 = { province = 245 color = { 1 1 1 } }
-				b_246 = { province = 246 color = { 1 1 1 } }
-				b_247 = { province = 247 color = { 1 1 1 } }
-				b_248 = { province = 248 color = { 1 1 1 } }
-				b_249 = { province = 249 color = { 1 1 1 } }
-				b_250 = { province = 250 color = { 1 1 1 } }
-				b_251 = { province = 251 color = { 1 1 1 } }
-				b_252 = { province = 252 color = { 1 1 1 } }
-				b_253 = { province = 253 color = { 1 1 1 } }
-				b_254 = { province = 254 color = { 1 1 1 } }
-				b_257 = { province = 257 color = { 1 1 1 } }
-				b_258 = { province = 258 color = { 1 1 1 } }
-				b_259 = { province = 259 color = { 1 1 1 } }
-				b_260 = { province = 260 color = { 1 1 1 } }
-				b_261 = { province = 261 color = { 1 1 1 } }
-				b_262 = { province = 262 color = { 1 1 1 } }
-				b_263 = { province = 263 color = { 1 1 1 } }
-				b_264 = { province = 264 color = { 1 1 1 } }
-				b_265 = { province = 265 color = { 1 1 1 } }
-				b_266 = { province = 266 color = { 1 1 1 } }
-				b_267 = { province = 267 color = { 1 1 1 } }
-				b_269 = { province = 269 color = { 1 1 1 } }
-				b_270 = { province = 270 color = { 1 1 1 } }
-				b_271 = { province = 271 color = { 1 1 1 } }
-				b_272 = { province = 272 color = { 1 1 1 } }
-				b_273 = { province = 273 color = { 1 1 1 } }
-				b_275 = { province = 275 color = { 1 1 1 } }
-				b_276 = { province = 276 color = { 1 1 1 } }
-				b_278 = { province = 278 color = { 1 1 1 } }
-				b_279 = { province = 279 color = { 1 1 1 } }
-				b_280 = { province = 280 color = { 1 1 1 } }
-				b_281 = { province = 281 color = { 1 1 1 } }
-				b_282 = { province = 282 color = { 1 1 1 } }
-				b_283 = { province = 283 color = { 1 1 1 } }
-				b_284 = { province = 284 color = { 1 1 1 } }
-				b_285 = { province = 285 color = { 1 1 1 } }
-				b_286 = { province = 286 color = { 1 1 1 } }
-				b_287 = { province = 287 color = { 1 1 1 } }
-				b_289 = { province = 289 color = { 1 1 1 } }
-				b_292 = { province = 292 color = { 1 1 1 } }
-				b_293 = { province = 293 color = { 1 1 1 } }
-				b_294 = { province = 294 color = { 1 1 1 } }
-				b_295 = { province = 295 color = { 1 1 1 } }
-				b_296 = { province = 296 color = { 1 1 1 } }
-				b_297 = { province = 297 color = { 1 1 1 } }
-				b_298 = { province = 298 color = { 1 1 1 } }
-				b_299 = { province = 299 color = { 1 1 1 } }
-				b_300 = { province = 300 color = { 1 1 1 } }
-				b_301 = { province = 301 color = { 1 1 1 } }
-				b_302 = { province = 302 color = { 1 1 1 } }
-				b_303 = { province = 303 color = { 1 1 1 } }
-				b_305 = { province = 305 color = { 1 1 1 } }
-				b_306 = { province = 306 color = { 1 1 1 } }
-				b_307 = { province = 307 color = { 1 1 1 } }
-				b_308 = { province = 308 color = { 1 1 1 } }
-				b_310 = { province = 310 color = { 1 1 1 } }
-				b_312 = { province = 312 color = { 1 1 1 } }
-				b_313 = { province = 313 color = { 1 1 1 } }
-				b_314 = { province = 314 color = { 1 1 1 } }
-				b_316 = { province = 316 color = { 1 1 1 } }
-				b_317 = { province = 317 color = { 1 1 1 } }
-				b_318 = { province = 318 color = { 1 1 1 } }
-				b_319 = { province = 319 color = { 1 1 1 } }
-				b_320 = { province = 320 color = { 1 1 1 } }
-				b_322 = { province = 322 color = { 1 1 1 } }
-				b_323 = { province = 323 color = { 1 1 1 } }
-				b_324 = { province = 324 color = { 1 1 1 } }
-				b_325 = { province = 325 color = { 1 1 1 } }
-				b_328 = { province = 328 color = { 1 1 1 } }
-				b_330 = { province = 330 color = { 1 1 1 } }
-				b_331 = { province = 331 color = { 1 1 1 } }
-				b_332 = { province = 332 color = { 1 1 1 } }
-				b_333 = { province = 333 color = { 1 1 1 } }
-				b_334 = { province = 334 color = { 1 1 1 } }
-				b_336 = { province = 336 color = { 1 1 1 } }
-				b_337 = { province = 337 color = { 1 1 1 } }
-				b_339 = { province = 339 color = { 1 1 1 } }
-				b_341 = { province = 341 color = { 1 1 1 } }
-				b_342 = { province = 342 color = { 1 1 1 } }
-				b_344 = { province = 344 color = { 1 1 1 } }
-				b_345 = { province = 345 color = { 1 1 1 } }
-				b_346 = { province = 346 color = { 1 1 1 } }
-				b_347 = { province = 347 color = { 1 1 1 } }
-				b_349 = { province = 349 color = { 1 1 1 } }
-				b_351 = { province = 351 color = { 1 1 1 } }
-				b_352 = { province = 352 color = { 1 1 1 } }
-				b_353 = { province = 353 color = { 1 1 1 } }
+	k_temp_nectar_deer = {
+		color = { 126 28 26 }
+		d_temp_transcendent_crystal = {
+			color = { 220 101 103 }
+			c_temp_turmeric_ruby = {
+				color = { 177 144 52 }
+				b_temp_torrent_ocelot = {
+					color = { 30 83 122 }
+					province = 27
+				}
+				b_temp_imperceptible_frost = {
+					color = { 25 148 125 }
+					province = 44
+				}
+				b_temp_immutable_dragon = {
+					color = { 96 155 144 }
+					province = 47
+				}
+			}
+			c_temp_tactile_fox = {
+				color = { 52 177 59 }
+				b_temp_teal_precipitation = {
+					color = { 151 101 39 }
+					province = 61
+				}
+				b_temp_lilac_snow = {
+					color = { 124 151 39 }
+					province = 69
+				}
+				b_temp_tan_tiger = {
+					color = { 39 151 57 }
+					province = 74
+				}
+				b_temp_grateful_aurora = {
+					color = { 91 122 30 }
+					province = 95
+				}
+			}
+			c_temp_crystal_whirlwind = {
+				color = { 220 101 122 }
+				b_temp_aesthetic_shadow = {
+					color = { 30 122 49 }
+					province = 71
+				}
+				b_temp_sepia_overcast = {
+					color = { 46 222 189 }
+					province = 110
+				}
+				b_temp_lightning_fox = {
+					color = { 255 88 150 }
+					province = 119
+				}
+				b_temp_azurite_mist = {
+					color = { 197 83 217 }
+					province = 167
+				}
+			}
+		}
+		d_temp_pearl_pearl = {
+			color = { 101 220 138 }
+			c_temp_flexible_cyclone = {
+				color = { 101 155 220 }
+				b_temp_surreal_cumulus = {
+					color = { 171 51 33 }
+					province = 35
+				}
+			}
+			c_temp_emerald_tornado = {
+				color = { 196 101 220 }
+				b_temp_stone_quartz = {
+					color = { 116 243 219 }
+					province = 52
+				}
+				b_temp_amethyst_aurora = {
+					color = { 255 129 88 }
+					province = 60
+				}
+				b_temp_symmetrical_leopard = {
+					color = { 19 139 117 }
+					province = 66
+				}
+				b_temp_insuperable_iolite = {
+					color = { 133 47 19 }
+					province = 88
+				}
+			}
+			c_temp_metal_clay = {
+				color = { 101 220 158 }
+				b_temp_cyan_caracal = {
+					color = { 127 125 182 }
+					province = 80
+				}
+				b_temp_salt_sunshine = {
+					color = { 125 182 169 }
+					province = 83
+				}
+				b_temp_selfish_jasper = {
+					color = { 114 202 238 }
+					province = 109
+				}
+				b_temp_incalculable_photon = {
+					color = { 139 112 75 }
+					province = 113
+				}
+				b_temp_charcoal_blizzard = {
+					color = { 144 133 139 }
+					province = 117
+				}
+			}
+			c_temp_crystal_pearl = {
+				color = { 151 220 101 }
+				b_temp_intangible_sunstone = {
+					color = { 133 19 86 }
+					province = 146
+				}
+				b_temp_playful_lightning = {
+					color = { 217 83 195 }
+					province = 150
+				}
+				b_temp_intangible_obsidian = {
+					color = { 197 217 83 }
+					province = 172
+				}
+				b_temp_lapis_lazuli_dog = {
+					color = { 180 57 103 }
+					province = 173
+				}
+			}
+		}
+		d_temp_peach_water = {
+			color = { 101 205 220 }
+			c_temp_whimsical_wood = {
+				color = { 177 52 171 }
+				b_temp_jade_stone = {
+					color = { 46 222 75 }
+					province = 125
+				}
+				b_temp_grateful_lava = {
+					color = { 229 101 113 }
+					province = 176
+				}
+				b_temp_petal_precipitation = {
+					color = { 216 146 58 }
+					province = 177
+				}
+				b_temp_sand_peridot = {
+					color = { 39 222 188 }
+					province = 181
+				}
+			}
+			c_temp_abstract_dust_devil = {
+				color = { 52 170 177 }
+				b_temp_vivid_drizzle = {
+					color = { 152 96 24 }
+					province = 131
+				}
+				b_temp_mist_frost = {
+					color = { 223 214 82 }
+					province = 154
+				}
+				b_temp_majestic_agate = {
+					color = { 46 58 98 }
+					province = 157
+				}
+				b_temp_olive_malachite = {
+					color = { 152 144 24 }
+					province = 192
+				}
+			}
+			c_temp_silver_marmot = {
+				color = { 52 56 177 }
+				b_temp_cyan_cold_front = {
+					color = { 240 134 94 }
+					province = 214
+				}
+				b_temp_resilient_blaze = {
+					color = { 101 90 86 }
+					province = 221
+				}
+				b_temp_abstract_tourmaline = {
+					color = { 166 234 152 }
+					province = 265
+				}
+				b_temp_untouchable_obsidian = {
+					color = { 186 150 49 }
+					province = 271
+				}
+				b_temp_ether_aurora = {
+					color = { 186 87 49 }
+					province = 282
+				}
+			}
+		}
+		d_temp_indigo_jasper = {
+			color = { 194 220 101 }
+			c_temp_clay_deer = {
+				color = { 185 101 220 }
+				b_temp_inestimable_elephant = {
+					color = { 236 155 202 }
+					province = 130
+				}
+				b_temp_subdued_wolf = {
+					color = { 153 51 28 }
+					province = 149
+				}
+				b_temp_imperceptible_plasma = {
+					color = { 217 83 112 }
+					province = 193
+				}
+				b_temp_complacent_ocelot = {
+					color = { 0 132 164 }
+					province = 211
+				}
+			}
+			c_temp_earth_wolf = {
+				color = { 220 133 101 }
+				b_temp_coral_lapis_lazuli = {
+					color = { 139 85 75 }
+					province = 171
+				}
+				b_temp_coral_typhoon = {
+					color = { 113 139 75 }
+					province = 194
+				}
+				b_temp_mysterious_dragon = {
+					color = { 126 83 217 }
+					province = 199
+				}
+				b_temp_emerald_drizzle = {
+					color = { 101 217 83 }
+					province = 203
+				}
+				b_temp_transcendent_tourmaline = {
+					color = { 139 75 99 }
+					province = 230
+				}
+			}
+			c_temp_mysterious_water = {
+				color = { 220 101 172 }
+				b_temp_enthusiastic_stratus = {
+					color = { 71 26 39 }
+					province = 220
+				}
+				b_temp_bold_serpentine = {
+					color = { 160 100 87 }
+					province = 229
+				}
+				b_temp_playful_windstorm = {
+					color = { 224 107 81 }
+					province = 243
+				}
+				b_temp_torrent_bear = {
+					color = { 83 148 217 }
+					province = 254
+				}
+				b_temp_white_sleet = {
+					color = { 153 241 143 }
+					province = 264
+				}
+			}
+		}
+	}
+	k_temp_aloof_yak = {
+		color = { 167 0 6 }
+		d_temp_time-defying_dog = {
+			color = { 210 82 214 }
+			c_temp_accepting_azurite = {
+				color = { 236 209 156 }
+				b_temp_frost_clear_sky = {
+					color = { 50 169 101 }
+					province = 45
+				}
+				b_temp_inexhaustible_marmot = {
+					color = { 235 167 84 }
+					province = 85
+				}
+			}
+			c_temp_aloof_spinel = {
+				color = { 156 180 236 }
+				b_temp_insuperable_starlight = {
+					color = { 116 80 36 }
+					province = 62
+				}
+				b_temp_serpentine_yak = {
+					color = { 169 157 50 }
+					province = 64
+				}
+				b_temp_soothing_topaz = {
+					color = { 101 62 103 }
+					province = 116
+				}
+			}
+			c_temp_cobalt_caracal = {
+				color = { 177 156 236 }
+				b_temp_lilac_ice = {
+					color = { 169 50 161 }
+					province = 79
+				}
+				b_temp_sapphire_panda = {
+					color = { 51 118 14 }
+					province = 100
+				}
+				b_temp_intransmutable_starlight = {
+					color = { 83 179 30 }
+					province = 135
+				}
+			}
+		}
+		d_temp_fearful_whirlwind = {
+			color = { 214 82 119 }
+			c_temp_sapphire_leopard = {
+				color = { 156 236 189 }
+				b_temp_turquoise_gravity = {
+					color = { 86 179 35 }
+					province = 46
+				}
+				b_temp_dramatic_torrent = {
+					color = { 96 155 155 }
+					province = 53
+				}
+				b_temp_spinel_carnelian = {
+					color = { 112 36 116 }
+					province = 76
+				}
+				b_temp_aether_zephyr = {
+					color = { 169 50 113 }
+					province = 78
+				}
+			}
+			c_temp_mercury_turquoise = {
+				color = { 156 236 221 }
+				b_temp_sepia_neutron = {
+					color = { 62 78 103 }
+					province = 65
+				}
+				b_temp_unassailable_camel = {
+					color = { 105 235 233 }
+					province = 104
+				}
+				b_temp_intricate_stratus = {
+					color = { 205 25 187 }
+					province = 144
+				}
+			}
+			c_temp_stoic_shadow = {
+				color = { 112 214 82 }
+				b_temp_lightning_rain = {
+					color = { 36 65 116 }
+					province = 124
+				}
+				b_temp_assertive_cirrus = {
+					color = { 50 169 160 }
+					province = 134
+				}
+			}
+		}
+		d_temp_orange_moonlight = {
+			color = { 214 118 82 }
+			c_temp_ruby_heat_index = {
+				color = { 156 218 236 }
+				b_temp_impatient_crystal = {
+					color = { 43 90 17 }
+					province = 139
+				}
+				b_temp_sulfur_sardonyx = {
+					color = { 29 64 64 }
+					province = 159
+				}
+				b_temp_modern_magma = {
+					color = { 217 95 83 }
+					province = 175
+				}
+			}
+			c_temp_timeless_sunstone = {
+				color = { 214 236 156 }
+				b_temp_immutable_caracal = {
+					color = { 116 36 69 }
+					province = 156
+				}
+				b_temp_transcendent_sunlight = {
+					color = { 83 217 173 }
+					province = 208
+				}
+				b_temp_gravity_hail = {
+					color = { 116 48 36 }
+					province = 213
+				}
+				b_temp_indifferent_polecat = {
+					color = { 217 83 145 }
+					province = 227
+				}
+			}
+			c_temp_ivory_fox = {
+				color = { 168 236 156 }
+				b_temp_ungrateful_starlight = {
+					color = { 9 157 61 }
+					province = 183
+				}
+				b_temp_earth_ruby = {
+					color = { 25 205 124 }
+					province = 206
+				}
+				b_temp_incalculable_capricorn = {
+					color = { 126 80 135 }
+					province = 207
+				}
+				b_temp_monochromatic_polar_vortex = {
+					color = { 167 162 211 }
+					province = 239
+				}
+			}
+		}
+	}
+	k_temp_silver_lava = {
+		color = { 18 47 163 }
+		d_temp_flexible_diamond = {
+			color = { 65 20 212 }
+			c_temp_incalculable_moonstone = {
+				color = { 251 153 115 }
+				b_temp_water_wolf = {
+					color = { 114 230 114 }
+					province = 68
+				}
+				b_temp_ruby_pearl = {
+					color = { 178 179 57 }
+					province = 82
+				}
+				b_temp_tourmaline_muntjac = {
+					color = { 79 174 79 }
+					province = 102
+				}
+				b_temp_sapphire_quartz = {
+					color = { 200 155 189 }
+					province = 103
+				}
+			}
+			c_temp_insuperable_chinook = {
+				color = { 251 115 145 }
+				b_temp_jade_deer = {
+					color = { 95 115 95 }
+					province = 112
+				}
+				b_temp_defiant_cold_front = {
+					color = { 202 57 17 }
+					province = 122
+				}
+				b_temp_omniscient_air = {
+					color = { 119 64 83 }
+					province = 152
+				}
+				b_temp_jasper_polecat = {
+					color = { 179 63 57 }
+					province = 169
+				}
+			}
+			c_temp_symmetrical_loris = {
+				color = { 212 137 20 }
+				b_temp_starlight_yak = {
+					color = { 161 109 95 }
+					province = 138
+				}
+				b_temp_unrestricted_quasar = {
+					color = { 223 22 91 }
+					province = 151
+				}
+				b_temp_vivid_hurricane = {
+					color = { 51 30 122 }
+					province = 163
+				}
+				b_temp_diamond_quartz = {
+					color = { 155 159 200 }
+					province = 190
+				}
+				b_temp_ineluctable_tiger = {
+					color = { 223 33 22 }
+					province = 191
+				}
+			}
+			c_temp_tiger's_eye_polecat = {
+				color = { 251 115 202 }
+				b_temp_spectacular_opal = {
+					color = { 2 170 97 }
+					province = 233
+				}
+				b_temp_complacent_shadow = {
+					color = { 118 60 44 }
+					province = 234
+				}
+				b_temp_everlasting_citrine = {
+					color = { 109 127 156 }
+					province = 238
+				}
+				b_temp_turquoise_dragon = {
+					color = { 190 81 51 }
+					province = 263
+				}
+			}
+		}
+		d_temp_malachite_marmot = {
+			color = { 212 20 121 }
+			c_temp_insuperable_owl = {
+				color = { 20 84 212 }
+				b_temp_empathetic_carnelian = {
+					color = { 155 173 200 }
+					province = 87
+				}
+				b_temp_lethargic_obsidian = {
+					color = { 47 145 47 }
+					province = 93
+				}
+				b_temp_carnelian_rhodonite = {
+					color = { 179 66 57 }
+					province = 98
+				}
+				b_temp_turquoise_sardonyx = {
+					color = { 226 117 237 }
+					province = 115
+				}
+				b_temp_complacent_sardonyx = {
+					color = { 179 200 155 }
+					province = 121
+				}
+			}
+			c_temp_soft_rainbow = {
+				color = { 20 202 212 }
+				b_temp_time-defying_mercury = {
+					color = { 0 156 110 }
+					province = 96
+				}
+				b_temp_respectful_sirocco = {
+					color = { 57 179 110 }
+					province = 97
+				}
+				b_temp_peach_thunderbolt = {
+					color = { 252 177 87 }
+					province = 123
+				}
+				b_temp_disrespectful_trade_winds = {
+					color = { 154 38 3 }
+					province = 155
+				}
+			}
+			c_temp_quartz_metal = {
+				color = { 86 212 20 }
+				b_temp_yellow_pearl = {
+					color = { 237 184 117 }
+					province = 158
+				}
+				b_temp_idealistic_fire = {
+					color = { 161 95 146 }
+					province = 162
+				}
+				b_temp_time-defying_hematite = {
+					color = { 22 100 223 }
+					province = 180
+				}
+				b_temp_disrespectful_rhodonite = {
+					color = { 71 22 223 }
+					province = 189
+				}
+				b_temp_aventurine_labradorite = {
+					color = { 223 22 200 }
+					province = 225
+				}
+			}
+			c_temp_fire_sand = {
+				color = { 20 212 131 }
+				b_temp_sapphire_hurricane = {
+					color = { 115 106 95 }
+					province = 166
+				}
+				b_temp_sulfur_emerald = {
+					color = { 156 94 21 }
+					province = 184
+				}
+				b_temp_picturesque_raindrop = {
+					color = { 95 63 74 }
+					province = 210
+				}
+				b_temp_turquoise_clay = {
+					color = { 156 0 97 }
+					province = 228
+				}
+			}
+		}
+		d_temp_incomprehensible_whirlwind = {
+			color = { 212 41 20 }
+			c_temp_enchanting_sirocco = {
+				color = { 157 115 251 }
+				b_temp_cyan_fog = {
+					color = { 249 135 174 }
+					province = 161
+				}
+				b_temp_aurora_sunshine = {
+					color = { 83 50 42 }
+					province = 188
+				}
+				b_temp_turquoise_yak = {
+					color = { 219 61 14 }
+					province = 198
+				}
+				b_temp_citrine_gharial = {
+					color = { 197 38 1 }
+					province = 237
+				}
+			}
+			c_temp_arrogant_petal = {
+				color = { 115 194 251 }
+				b_temp_ruby_chital = {
+					color = { 113 197 231 }
+					province = 250
+				}
+				b_temp_radiant_precipitation = {
+					color = { 89 103 109 }
+					province = 269
+				}
+				b_temp_playful_sleet = {
+					color = { 3 61 17 }
+					province = 274
+				}
+				b_temp_peridot_polar_vortex = {
+					color = { 146 176 153 }
+					province = 313
+				}
+			}
+			c_temp_subdued_microburst = {
+				color = { 115 138 251 }
+				b_temp_quartz_tiger's_eye = {
+					color = { 137 231 177 }
+					province = 258
+				}
+				b_temp_tourmaline_jade = {
+					color = { 129 218 129 }
+					province = 296
+				}
+				b_temp_magenta_emerald = {
+					color = { 148 36 75 }
+					province = 328
+				}
+			}
+			c_temp_pragmatic_hedgehog = {
+				color = { 115 251 151 }
+				b_temp_imperceptible_bear = {
+					color = { 110 197 233 }
+					province = 280
+				}
+				b_temp_sapphire_pearl = {
+					color = { 134 6 61 }
+					province = 325
+				}
+				b_temp_iolite_moonlight = {
+					color = { 139 158 165 }
+					province = 358
+				}
+			}
+			c_temp_rhodochrosite_mongoose = {
+				color = { 115 251 227 }
+				b_temp_intriguing_cyclone = {
+					color = { 25 112 205 }
+					province = 298
+				}
+				b_temp_unchanging_serpentine = {
+					color = { 6 134 37 }
+					province = 301
+				}
+				b_temp_radiant_heat_index = {
+					color = { 200 205 25 }
+					province = 326
+				}
+				b_temp_crystal_opal = {
+					color = { 75 105 116 }
+					province = 327
+				}
+			}
+		}
+		d_temp_incomprehensible_quasar = {
+			color = { 211 20 212 }
+			c_temp_mist_dhole = {
+				color = { 201 212 20 }
+				b_temp_aurora_turquoise = {
+					color = { 86 179 57 }
+					province = 232
+				}
+				b_temp_engaged_nectar = {
+					color = { 106 111 23 }
+					province = 244
+				}
+				b_temp_emerald_owl = {
+					color = { 0 134 156 }
+					province = 275
+				}
+			}
+			c_temp_engaged_aquamarine = {
+				color = { 212 73 20 }
+				b_temp_ebony_pika = {
+					color = { 30 151 30 }
+					province = 253
+				}
+				b_temp_muted_wood = {
+					color = { 75 118 44 }
+					province = 256
+				}
+				b_temp_immersive_tourmaline = {
+					color = { 223 22 138 }
+					province = 278
+				}
+				b_temp_tiger's_eye_ruby = {
+					color = { 108 136 113 }
+					province = 297
+				}
+				b_temp_earth_lynx = {
+					color = { 111 59 23 }
+					province = 299
+				}
+			}
+			c_temp_indivisible_frost = {
+				color = { 231 115 251 }
+				b_temp_air_horse = {
+					color = { 103 94 32 }
+					province = 294
+				}
+				b_temp_abstract_chrysocolla = {
+					color = { 162 102 87 }
+					province = 318
+				}
+				b_temp_beige_sapphire = {
+					color = { 148 81 36 }
+					province = 335
+				}
+				b_temp_photon_lapis_lazuli = {
+					color = { 103 54 32 }
+					province = 348
+				}
+			}
+		}
+	}
+	k_temp_sapphire_jasper = {
+		color = { 167 0 97 }
+		d_temp_magma_stone = {
+			color = { 82 203 214 }
+			c_temp_indigo_clear_sky = {
+				color = { 214 174 82 }
+				b_temp_jasper_emerald = {
+					color = { 52 106 14 }
+					province = 90
+				}
+				b_temp_navy_quokka = {
+					color = { 106 60 14 }
+					province = 99
+				}
+				b_temp_aurora_deer = {
+					color = { 140 27 27 }
+					province = 133
+				}
+			}
+			c_temp_lapis_lazuli_water = {
+				color = { 182 214 82 }
+				b_temp_submissive_ruby = {
+					color = { 64 119 80 }
+					province = 185
+				}
+				b_temp_cobalt_tornado = {
+					color = { 134 48 6 }
+					province = 231
+				}
+			}
+			c_temp_water_sapphire = {
+				color = { 142 214 82 }
+				b_temp_fascinating_frost = {
+					color = { 220 238 89 }
+					province = 270
+				}
+				b_temp_ice_fennec_fox = {
+					color = { 86 116 128 }
+					province = 272
+				}
+				b_temp_citrine_sleet = {
+					color = { 106 14 31 }
+					province = 285
+				}
+				b_temp_spectacular_falcon = {
+					color = { 238 138 89 }
+					province = 323
+				}
+			}
+			c_temp_chrysocolla_garnet = {
+				color = { 214 188 82 }
+				b_temp_sapphire_raindrop = {
+					color = { 171 109 203 }
+					province = 361
+				}
+				b_temp_ruby_tiger = {
+					color = { 242 126 114 }
+					province = 368
+				}
+				b_temp_lilac_coral = {
+					color = { 89 97 238 }
+					province = 405
+				}
+			}
+		}
+		d_temp_open-minded_magnetite = {
+			color = { 214 82 145 }
+			c_temp_gravity_mist = {
+				color = { 82 214 131 }
+				b_temp_amethyst_polecat = {
+					color = { 168 34 72 }
+					province = 261
+				}
+				b_temp_rich_gharial = {
+					color = { 174 30 20 }
+					province = 276
+				}
+				b_temp_rhodonite_precipitation = {
+					color = { 174 105 20 }
+					province = 288
+				}
+			}
+			c_temp_minimalistic_sulfur = {
+				color = { 117 82 214 }
+				b_temp_sepia_caracal = {
+					color = { 82 132 214 }
+					province = 266
+				}
+				b_temp_unbounded_photon = {
+					color = { 100 238 89 }
+					province = 279
+				}
+				b_temp_flexible_chinook = {
+					color = { 77 225 202 }
+					province = 311
+				}
+				b_temp_white_kunzite = {
+					color = { 126 173 173 }
+					province = 314
+				}
+				b_temp_immaterial_cobalt = {
+					color = { 134 6 28 }
+					province = 315
+				}
+			}
+			c_temp_turquoise_frost = {
+				color = { 82 202 214 }
+				b_temp_minimalistic_labradorite = {
+					color = { 164 0 17 }
+					province = 340
+				}
+				b_temp_patient_lava = {
+					color = { 130 71 67 }
+					province = 345
+				}
+				b_temp_stoic_frost = {
+					color = { 45 28 159 }
+					province = 347
+				}
+				b_temp_mysterious_emerald = {
+					color = { 195 156 167 }
+					province = 355
+				}
+			}
+			c_temp_ruby_spinel = {
+				color = { 194 82 214 }
+				b_temp_tourmaline_emerald = {
+					color = { 201 102 94 }
+					province = 354
+				}
+				b_temp_captivating_tapir = {
+					color = { 38 189 187 }
+					province = 371
+				}
+				b_temp_determined_sardonyx = {
+					color = { 117 45 153 }
+					province = 377
+				}
+			}
+		}
+	}
+	k_temp_coral_pearl = {
+		color = { 167 76 0 }
+		d_temp_quartz_marmot = {
+			color = { 181 64 36 }
+			c_temp_selenite_antelope = {
+				color = { 37 80 164 }
+				b_temp_humble_obsidian = {
+					color = { 113 83 115 }
+					province = 281
+				}
+				b_temp_mesmerizing_ether = {
+					color = { 233 117 225 }
+					province = 324
+				}
+				b_temp_serene_lava = {
+					color = { 115 38 120 }
+					province = 344
+				}
+				b_temp_muted_garnet = {
+					color = { 87 115 83 }
+					province = 375
+				}
+			}
+			c_temp_rhodochrosite_otter = {
+				color = { 239 133 147 }
+				b_temp_agate_rhodonite = {
+					color = { 171 83 29 }
+					province = 333
+				}
+				b_temp_incomprehensible_nor'easter = {
+					color = { 90 173 38 }
+					province = 350
+				}
+				b_temp_restless_deer = {
+					color = { 82 230 175 }
+					province = 362
+				}
+				b_temp_rose_dhole = {
+					color = { 81 197 97 }
+					province = 393
+				}
+			}
+			c_temp_pink_gravity = {
+				color = { 176 155 174 }
+				b_temp_awe-inspiring_sulfur = {
+					color = { 255 203 185 }
+					province = 380
+				}
+				b_temp_timeless_tapir = {
+					color = { 53 75 106 }
+					province = 400
+				}
+				b_temp_malachite_dhole = {
+					color = { 185 255 185 }
+					province = 409
+				}
+			}
+			c_temp_generous_drizzle = {
+				color = { 164 37 153 }
+				b_temp_turquoise_ether = {
+					color = { 110 116 126 }
+					province = 425
+				}
+				b_temp_immutable_rain = {
+					color = { 191 88 42 }
+					province = 437
+				}
+				b_temp_sardonyx_cobalt = {
+					color = { 63 129 79 }
+					province = 450
+				}
+				b_temp_coral_capricorn = {
+					color = { 3 49 113 }
+					province = 472
+				}
+			}
+		}
+		d_temp_garnet_hematite = {
+			color = { 139 222 83 }
+			c_temp_majestic_obsidian = {
+				color = { 201 239 133 }
+				b_temp_azure_capricorn = {
+					color = { 209 91 50 }
+					province = 286
+				}
+				b_temp_charcoal_raindrop = {
+					color = { 25 206 48 }
+					province = 287
+				}
+				b_temp_serene_magnetite = {
+					color = { 209 50 60 }
+					province = 306
+				}
+				b_temp_surreal_orangutan = {
+					color = { 38 128 172 }
+					province = 336
+				}
+			}
+			c_temp_turquoise_rhodonite = {
+				color = { 133 239 195 }
+				b_temp_confident_sulfur = {
+					color = { 60 141 183 }
+					province = 295
+				}
+				b_temp_generous_markhor = {
+					color = { 60 183 124 }
+					province = 308
+				}
+				b_temp_inestimable_citrine = {
+					color = { 20 158 38 }
+					province = 309
+				}
+				b_temp_rich_labradorite = {
+					color = { 138 47 190 }
+					province = 316
+				}
+			}
+			c_temp_salmon_pangolin = {
+				color = { 136 133 239 }
+				b_temp_iolite_lapis_lazuli = {
+					color = { 60 183 89 }
+					province = 349
+				}
+				b_temp_epic_gharial = {
+					color = { 229 75 151 }
+					province = 356
+				}
+				b_temp_sardonyx_pearl = {
+					color = { 82 180 230 }
+					province = 363
+				}
+				b_temp_inestimable_quartz = {
+					color = { 86 198 195 }
+					province = 384
+				}
+			}
+			c_temp_ice_trade_winds = {
+				color = { 229 133 239 }
+				b_temp_peridot_tiger's_eye = {
+					color = { 189 71 13 }
+					province = 359
+				}
+				b_temp_sublime_heatwave = {
+					color = { 246 140 74 }
+					province = 385
+				}
+				b_temp_lavender_shadow = {
+					color = { 28 136 54 }
+					province = 386
+				}
+				b_temp_lightning_quartz = {
+					color = { 74 246 241 }
+					province = 416
+				}
+			}
+		}
+		d_temp_crisp_metal = {
+			color = { 83 83 222 }
+			c_temp_obsidian_coral = {
+				color = { 36 109 181 }
+				b_temp_radiant_polecat = {
+					color = { 151 131 98 }
+					province = 290
+				}
+				b_temp_moonlight_dust_devil = {
+					color = { 83 17 176 }
+					province = 302
+				}
+				b_temp_elegant_sunstone = {
+					color = { 144 133 126 }
+					province = 329
+				}
+				b_temp_ruby_turquoise = {
+					color = { 99 222 210 }
+					province = 337
+				}
+				b_temp_vibrant_kangaroo = {
+					color = { 105 137 25 }
+					province = 364
+				}
+			}
+			c_temp_turmeric_gale = {
+				color = { 144 36 181 }
+				b_temp_zircon_opal = {
+					color = { 101 37 20 }
+					province = 310
+				}
+				b_temp_torrent_rhodonite = {
+					color = { 7 129 88 }
+					province = 322
+				}
+				b_temp_energetic_quartz = {
+					color = { 101 71 20 }
+					province = 341
+				}
+				b_temp_undividable_azurite = {
+					color = { 86 63 49 }
+					province = 351
+				}
+				b_temp_ethereal_yak = {
+					color = { 41 102 29 }
+					province = 387
+				}
+			}
+			c_temp_fascinating_ruby = {
+				color = { 36 181 64 }
+				b_temp_tactile_sulfur = {
+					color = { 42 121 52 }
+					province = 320
+				}
+				b_temp_flexible_quokka = {
+					color = { 136 64 28 }
+					province = 331
+				}
+				b_temp_ivory_agate = {
+					color = { 53 166 168 }
+					province = 376
+				}
+				b_temp_undividable_gaur = {
+					color = { 99 222 115 }
+					province = 414
+				}
+			}
+			c_temp_crisp_air = {
+				color = { 181 36 42 }
+				b_temp_sardonyx_gravity = {
+					color = { 189 15 13 }
+					province = 395
+				}
+				b_temp_bamboo_calm = {
+					color = { 154 39 37 }
+					province = 397
+				}
+				b_temp_fire_garnet = {
+					color = { 176 116 17 }
+					province = 410
+				}
+				b_temp_unutterable_cold_front = {
+					color = { 101 20 35 }
+					province = 438
+				}
+			}
+		}
+		d_temp_restless_dust_devil = {
+			color = { 222 83 86 }
+			c_temp_balanced_mercury = {
+				color = { 133 239 177 }
+				b_temp_olive_mist = {
+					color = { 60 188 54 }
+					province = 330
+				}
+				b_temp_abstract_opal = {
+					color = { 7 18 129 }
+					province = 332
+				}
+				b_temp_blaze_wolf = {
+					color = { 86 51 49 }
+					province = 365
+				}
+				b_temp_empathetic_obsidian = {
+					color = { 54 188 142 }
+					province = 372
+				}
+			}
+			c_temp_delicate_coral = {
+				color = { 221 239 133 }
+				b_temp_retro_pearl = {
+					color = { 87 7 129 }
+					province = 370
+				}
+				b_temp_callous_mercury = {
+					color = { 108 98 82 }
+					province = 391
+				}
+				b_temp_undividable_bamboo = {
+					color = { 122 30 84 }
+					province = 396
+				}
+				b_temp_judgmental_drought = {
+					color = { 114 91 69 }
+					province = 442
+				}
+			}
+			c_temp_spectacular_rhodochrosite = {
+				color = { 239 133 152 }
+				b_temp_invisible_aventurine = {
+					color = { 169 103 38 }
+					province = 389
+				}
+				b_temp_intransmutable_squall = {
+					color = { 117 16 170 }
+					province = 392
+				}
+				b_temp_lightning_metal = {
+					color = { 106 79 53 }
+					province = 404
+				}
+				b_temp_frost_citrine = {
+					color = { 56 11 79 }
+					province = 434
+				}
+			}
+			c_temp_ineffable_aurora = {
+				color = { 133 217 239 }
+				b_temp_pessimistic_capricorn = {
+					color = { 183 48 23 }
+					province = 398
+				}
+				b_temp_balanced_tapir = {
+					color = { 29 78 102 }
+					province = 426
+				}
+				b_temp_incorporeal_petal = {
+					color = { 149 188 54 }
+					province = 428
+				}
+				b_temp_defiant_clay = {
+					color = { 183 102 23 }
+					province = 458
+				}
+			}
+		}
+	}
+	k_temp_insecure_nectar = {
+		color = { 95 18 163 }
+		d_temp_inestimable_jerboa = {
+			color = { 188 82 13 }
+			c_temp_nectar_snowflake = {
+				color = { 163 120 32 }
+				b_temp_unassailable_blizzard = {
+					color = { 106 33 14 }
+					province = 292
+				}
+				b_temp_picturesque_microburst = {
+					color = { 200 155 155 }
+					province = 303
+				}
+				b_temp_accepting_drought = {
+					color = { 155 200 191 }
+					province = 321
+				}
+				b_temp_onyx_fog = {
+					color = { 34 104 132 }
+					province = 339
+				}
+			}
+			c_temp_selenite_wolf = {
+				color = { 163 62 32 }
+				b_temp_everlasting_pearl = {
+					color = { 176 146 150 }
+					province = 343
+				}
+				b_temp_serpentine_orangutan = {
+					color = { 87 141 162 }
+					province = 357
+				}
+				b_temp_rust_windstorm = {
+					color = { 74 37 92 }
+					province = 378
+				}
+				b_temp_lava_monsoon = {
+					color = { 127 202 170 }
+					province = 401
+				}
+			}
+			c_temp_tornado_ibex = {
+				color = { 158 163 32 }
+				b_temp_respectful_starlight = {
+					color = { 193 44 28 }
+					province = 367
+				}
+				b_temp_sunstone_blaze = {
+					color = { 143 30 17 }
+					province = 394
+				}
+				b_temp_inconceivable_air = {
+					color = { 94 93 94 }
+					province = 411
+				}
+				b_temp_indifferent_emerald = {
+					color = { 106 24 14 }
+					province = 429
+				}
+			}
+		}
+		d_temp_moonstone_caracal = {
+			color = { 188 13 37 }
+			c_temp_delicate_zircon = {
+				color = { 108 32 163 }
+				b_temp_optimistic_cyclone = {
+					color = { 105 25 135 }
+					province = 366
+				}
+				b_temp_indifferent_sulfur = {
+					color = { 170 149 116 }
+					province = 374
+				}
+				b_temp_dreamy_tourmaline = {
+					color = { 155 161 26 }
+					province = 382
+				}
+				b_temp_transcendent_amber = {
+					color = { 161 63 26 }
+					province = 418
+				}
+			}
+			c_temp_complacent_torrent = {
+				color = { 163 32 61 }
+				b_temp_mist_aether = {
+					color = { 57 20 71 }
+					province = 369
+				}
+				b_temp_unchanging_lynx = {
+					color = { 71 65 20 }
+					province = 379
+				}
+				b_temp_illusory_torrent = {
+					color = { 140 102 88 }
+					province = 383
+				}
+				b_temp_dazzling_ruby = {
+					color = { 116 170 122 }
+					province = 420
+				}
+			}
+			c_temp_omniscient_wood = {
+				color = { 163 32 122 }
+				b_temp_beige_kunzite = {
+					color = { 121 116 170 }
+					province = 435
+				}
+				b_temp_fearful_aurora = {
+					color = { 71 28 20 }
+					province = 465
+				}
+				b_temp_mysterious_cobalt = {
+					color = { 176 138 42 }
+					province = 471
+				}
+				b_temp_surreal_horse = {
+					color = { 98 68 54 }
+					province = 489
+				}
+			}
+		}
+		d_temp_turquoise_ruby = {
+			color = { 115 251 238 }
+			c_temp_brown_clear_sky = {
+				color = { 90 71 135 }
+				b_temp_gold_rain = {
+					color = { 135 46 12 }
+					province = 402
+				}
+				b_temp_jade_opal = {
+					color = { 38 92 48 }
+					province = 431
+				}
+				b_temp_altruistic_water = {
+					color = { 135 12 58 }
+					province = 456
+				}
+				b_temp_serpentine_aquamarine = {
+					color = { 114 242 187 }
+					province = 466
+				}
+			}
+			c_temp_fluorite_kunzite = {
+				color = { 135 71 105 }
+				b_temp_ambitious_fennec_fox = {
+					color = { 94 12 135 }
+					province = 406
+				}
+				b_temp_closed-minded_aether = {
+					color = { 247 111 255 }
+					province = 415
+				}
+				b_temp_sapphire_limestone = {
+					color = { 123 59 52 }
+					province = 453
+				}
+				b_temp_ethereal_squall = {
+					color = { 201 116 106 }
+					province = 464
+				}
+			}
+			c_temp_limestone_diamond = {
+				color = { 71 91 135 }
+				b_temp_insuperable_labradorite = {
+					color = { 163 49 74 }
+					province = 507
+				}
+				b_temp_intriguing_fluorite = {
+					color = { 200 36 158 }
+					province = 508
+				}
+				b_temp_unbounded_frost = {
+					color = { 233 174 86 }
+					province = 510
+				}
+				b_temp_red_polar_vortex = {
+					color = { 86 233 97 }
+					province = 511
+				}
+			}
+		}
+		d_temp_ether_starlight = {
+			color = { 115 251 170 }
+			c_temp_soothing_chrysocolla = {
+				color = { 32 163 87 }
+				b_temp_omniscient_aurora = {
+					color = { 203 120 96 }
+					province = 462
+				}
+				b_temp_coral_sunstone = {
+					color = { 203 96 109 }
+					province = 490
+				}
+				b_temp_dazzling_opal = {
+					color = { 36 200 116 }
+					province = 529
+				}
+				b_temp_cerulean_citrine = {
+					color = { 25 151 54 }
+					province = 561
+				}
+			}
+			c_temp_cyclone_elephant = {
+				color = { 32 129 163 }
+				b_temp_accepting_antelope = {
+					color = { 25 151 146 }
+					province = 470
+				}
+				b_temp_pink_mist = {
+					color = { 203 155 96 }
+					province = 504
+				}
+				b_temp_citrine_muntjac = {
+					color = { 85 102 101 }
+					province = 539
+				}
+			}
+			c_temp_infinite_raindrop = {
+				color = { 97 163 32 }
+				b_temp_empathetic_kunzite = {
+					color = { 151 57 25 }
+					province = 587
+				}
+				b_temp_epic_solar_radiation = {
+					color = { 180 200 36 }
+					province = 598
+				}
+				b_temp_turquoise_rainbow = {
+					color = { 203 123 96 }
+					province = 620
+				}
+				b_temp_harmonious_squall = {
+					color = { 154 203 96 }
+					province = 644
+				}
+				b_temp_malachite_snowflake = {
+					color = { 107 95 53 }
+					province = 645
+				}
+			}
+		}
+	}
+	k_silk_and_pearl = {
+		color = { 2 58 129 }
+		d_temp_minimalistic_deer = {
+			color = { 206 115 113 }
+			c_temp_salmon_drizzle = {
+				color = { 168 255 135 }
+				b_temp_rhodonite_polecat = {
+					color = { 218 80 136 }
+					province = 373
+				}
+				b_temp_serene_whirlwind = {
+					color = { 55 206 84 }
+					province = 381
+				}
+				b_temp_limestone_torrent = {
+					color = { 217 178 80 }
+					province = 388
+				}
+				b_temp_undefinable_leopard = {
+					color = { 31 229 84 }
+					province = 422
+				}
+			}
+			c_temp_wood_kangaroo = {
+				color = { 255 164 135 }
+				b_temp_defiant_citrine = {
+					color = { 90 218 80 }
+					province = 399
+				}
+				b_temp_rhodochrosite_cumulus = {
+					color = { 85 124 92 }
+					province = 433
+				}
+				b_temp_intransmutable_turkish_angora_cat = {
+					color = { 120 180 92 }
+					province = 518
+				}
+				b_temp_chrysocolla_falcon = {
+					color = { 208 32 41 }
+					province = 564
+				}
+			}
+			c_temp_content_moonlight = {
+				color = { 227 255 135 }
+				b_temp_sapphire_squall = {
+					color = { 190 166 106 }
+					province = 430
+				}
+				b_temp_omnipresent_gazelle = {
+					color = { 92 180 148 }
+					province = 469
+				}
+				b_temp_passionate_lava = {
+					color = { 120 92 180 }
+					province = 503
+				}
+				b_temp_unworldly_rust = {
+					color = { 59 214 89 }
+					province = 535
+				}
+			}
+		}
+		d_temp_magnetite_jasper = {
+			color = { 250 51 47 }
+			c_temp_complacent_clay = {
+				color = { 218 113 80 }
+				b_temp_balanced_emerald = {
+					color = { 36 235 207 }
+					province = 440
+				}
+				b_temp_cobalt_kunzite = {
+					color = { 180 119 92 }
+					province = 481
+				}
+				b_temp_soft_snow = {
+					color = { 80 92 218 }
+					province = 536
+				}
+			}
+			c_temp_mercury_magnetite = {
+				color = { 218 80 116 }
+				b_temp_flexible_panda = {
+					color = { 218 153 80 }
+					province = 461
+				}
+				b_temp_chartreuse_clay = {
+					color = { 135 117 118 }
+					province = 463
+				}
+				b_temp_plasma_sardonyx = {
+					color = { 148 0 0 }
+					province = 482
+				}
+				b_temp_sublime_elephant = {
+					color = { 117 83 84 }
+					province = 501
+				}
+			}
+			c_temp_aesthetic_cumulus = {
+				color = { 255 135 173 }
+				b_temp_incalculable_wood = {
+					color = { 129 46 95 }
+					province = 506
+				}
+				b_temp_salmon_ruby = {
+					color = { 206 156 32 }
+					province = 545
+				}
+				b_temp_volcano_rust = {
+					color = { 0 95 148 }
+					province = 572
+				}
+				b_temp_symmetrical_microburst = {
+					color = { 103 208 32 }
+					province = 595
+				}
+				b_temp_mercury_mist = {
+					color = { 92 153 52 }
+					province = 609
+				}
+			}
+		}
+		d_voice_of_the_tides = {
+			color = { 146 8 44 }
+			c_temp_obsidian_turkish_angora_cat = {
+				color = { 0 188 121 }
+				b_temp_immutable_quasar = {
+					color = { 55 74 222 }
+					province = 452
+				}
+				b_temp_immeasurable_polecat = {
+					color = { 199 233 73 }
+					province = 459
+				}
+				b_temp_ebony_thunderstorm = {
+					color = { 73 233 131 }
+					province = 528
+				}
+				b_temp_idealistic_spinel = {
+					color = { 110 73 233 }
+					province = 566
+				}
+			}
+			c_temp_lightning_lynx = {
+				color = { 106 9 0 }
+				b_temp_imperishable_magnetite = {
+					color = { 36 164 235 }
+					province = 531
+				}
+				b_temp_monochromatic_warm_front = {
+					color = { 233 133 73 }
+					province = 537
+				}
+				b_temp_rhodochrosite_malachite = {
+					color = { 122 27 30 }
+					province = 562
+				}
+				b_temp_yellow_stone = {
+					color = { 122 27 86 }
+					province = 593
+				}
+			}
+			c_bittern = {
+				color = { 106 0 103 }
+				b_bittern = {
+					color = { 109 233 73 }
+					province = 619
+				}
+				b_temp_brick_fluorite = {
+					color = { 210 37 43 }
+					province = 630
+				}
+				b_temp_epic_blaze = {
+					color = { 172 86 177 }
+					province = 634
+				}
+				b_temp_humble_rust = {
+					color = { 218 80 179 }
+					province = 723
+				}
+			}
+			c_temp_red_garnet = {
+				color = { 255 89 251 }
+				b_temp_cautious_azurite = {
+					color = { 73 233 176 }
+					province = 627
+				}
+				b_temp_majestic_selenite = {
+					color = { 73 166 233 }
+					province = 652
+				}
+				b_temp_boundless_tourmaline = {
+					color = { 118 15 151 }
+					province = 712
+				}
+			}
+		}
+		d_temp_awe-inspiring_rainbow = {
+			color = { 219 38 0 }
+			c_temp_assertive_sleet = {
+				color = { 0 106 25 }
+				b_temp_energetic_heatwave = {
+					color = { 36 220 235 }
+					province = 494
+				}
+				b_temp_mysterious_capricorn = {
+					color = { 64 0 16 }
+					province = 509
+				}
+				b_temp_mesmerizing_azurite = {
+					color = { 55 87 35 }
+					province = 558
+				}
+				b_temp_enchanting_rainbow = {
+					color = { 180 92 152 }
+					province = 579
+				}
+			}
+			c_temp_immaterial_bear = {
+				color = { 135 255 213 }
+				b_temp_maroon_obsidian = {
+					color = { 122 41 27 }
+					province = 584
+				}
+				b_temp_curious_malachite = {
+					color = { 92 129 180 }
+					province = 616
+				}
+				b_temp_orange_sand = {
+					color = { 95 61 132 }
+					province = 657
+				}
+				b_temp_transcendent_air = {
+					color = { 122 95 27 }
+					province = 662
+				}
+			}
+			c_temp_pink_emerald = {
+				color = { 255 217 135 }
+				b_temp_awe-inspiring_deer = {
+					color = { 235 179 36 }
+					province = 585
+				}
+				b_temp_indifferent_cheetah = {
+					color = { 125 218 80 }
+					province = 617
+				}
+				b_temp_white_starlight = {
+					color = { 175 180 92 }
+					province = 637
+				}
+				b_temp_unassailable_ibex = {
+					color = { 36 235 152 }
+					province = 665
+				}
+				b_temp_rhodochrosite_carnelian = {
+					color = { 155 30 35 }
+					province = 668
+				}
+			}
+			c_temp_boundless_heatwave = {
+				color = { 106 66 0 }
+				b_temp_serene_hematite = {
+					color = { 233 158 73 }
+					province = 643
+				}
+				b_temp_magma_ibex = {
+					color = { 97 186 41 }
+					province = 651
+				}
+				b_temp_radiant_sunlight = {
+					color = { 106 27 122 }
+					province = 689
+				}
+				b_temp_purple_earth = {
+					color = { 27 72 122 }
+					province = 701
+				}
+			}
+		}
+	}
+	k_temp_amethyst_ruby = {
+		color = { 133 167 0 }
+		d_temp_disrespectful_heatwave = {
+			color = { 142 130 87 }
+			c_temp_minimalistic_gharial = {
+				color = { 142 101 87 }
+				b_temp_light_moonlight = {
+					color = { 206 103 51 }
+					province = 390
+				}
+				b_temp_dreamy_dog = {
+					color = { 164 0 96 }
+					province = 408
+				}
+				b_temp_charcoal_chinook = {
+					color = { 229 176 97 }
+					province = 441
+				}
+			}
+			c_temp_pessimistic_heat_index = {
+				color = { 142 87 126 }
+				b_temp_maroon_jasper = {
+					color = { 229 97 99 }
+					province = 407
+				}
+				b_temp_stingy_labradorite = {
+					color = { 206 51 53 }
+					province = 443
+				}
+				b_temp_silver_breeze = {
+					color = { 152 214 181 }
+					province = 491
+				}
+			}
+			c_temp_dynamic_blaze = {
+				color = { 87 88 142 }
+				b_temp_cobalt_alexandrite = {
+					color = { 71 169 117 }
+					province = 413
+				}
+				b_temp_rhodonite_clay = {
+					color = { 120 109 55 }
+					province = 449
+				}
+				b_temp_emerald_labradorite = {
+					color = { 200 183 36 }
+					province = 476
+				}
+			}
+			c_temp_subdued_markhor = {
+				color = { 140 142 87 }
+				b_temp_starlight_barometric_pressure = {
+					color = { 122 42 59 }
+					province = 427
+				}
+				b_temp_stubborn_starlight = {
+					color = { 117 0 164 }
+					province = 436
+				}
+				b_temp_brick_ibex = {
+					color = { 36 200 111 }
+					province = 444
+				}
+			}
+		}
+		d_temp_turmeric_wood = {
+			color = { 100 87 142 }
+			c_temp_azurite_bear = {
+				color = { 87 142 130 }
+				b_temp_amber_selenite = {
+					color = { 161 29 78 }
+					province = 421
+				}
+				b_temp_jade_orangutan = {
+					color = { 200 72 36 }
+					province = 460
+				}
+				b_temp_sublime_pangolin = {
+					color = { 108 5 7 }
+					province = 483
+				}
+			}
+			c_temp_symmetrical_markhor = {
+				color = { 87 113 142 }
+				b_temp_surreal_spinel = {
+					color = { 108 20 5 }
+					province = 445
+				}
+				b_temp_peridot_lapis_lazuli = {
+					color = { 68 36 200 }
+					province = 500
+				}
+			}
+			c_temp_immersive_cirrus = {
+				color = { 89 142 87 }
+				b_temp_ephemeral_emerald = {
+					color = { 229 97 111 }
+					province = 457
+				}
+				b_temp_universal_obsidian = {
+					color = { 168 25 27 }
+					province = 479
+				}
+				b_temp_pristine_kangaroo = {
+					color = { 200 36 173 }
+					province = 497
+				}
+			}
+		}
+	}
+	k_temp_universal_diamond = {
+		color = { 246 138 105 }
+		d_temp_ivory_cirrus = {
+			color = { 209 46 142 }
+			c_temp_picturesque_nor'easter = {
+				color = { 209 194 46 }
+				b_temp_indigo_whirlwind = {
+					color = { 96 204 106 }
+					province = 412
+				}
+				b_temp_wood_pika = {
+					color = { 208 80 174 }
+					province = 417
+				}
+				b_temp_ethereal_moonlight = {
+					color = { 166 39 133 }
+					province = 448
+				}
+				b_temp_complacent_salt = {
+					color = { 190 54 15 }
+					province = 468
+				}
+			}
+			c_temp_chrysocolla_malachite = {
+				color = { 209 56 46 }
+				b_temp_determined_ocelot = {
+					color = { 0 172 137 }
+					province = 446
+				}
+				b_temp_vortex_metal = {
+					color = { 17 130 83 }
+					province = 455
+				}
+				b_temp_immeasurable_zephyr = {
+					color = { 135 45 111 }
+					province = 478
+				}
+				b_temp_plum_quartz = {
+					color = { 130 17 69 }
+					province = 496
+				}
+				b_temp_mesmerizing_jerboa = {
+					color = { 190 15 144 }
+					province = 517
+				}
+			}
+			c_temp_content_sapphire = {
+				color = { 53 209 46 }
+				b_temp_cyclone_turkish_angora_cat = {
+					color = { 7 120 18 }
+					province = 454
+				}
+				b_temp_purple_fluorite = {
+					color = { 20 192 121 }
+					province = 485
+				}
+				b_temp_gray_aurora = {
+					color = { 163 245 79 }
+					province = 488
+				}
+				b_temp_emerald_diamond = {
+					color = { 245 161 79 }
+					province = 521
+				}
+			}
+			c_temp_intricate_earth = {
+				color = { 209 204 46 }
+				b_temp_vibrant_rain = {
+					color = { 89 148 29 }
+					province = 498
+				}
+				b_temp_formless_stratus = {
+					color = { 0 172 94 }
+					province = 525
+				}
+				b_temp_surreal_limestone = {
+					color = { 245 79 122 }
+					province = 542
+				}
+				b_temp_ebony_quartz = {
+					color = { 125 154 116 }
+					province = 573
+				}
+			}
+			c_temp_pragmatic_antelope = {
+				color = { 209 46 202 }
+				b_temp_rhodochrosite_fluorite = {
+					color = { 146 240 201 }
+					province = 515
+				}
+				b_temp_coral_chrysocolla = {
+					color = { 240 146 171 }
+					province = 546
+				}
+				b_temp_clay_clay = {
+					color = { 118 34 89 }
+					province = 551
+				}
+				b_temp_immeasurable_diamond = {
+					color = { 39 172 0 }
+					province = 578
+				}
+			}
+			c_temp_white_cheetah = {
+				color = { 46 102 209 }
+				b_temp_sublime_rainbow = {
+					color = { 118 34 53 }
+					province = 533
+				}
+				b_temp_assertive_ice = {
+					color = { 34 118 115 }
+					province = 544
+				}
+				b_temp_complacent_marmot = {
+					color = { 79 24 39 }
+					province = 557
+				}
+				b_temp_sunlight_ice = {
+					color = { 19 171 165 }
+					province = 581
+				}
+			}
+			c_temp_gray_salt = {
+				color = { 209 46 133 }
+				b_temp_stoic_yak = {
+					color = { 68 117 54 }
+					province = 543
+				}
+				b_temp_shadow_drought = {
+					color = { 132 22 51 }
+					province = 556
+				}
+				b_temp_intricate_coral = {
+					color = { 129 105 112 }
+					province = 583
+				}
+				b_temp_kunzite_clay = {
+					color = { 30 192 96 }
+					province = 589
+				}
+			}
+		}
+		d_temp_elegant_breeze = {
+			color = { 46 171 209 }
+			c_temp_serene_dhole = {
+				color = { 37 188 174 }
+				b_temp_plum_tornado = {
+					color = { 31 84 156 }
+					province = 487
+				}
+				b_temp_diamond_lapis_lazuli = {
+					color = { 246 35 87 }
+					province = 516
+				}
+				b_temp_vibrant_magnetite = {
+					color = { 79 88 101 }
+					province = 550
+				}
+			}
+			c_temp_unchanging_polecat = {
+				color = { 161 46 209 }
+				b_temp_turquoise_owl = {
+					color = { 56 148 29 }
+					province = 527
+				}
+				b_temp_selenite_hurricane = {
+					color = { 76 97 69 }
+					province = 577
+				}
+				b_temp_unfathomable_windchill = {
+					color = { 54 136 29 }
+					province = 605
+				}
+				b_temp_judgmental_loris = {
+					color = { 48 198 6 }
+					province = 610
+				}
+			}
+			c_temp_sepia_tornado = {
+				color = { 117 37 188 }
+				b_temp_hematite_mist = {
+					color = { 2 0 172 }
+					province = 661
+				}
+				b_temp_immersive_thunderstorm = {
+					color = { 0 172 132 }
+					province = 696
+				}
+				b_temp_blue_lava = {
+					color = { 125 172 0 }
+					province = 709
+				}
+				b_temp_everlasting_dog = {
+					color = { 111 0 37 }
+					province = 734
+				}
+			}
+			c_temp_spinel_aventurine = {
+				color = { 37 103 188 }
+				b_temp_malachite_gaur = {
+					color = { 255 247 127 }
+					province = 672
+				}
+				b_temp_undefinable_ruby = {
+					color = { 200 191 58 }
+					province = 673
+				}
+				b_temp_modern_fire = {
+					color = { 127 225 97 }
+					province = 685
+				}
+				b_temp_silver_solar_radiation = {
+					color = { 145 231 235 }
+					province = 707
+				}
+			}
+		}
+		d_temp_blue_pangolin = {
+			color = { 54 46 209 }
+			c_temp_petal_turkish_angora_cat = {
+				color = { 209 88 46 }
+				b_temp_incorporeal_gharial = {
+					color = { 67 144 141 }
+					province = 596
+				}
+				b_temp_cerulean_wolf = {
+					color = { 153 40 71 }
+					province = 602
+				}
+				b_temp_callous_solar_radiation = {
+					color = { 100 76 82 }
+					province = 624
+				}
+				b_temp_charcoal_moonlight = {
+					color = { 67 144 103 }
+					province = 626
+				}
+			}
+			c_temp_time-defying_leopard = {
+				color = { 46 209 116 }
+				b_temp_stone_carnelian = {
+					color = { 69 61 63 }
+					province = 606
+				}
+				b_temp_mint_fennec_fox = {
+					color = { 76 100 87 }
+					province = 613
+				}
+				b_temp_delicate_mercury = {
+					color = { 68 69 61 }
+					province = 623
+				}
+				b_temp_invisible_thunderbolt = {
+					color = { 209 221 92 }
+					province = 638
+				}
+			}
+			c_temp_lightning_topaz = {
+				color = { 46 120 209 }
+				b_temp_ice_typhoon = {
+					color = { 66 192 30 }
+					province = 614
+				}
+				b_temp_stoic_cobalt = {
+					color = { 132 232 101 }
+					province = 629
+				}
+				b_temp_coral_garnet = {
+					color = { 119 176 102 }
+					province = 640
+				}
+				b_temp_serene_obsidian = {
+					color = { 83 171 56 }
+					province = 697
+				}
+			}
+			c_temp_ethereal_gravity = {
+				color = { 238 71 152 }
+				b_temp_assertive_dragon = {
+					color = { 221 107 92 }
+					province = 648
+				}
+				b_temp_mesmerizing_otter = {
+					color = { 172 0 171 }
+					province = 674
+				}
+				b_temp_surreal_overcast = {
+					color = { 221 92 155 }
+					province = 678
+				}
+				b_temp_imperceptible_chrysocolla = {
+					color = { 221 92 204 }
+					province = 694
+				}
+			}
+		}
+	}
+	k_temp_diamond_sardonyx = {
+		color = { 198 246 105 }
+		d_temp_agate_air = {
+			color = { 220 116 101 }
+			c_temp_surreal_sunstone = {
+				color = { 230 121 250 }
+				b_temp_rose_alexandrite = {
+					color = { 171 78 81 }
+					province = 419
+				}
+				b_temp_coral_metal = {
+					color = { 144 82 180 }
+					province = 424
+				}
+				b_temp_peach_turbulence = {
+					color = { 78 171 137 }
+					province = 473
+				}
+				b_temp_alexandrite_labradorite = {
+					color = { 10 170 111 }
+					province = 492
+				}
+			}
+			c_temp_purple_lynx = {
+				color = { 250 121 161 }
+				b_temp_sunlight_pearl = {
+					color = { 10 137 170 }
+					province = 582
+				}
+				b_temp_bold_tornado = {
+					color = { 30 111 131 }
+					province = 594
+				}
+				b_temp_energetic_turquoise = {
+					color = { 113 90 93 }
+					province = 656
+				}
+				b_temp_intricate_frost = {
+					color = { 179 22 40 }
+					province = 663
+				}
+			}
+			c_temp_sardonyx_loris = {
+				color = { 121 250 228 }
+				b_temp_ice_rhodochrosite = {
+					color = { 93 67 58 }
+					province = 639
+				}
+				b_temp_respectful_hedgehog = {
+					color = { 255 191 98 }
+					province = 650
+				}
+				b_temp_gold_deer = {
+					color = { 113 226 64 }
+					province = 690
+				}
+				b_temp_luminous_snow = {
+					color = { 139 230 215 }
+					province = 714
+				}
+			}
+			c_temp_omniscient_quokka = {
+				color = { 122 121 250 }
+				b_temp_air_amethyst = {
+					color = { 55 99 110 }
+					province = 705
+				}
+				b_temp_quartz_frost = {
+					color = { 98 255 101 }
+					province = 726
+				}
+				b_temp_malachite_salt = {
+					color = { 150 166 170 }
+					province = 751
+				}
+				b_temp_timeless_ice = {
+					color = { 38 116 4 }
+					province = 759
+				}
+				b_temp_retro_nor'easter = {
+					color = { 98 160 255 }
+					province = 771
+				}
+			}
+			c_temp_invisible_quasar = {
+				color = { 121 250 121 }
+				b_temp_sand_polecat = {
+					color = { 69 188 17 }
+					province = 797
+				}
+				b_temp_tiger's_eye_microburst = {
+					color = { 188 146 17 }
+					province = 833
+				}
+				b_temp_pristine_jerboa = {
+					color = { 98 255 131 }
+					province = 864
+				}
+				b_temp_enchanting_tourmaline = {
+					color = { 255 230 98 }
+					province = 920
+				}
+			}
+		}
+		d_temp_restless_loris = {
+			color = { 134 164 37 }
+			c_temp_radiant_steam = {
+				color = { 75 164 37 }
+				b_temp_intricate_rain = {
+					color = { 7 172 179 }
+					province = 486
+				}
+				b_temp_bold_emerald = {
+					color = { 7 179 131 }
+					province = 512
+				}
+				b_temp_jasper_hurricane = {
+					color = { 43 196 187 }
+					province = 530
+				}
+				b_temp_mysterious_shadow = {
+					color = { 7 153 179 }
+					province = 554
+				}
+				b_temp_confident_aurora = {
+					color = { 98 255 130 }
+					province = 565
+				}
+			}
+			c_temp_emerald_dog = {
+				color = { 37 164 144 }
+				b_temp_confident_sapphire = {
+					color = { 20 94 89 }
+					province = 522
+				}
+				b_temp_auburn_tiger = {
+					color = { 179 7 11 }
+					province = 532
+				}
+				b_temp_carnelian_whirlwind = {
+					color = { 135 56 58 }
+					province = 549
+				}
+				b_temp_defiant_rain = {
+					color = { 231 255 98 }
+					province = 563
+				}
+				b_temp_minimalistic_cirrus = {
+					color = { 56 135 130 }
+					province = 603
+				}
+			}
+			c_temp_transcendent_microburst = {
+				color = { 164 97 37 }
+				b_temp_silver_turbulence = {
+					color = { 149 9 76 }
+					province = 618
+				}
+				b_temp_vivid_spinel = {
+					color = { 120 76 60 }
+					province = 653
+				}
+				b_temp_ruby_magma = {
+					color = { 158 58 22 }
+					province = 670
+				}
+				b_temp_iolite_volcano = {
+					color = { 131 79 113 }
+					province = 713
+				}
+			}
+			c_temp_emerald_kangaroo = {
+				color = { 191 220 101 }
+				b_temp_pearl_typhoon = {
+					color = { 9 124 104 }
+					province = 747
+				}
+				b_temp_shadow_metal = {
+					color = { 168 98 255 }
+					province = 790
+				}
+				b_temp_abstract_muntjac = {
+					color = { 124 9 64 }
+					province = 835
+				}
+				b_temp_orange_antelope = {
+					color = { 98 243 255 }
+					province = 862
+				}
+			}
+		}
+		d_temp_unfathomable_ether = {
+			color = { 200 101 220 }
+			c_temp_transcendent_mongoose = {
+				color = { 250 127 121 }
+				b_temp_untouchable_sulfur = {
+					color = { 212 255 98 }
+					province = 915
+				}
+				b_temp_vibrant_warm_front = {
+					color = { 201 156 178 }
+					province = 918
+				}
+				b_temp_photon_water = {
+					color = { 254 182 216 }
+					province = 969
+				}
+				b_temp_chrysocolla_sand = {
+					color = { 203 74 136 }
+					province = 997
+				}
+			}
+			c_temp_apathetic_petal = {
+				color = { 250 230 121 }
+				b_temp_intriguing_nor'easter = {
+					color = { 98 223 255 }
+					province = 966
+				}
+				b_temp_abstract_peridot = {
+					color = { 131 247 130 }
+					province = 1006
+				}
+				b_temp_unassailable_topaz = {
+					color = { 114 157 113 }
+					province = 1012
+				}
+				b_temp_tiger's_eye_malachite = {
+					color = { 104 226 103 }
+					province = 1029
+				}
+			}
+			c_temp_adventurous_volcano = {
+				color = { 121 151 250 }
+				b_temp_modern_shadow = {
+					color = { 122 79 100 }
+					province = 1013
+				}
+				b_temp_sepia_sapphire = {
+					color = { 98 199 255 }
+					province = 1026
+				}
+				b_temp_delicate_dragon = {
+					color = { 233 91 159 }
+					province = 1032
+				}
+				b_temp_idealistic_ice = {
+					color = { 79 122 79 }
+					province = 1051
+				}
+			}
+			c_temp_harmonious_quasar = {
+				color = { 250 121 238 }
+				b_temp_surreal_snowflake = {
+					color = { 255 157 98 }
+					province = 1033
+				}
+				b_temp_brown_solar_radiation = {
+					color = { 82 193 81 }
+					province = 1036
+				}
+				b_temp_determined_falcon = {
+					color = { 236 255 98 }
+					province = 1062
+				}
+				b_temp_awe-inspiring_muntjac = {
+					color = { 13 132 11 }
+					province = 1076
+				}
+			}
+		}
+	}
+	k_temp_salt_aquamarine = {
+		color = { 28 0 162 }
+		d_temp_enthusiastic_capricorn = {
+			color = { 143 118 252 }
+			c_temp_malachite_frost = {
+				color = { 24 142 55 }
+				b_temp_pristine_yak = {
+					color = { 221 80 58 }
+					province = 432
+				}
+				b_temp_monochromatic_mongoose = {
+					color = { 165 63 42 }
+					province = 451
+				}
+				b_temp_indivisible_pangolin = {
+					color = { 255 98 98 }
+					province = 467
+				}
+				b_temp_realistic_trade_winds = {
+					color = { 156 24 4 }
+					province = 477
+				}
+			}
+			c_temp_magnetite_stratus = {
+				color = { 142 24 140 }
+				b_temp_petal_light = {
+					color = { 196 70 43 }
+					province = 474
+				}
+				b_temp_determined_obsidian = {
+					color = { 98 140 255 }
+					province = 475
+				}
+				b_temp_blaze_coral = {
+					color = { 113 57 45 }
+					province = 523
+				}
+				b_temp_tornado_coral = {
+					color = { 152 89 92 }
+					province = 570
+				}
+			}
+			c_temp_amber_gazelle = {
+				color = { 91 142 24 }
+				b_temp_immutable_wood = {
+					color = { 86 137 118 }
+					province = 499
+				}
+				b_temp_timeless_hail = {
+					color = { 114 223 158 }
+					province = 568
+				}
+				b_temp_amber_lynx = {
+					color = { 255 254 98 }
+					province = 601
+				}
+				b_temp_nectar_lightning = {
+					color = { 223 114 125 }
+					province = 633
+				}
+			}
+			c_temp_light_jade = {
+				color = { 119 175 53 }
+				b_temp_crimson_aurora = {
+					color = { 90 113 106 }
+					province = 654
+				}
+				b_temp_detached_tourmaline = {
+					color = { 197 98 255 }
+					province = 699
+				}
+				b_temp_indigo_iolite = {
+					color = { 26 187 91 }
+					province = 717
+				}
+				b_temp_lava_moonstone = {
+					color = { 80 194 178 }
+					province = 722
+				}
+			}
+		}
+		d_temp_tactile_obsidian = {
+			color = { 131 252 118 }
+			c_temp_black_elephant = {
+				color = { 12 185 20 }
+				b_temp_pragmatic_starlight = {
+					color = { 230 0 136 }
+					province = 480
+				}
+				b_temp_mauve_jerboa = {
+					color = { 48 193 149 }
+					province = 495
+				}
+				b_temp_rust_camel = {
+					color = { 0 255 177 }
+					province = 505
+				}
+				b_temp_curious_typhoon = {
+					color = { 0 255 42 }
+					province = 513
+				}
+				b_temp_unfathomable_citrine = {
+					color = { 206 29 73 }
+					province = 569
+				}
+			}
+			c_temp_content_rhodochrosite = {
+				color = { 47 12 185 }
+				b_temp_transcendent_hematite = {
+					color = { 35 107 115 }
+					province = 484
+				}
+				b_temp_spectacular_solar_radiation = {
+					color = { 4 160 179 }
+					province = 493
+				}
+				b_temp_closed-minded_topaz = {
+					color = { 35 83 115 }
+					province = 502
+				}
+				b_temp_ambitious_sirocco = {
+					color = { 0 121 172 }
+					province = 526
+				}
+				b_temp_indestructible_vortex = {
+					color = { 18 83 170 }
+					province = 555
+				}
+			}
+			c_temp_fascinating_quasar = {
+				color = { 12 185 116 }
+				b_temp_enchanting_cold_front = {
+					color = { 1 36 85 }
+					province = 592
+				}
+				b_temp_defiant_peridot = {
+					color = { 206 29 145 }
+					province = 612
+				}
+				b_temp_closed-minded_turkish_angora_cat = {
+					color = { 33 148 162 }
+					province = 681
+				}
+				b_temp_mist_moonstone = {
+					color = { 142 177 181 }
+					province = 739
+				}
+			}
+			c_temp_unchanging_rust = {
+				color = { 185 60 12 }
+				b_temp_majestic_polar_vortex = {
+					color = { 7 179 35 }
+					province = 615
+				}
+				b_temp_gray_citrine = {
+					color = { 28 115 125 }
+					province = 622
+				}
+				b_temp_unattainable_chinook = {
+					color = { 29 187 206 }
+					province = 660
+				}
+				b_temp_sardonyx_neutron = {
+					color = { 117 226 135 }
+					province = 719
+				}
+			}
+		}
+		d_temp_topaz_heatwave = {
+			color = { 118 190 252 }
+			c_temp_open-minded_turquoise = {
+				color = { 142 58 24 }
+				b_temp_surreal_ice = {
+					color = { 137 93 86 }
+					province = 524
+				}
+				b_temp_glistening_azurite = {
+					color = { 167 29 8 }
+					province = 559
+				}
+				b_temp_monochromatic_jerboa = {
+					color = { 52 0 230 }
+					province = 586
+				}
+				b_temp_emerald_precipitation = {
+					color = { 128 90 97 }
+					province = 608
+				}
+				b_temp_malachite_zephyr = {
+					color = { 90 128 117 }
+					province = 642
+				}
+			}
+			c_temp_bamboo_pangolin = {
+				color = { 185 109 12 }
+				b_temp_radiant_amber = {
+					color = { 76 184 42 }
+					province = 560
+				}
+				b_temp_picturesque_chrysocolla = {
+					color = { 184 175 42 }
+					province = 571
+				}
+				b_temp_kunzite_wolf = {
+					color = { 172 170 139 }
+					province = 611
+				}
+				b_temp_pearl_polecat = {
+					color = { 121 117 55 }
+					province = 636
+				}
+				b_temp_serene_pearl = {
+					color = { 29 126 206 }
+					province = 666
+				}
+			}
+			c_temp_white_light = {
+				color = { 185 84 12 }
+				b_temp_spectacular_capricorn = {
+					color = { 0 230 169 }
+					province = 664
+				}
+				b_temp_serene_petal = {
+					color = { 118 249 200 }
+					province = 684
+				}
+				b_temp_silver_dog = {
+					color = { 82 248 111 }
+					province = 706
+				}
+				b_temp_indivisible_aurora = {
+					color = { 118 249 153 }
+					province = 718
+				}
+			}
+		}
+		d_temp_boundless_garnet = {
+			color = { 118 252 245 }
+			c_temp_moonlight_fennec_fox = {
+				color = { 12 68 185 }
+				b_temp_tourmaline_onyx = {
+					color = { 86 206 29 }
+					province = 691
+				}
+				b_temp_emerald_gaur = {
+					color = { 63 126 79 }
+					province = 711
+				}
+				b_temp_magma_orangutan = {
+					color = { 114 223 143 }
+					province = 761
+				}
+			}
+			c_temp_tangerine_ether = {
+				color = { 53 175 93 }
+				b_temp_time-defying_obsidian = {
+					color = { 5 156 45 }
+					province = 743
+				}
+				b_temp_unbounded_iolite = {
+					color = { 128 207 149 }
+					province = 745
+				}
+				b_temp_picturesque_thunderstorm = {
+					color = { 120 238 222 }
+					province = 760
+				}
+				b_temp_incomprehensible_topaz = {
+					color = { 216 79 141 }
+					province = 794
+				}
+			}
+			c_temp_dynamic_quasar = {
+				color = { 150 207 88 }
+				b_temp_zircon_aurora = {
+					color = { 206 29 205 }
+					province = 758
+				}
+				b_temp_dramatic_raindrop = {
+					color = { 126 63 86 }
+					province = 805
+				}
+				b_temp_brown_wolf = {
+					color = { 168 73 103 }
+					province = 822
+				}
+				b_temp_sepia_elephant = {
+					color = { 252 104 81 }
+					province = 841
+				}
+			}
+			c_temp_stone_mongoose = {
+				color = { 53 115 175 }
+				b_temp_confident_hedgehog = {
+					color = { 138 0 230 }
+					province = 768
+				}
+				b_temp_topaz_snowflake = {
+					color = { 13 122 42 }
+					province = 802
+				}
+				b_temp_light_diamond = {
+					color = { 75 229 116 }
+					province = 820
+				}
+				b_temp_ochre_mongoose = {
+					color = { 206 170 19 }
+					province = 852
+				}
+			}
+		}
+		d_temp_glistening_whirlwind = {
+			color = { 239 118 252 }
+			c_temp_cautious_magma = {
+				color = { 104 136 105 }
+				b_temp_nectar_tornado = {
+					color = { 62 207 99 }
+					province = 738
+				}
+				b_temp_respectful_quartz = {
+					color = { 21 151 54 }
+					province = 757
+				}
+				b_temp_aquamarine_zephyr = {
+					color = { 206 167 29 }
+					province = 807
+				}
+				b_temp_patient_falcon = {
+					color = { 128 154 15 }
+					province = 814
+				}
+				b_temp_unassailable_alexandrite = {
+					color = { 191 212 95 }
+					province = 836
+				}
+			}
+			c_temp_emerald_warm_front = {
+				color = { 185 12 141 }
+				b_temp_brick_nectar = {
+					color = { 160 27 81 }
+					province = 762
+				}
+				b_temp_serpentine_aventurine = {
+					color = { 214 13 95 }
+					province = 764
+				}
+				b_temp_empathetic_sunstone = {
+					color = { 57 214 13 }
+					province = 808
+				}
+				b_temp_light_hail = {
+					color = { 49 165 16 }
+					province = 816
+				}
+				b_temp_otherworldly_spinel = {
+					color = { 64 29 206 }
+					province = 848
+				}
+			}
+			c_temp_disrespectful_squall = {
+				color = { 209 168 143 }
+				b_temp_omniscient_yak = {
+					color = { 129 26 10 }
+					province = 873
+				}
+				b_temp_ebony_diamond = {
+					color = { 93 215 124 }
+					province = 874
+				}
+				b_temp_whimsical_emerald = {
+					color = { 127 73 168 }
+					province = 893
+				}
+				b_temp_starlight_cyclone = {
+					color = { 209 0 208 }
+					province = 926
+				}
+			}
+			c_temp_dynamic_water = {
+				color = { 209 143 170 }
+				b_temp_sunstone_jerboa = {
+					color = { 175 20 31 }
+					province = 894
+				}
+				b_temp_imperishable_air = {
+					color = { 175 20 76 }
+					province = 932
+				}
+				b_temp_aventurine_sirocco = {
+					color = { 159 180 82 }
+					province = 945
+				}
+			}
+		}
+		d_temp_incomprehensible_calm = {
+			color = { 232 229 93 }
+			c_temp_malachite_vortex = {
+				color = { 185 12 72 }
+				b_temp_incomprehensible_light = {
+					color = { 154 27 56 }
+					province = 753
+				}
+				b_temp_fearful_marmot = {
+					color = { 140 94 109 }
+					province = 766
+				}
+				b_temp_auburn_calm = {
+					color = { 77 0 172 }
+					province = 791
+				}
+				b_temp_pink_sunstone = {
+					color = { 0 105 172 }
+					province = 845
+				}
+			}
+			c_temp_petal_sunlight = {
+				color = { 12 127 185 }
+				b_temp_aesthetic_diamond = {
+					color = { 255 143 173 }
+					province = 754
+				}
+				b_temp_nonchalant_stone = {
+					color = { 196 145 235 }
+					province = 806
+				}
+				b_temp_courageous_ocelot = {
+					color = { 255 159 143 }
+					province = 838
+				}
+			}
+			c_temp_courageous_diamond = {
+				color = { 209 189 143 }
+				b_temp_immaterial_quartz = {
+					color = { 42 111 0 }
+					province = 779
+				}
+				b_temp_earth_typhoon = {
+					color = { 10 165 10 }
+					province = 813
+				}
+				b_temp_ephemeral_leopard = {
+					color = { 182 10 55 }
+					province = 823
+				}
+				b_temp_yellow_whirlwind = {
+					color = { 208 235 145 }
+					province = 880
+				}
+			}
+			c_temp_harmonious_volcano = {
+				color = { 12 185 101 }
+				b_temp_ineffable_sunlight = {
+					color = { 250 81 55 }
+					province = 849
+				}
+				b_temp_harmonious_otter = {
+					color = { 161 49 32 }
+					province = 865
+				}
+				b_temp_callous_sardonyx = {
+					color = { 29 206 159 }
+					province = 898
+				}
+			}
+		}
+		d_temp_unrestricted_chinook = {
+			color = { 232 93 110 }
+			c_temp_charcoal_cheetah = {
+				color = { 209 151 143 }
+				b_temp_navy_magnetite = {
+					color = { 122 111 105 }
+					province = 896
+				}
+				b_temp_playful_gale = {
+					color = { 220 88 22 }
+					province = 911
+				}
+				b_temp_ungrateful_jade = {
+					color = { 121 74 66 }
+					province = 912
+				}
+				b_temp_plum_cyclone = {
+					color = { 108 206 29 }
+					province = 921
+				}
+			}
+			c_temp_imperishable_snowflake = {
+				color = { 156 209 143 }
+				b_temp_passionate_fog = {
+					color = { 151 245 213 }
+					province = 927
+				}
+				b_temp_awe-inspiring_whirlwind = {
+					color = { 245 151 173 }
+					province = 937
+				}
+				b_temp_mint_dust_devil = {
+					color = { 172 245 151 }
+					province = 939
+				}
+				b_temp_lilac_sleet = {
+					color = { 0 209 11 }
+					province = 948
+				}
+			}
+			c_temp_immeasurable_deer = {
+				color = { 175 128 53 }
+				b_temp_content_blaze = {
+					color = { 87 0 209 }
+					province = 949
+				}
+				b_temp_light_chinook = {
+					color = { 220 22 73 }
+					province = 955
+				}
+				b_temp_air_shadow = {
+					color = { 197 0 209 }
+					province = 974
+				}
+				b_temp_pink_citrine = {
+					color = { 154 101 47 }
+					province = 984
+				}
+				b_temp_unbounded_chrysocolla = {
+					color = { 109 108 97 }
+					province = 985
+				}
+			}
+			c_temp_teal_fennec_fox = {
+				color = { 72 175 53 }
+				b_temp_labradorite_wolf = {
+					color = { 69 27 86 }
+					province = 967
+				}
+				b_temp_violet_breeze = {
+					color = { 87 79 1 }
+					province = 968
+				}
+				b_temp_violet_gaur = {
+					color = { 162 149 28 }
+					province = 991
+				}
+				b_temp_amber_zephyr = {
+					color = { 92 7 124 }
+					province = 999
+				}
+			}
+		}
+		d_temp_unrestricted_rain = {
+			color = { 232 146 93 }
+			c_temp_ambitious_dog = {
+				color = { 110 242 213 }
+				b_temp_insuperable_rust = {
+					color = { 247 125 125 }
+					province = 964
+				}
+				b_temp_rust_kunzite = {
+					color = { 209 188 0 }
+					province = 971
+				}
+				b_temp_salmon_otter = {
+					color = { 226 62 73 }
+					province = 988
+				}
+			}
+			c_temp_immutable_crystal = {
+				color = { 175 53 166 }
+				b_temp_malachite_windstorm = {
+					color = { 169 70 25 }
+					province = 983
+				}
+				b_temp_photon_stratus = {
+					color = { 0 111 37 }
+					province = 1002
+				}
+				b_temp_balanced_capricorn = {
+					color = { 111 34 0 }
+					province = 1009
+				}
+				b_temp_apathetic_drizzle = {
+					color = { 101 90 79 }
+					province = 1038
+				}
+			}
+			c_temp_obsidian_pangolin = {
+				color = { 175 53 91 }
+				b_temp_intangible_clear_sky = {
+					color = { 255 41 56 }
+					province = 1005
+				}
+				b_temp_lapis_lazuli_polar_vortex = {
+					color = { 151 79 83 }
+					province = 1007
+				}
+				b_temp_coral_caracal = {
+					color = { 106 35 40 }
+					province = 1022
+				}
+				b_temp_rust_turkish_angora_cat = {
+					color = { 133 22 62 }
+					province = 1043
+				}
+			}
+			c_temp_plum_sapphire = {
+				color = { 96 53 175 }
+				b_temp_dreamy_kangaroo = {
+					color = { 54 163 41 }
+					province = 1027
+				}
+				b_temp_otherworldly_raindrop = {
+					color = { 41 78 163 }
+					province = 1039
+				}
+				b_temp_serpentine_antelope = {
+					color = { 239 59 59 }
+					province = 1055
+				}
+				b_temp_tornado_emerald = {
+					color = { 225 98 98 }
+					province = 1072
+				}
+			}
+		}
+	}
+	k_temp_emerald_hedgehog = {
+		color = { 105 209 246 }
+		d_temp_air_vortex = {
+			color = { 95 32 88 }
+			c_temp_unbounded_crystal = {
+				color = { 148 47 179 }
+				b_temp_insecure_sand = {
+					color = { 182 167 61 }
+					province = 519
+				}
+				b_temp_salt_ruby = {
+					color = { 104 42 38 }
+					province = 548
+				}
+				b_temp_balanced_quartz = {
+					color = { 65 107 165 }
+					province = 575
+				}
+				b_temp_untouchable_fog = {
+					color = { 226 179 85 }
+					province = 576
+				}
+				b_temp_assertive_carnelian = {
+					color = { 191 52 42 }
+					province = 580
+				}
+			}
+			c_temp_navy_zephyr = {
+				color = { 47 65 179 }
+				b_temp_unutterable_rhodochrosite = {
+					color = { 160 108 4 }
+					province = 520
+				}
+				b_temp_generous_dragon = {
+					color = { 160 61 182 }
+					province = 534
+				}
+				b_temp_brown_hail = {
+					color = { 160 71 4 }
+					province = 631
+				}
+			}
+			c_temp_content_photon = {
+				color = { 87 142 96 }
+				b_temp_mauve_gale = {
+					color = { 36 121 200 }
+					province = 552
+				}
+				b_temp_modern_fennec_fox = {
+					color = { 129 100 103 }
+					province = 621
+				}
+				b_temp_red_gale = {
+					color = { 100 129 104 }
+					province = 647
+				}
+			}
+			c_temp_altruistic_pangolin = {
+				color = { 47 179 162 }
+				b_temp_coral_muntjac = {
+					color = { 168 177 177 }
+					province = 553
+				}
+				b_temp_unfathomable_tourmaline = {
+					color = { 68 198 85 }
+					province = 588
+				}
+				b_temp_lava_steam = {
+					color = { 150 243 237 }
+					province = 625
+				}
+			}
+		}
+		d_temp_sapphire_agate = {
+			color = { 32 95 78 }
+			c_temp_intriguing_opal = {
+				color = { 179 58 47 }
+				b_temp_rhodonite_warm_front = {
+					color = { 40 180 184 }
+					province = 540
+				}
+				b_temp_tan_amethyst = {
+					color = { 171 235 155 }
+					province = 541
+				}
+				b_temp_harmonious_rainbow = {
+					color = { 104 182 61 }
+					province = 632
+				}
+				b_temp_orange_leopard = {
+					color = { 40 184 143 }
+					province = 641
+				}
+			}
+			c_temp_auburn_sirocco = {
+				color = { 179 156 47 }
+				b_temp_symmetrical_elephant = {
+					color = { 88 62 58 }
+					province = 655
+				}
+				b_temp_boundless_peridot = {
+					color = { 237 246 246 }
+					province = 698
+				}
+				b_temp_azure_sulfur = {
+					color = { 155 235 212 }
+					province = 703
+				}
+				b_temp_inexhaustible_dhole = {
+					color = { 47 79 176 }
+					province = 746
+				}
+			}
+			c_temp_quasar_stone = {
+				color = { 47 179 72 }
+				b_temp_inestimable_sardonyx = {
+					color = { 173 39 124 }
+					province = 682
+				}
+				b_temp_garnet_precipitation = {
+					color = { 85 120 226 }
+					province = 683
+				}
+				b_temp_abstract_orangutan = {
+					color = { 61 182 180 }
+					province = 740
+				}
+				b_temp_surreal_calm = {
+					color = { 137 222 39 }
+					province = 763
+				}
+			}
+		}
+		d_temp_formless_moonlight = {
+			color = { 95 52 32 }
+			c_temp_subdued_tapir = {
+				color = { 142 93 87 }
+				b_temp_indifferent_azurite = {
+					color = { 147 106 208 }
+					province = 671
+				}
+				b_temp_stone_tiger = {
+					color = { 114 114 92 }
+					province = 692
+				}
+				b_temp_rhodochrosite_coral = {
+					color = { 114 93 92 }
+					province = 702
+				}
+				b_temp_infinite_amethyst = {
+					color = { 81 39 222 }
+					province = 730
+				}
+			}
+			c_temp_selenite_spinel = {
+				color = { 122 142 87 }
+				b_temp_pragmatic_tourmaline = {
+					color = { 193 129 225 }
+					province = 695
+				}
+				b_temp_violet_monsoon = {
+					color = { 222 39 164 }
+					province = 774
+				}
+				b_temp_jade_lapis_lazuli = {
+					color = { 80 132 110 }
+					province = 789
+				}
+				b_temp_aloof_garnet = {
+					color = { 131 89 153 }
+					province = 824
+				}
+			}
+			c_temp_nectar_azurite = {
+				color = { 47 91 179 }
+				b_temp_engaged_gale = {
+					color = { 191 226 209 }
+					province = 800
+				}
+				b_temp_sapphire_camel = {
+					color = { 88 58 66 }
+					province = 810
+				}
+				b_temp_rust_tourmaline = {
+					color = { 168 52 84 }
+					province = 869
+				}
+			}
+			c_temp_white_turkish_angora_cat = {
+				color = { 47 179 139 }
+				b_temp_vivid_bamboo = {
+					color = { 157 70 137 }
+					province = 819
+				}
+				b_temp_enchanting_polar_vortex = {
+					color = { 168 94 52 }
+					province = 851
+				}
+				b_temp_gray_cumulus = {
+					color = { 115 28 159 }
+					province = 879
+				}
+			}
+		}
+	}
+	k_temp_soft_lightning = {
+		color = { 163 18 47 }
+		d_temp_stubborn_microburst = {
+			color = { 36 32 163 }
+			c_temp_cobalt_wood = {
+				color = { 32 202 219 }
+				b_temp_retro_chital = {
+					color = { 61 69 132 }
+					province = 547
+				}
+				b_temp_impatient_salt = {
+					color = { 159 53 54 }
+					province = 591
+				}
+				b_temp_unutterable_squall = {
+					color = { 73 151 25 }
+					province = 607
+				}
+			}
+			c_temp_content_whirlwind = {
+				color = { 32 219 183 }
+				b_temp_accepting_stratus = {
+					color = { 76 90 198 }
+					province = 567
+				}
+				b_temp_malachite_mongoose = {
+					color = { 141 161 78 }
+					province = 574
+				}
+				b_temp_serene_water = {
+					color = { 153 47 47 }
+					province = 649
+				}
+				b_temp_nectar_hurricane = {
+					color = { 49 108 12 }
+					province = 658
+				}
+			}
+			c_temp_sand_metal = {
+				color = { 32 101 219 }
+				b_temp_cyan_sand = {
+					color = { 200 36 189 }
+					province = 659
+				}
+				b_temp_red_cyclone = {
+					color = { 61 132 69 }
+					province = 679
+				}
+				b_temp_indigo_dhole = {
+					color = { 194 72 108 }
+					province = 700
+				}
+			}
+			c_temp_indestructible_coral = {
+				color = { 42 32 219 }
+				b_temp_cerulean_sunstone = {
+					color = { 107 122 54 }
+					province = 675
+				}
+				b_temp_clay_sulfur = {
+					color = { 194 72 80 }
+					province = 676
+				}
+				b_temp_ethereal_leopard = {
+					color = { 82 151 39 }
+					province = 725
+				}
+				b_temp_dreamy_frost = {
+					color = { 169 184 136 }
+					province = 732
+				}
+			}
+		}
+		d_temp_rhodochrosite_dragon = {
+			color = { 32 93 163 }
+			c_temp_lightning_loris = {
+				color = { 172 219 32 }
+				b_temp_incorporeal_trade_winds = {
+					color = { 78 161 111 }
+					province = 669
+				}
+				b_temp_accepting_tiger's_eye = {
+					color = { 194 155 72 }
+					province = 687
+				}
+				b_temp_aurora_overcast = {
+					color = { 125 78 161 }
+					province = 735
+				}
+				b_temp_cyclone_cyclone = {
+					color = { 194 82 72 }
+					province = 765
+				}
+			}
+			c_temp_mesmerizing_blizzard = {
+				color = { 32 219 112 }
+				b_temp_pearl_sapphire = {
+					color = { 154 136 184 }
+					province = 715
+				}
+				b_temp_amethyst_warm_front = {
+					color = { 173 111 26 }
+					province = 721
+				}
+				b_temp_modern_markhor = {
+					color = { 215 91 92 }
+					province = 750
+				}
+			}
+			c_temp_resilient_cobalt = {
+				color = { 98 219 32 }
+				b_temp_insuperable_jasper = {
+					color = { 161 78 161 }
+					province = 803
+				}
+				b_temp_aesthetic_heatwave = {
+					color = { 153 143 47 }
+					province = 812
+				}
+				b_temp_indigo_torrent = {
+					color = { 47 153 145 }
+					province = 829
+				}
+				b_temp_insuperable_whirlwind = {
+					color = { 16 126 15 }
+					province = 883
+				}
+			}
+		}
+		d_temp_stark_iolite = {
+			color = { 32 136 163 }
+			c_temp_mesmerizing_dog = {
+				color = { 219 32 71 }
+				b_temp_pearl_tapir = {
+					color = { 40 163 111 }
+					province = 744
+				}
+				b_temp_pessimistic_ice = {
+					color = { 114 186 39 }
+					province = 770
+				}
+				b_temp_azurite_calm = {
+					color = { 87 182 178 }
+					province = 778
+				}
+				b_temp_chrysocolla_coral = {
+					color = { 81 129 30 }
+					province = 832
+				}
+			}
+			c_temp_alexandrite_cumulus = {
+				color = { 160 32 219 }
+				b_temp_petal_steam = {
+					color = { 215 96 78 }
+					province = 769
+				}
+				b_temp_purple_cheetah = {
+					color = { 39 184 186 }
+					province = 784
+				}
+				b_temp_diamond_topaz = {
+					color = { 78 161 129 }
+					province = 804
+				}
+				b_temp_white_loris = {
+					color = { 227 124 173 }
+					province = 850
+				}
+				b_temp_yellow_dust_devil = {
+					color = { 78 121 161 }
+					province = 884
+				}
+			}
+			c_temp_muted_obsidian = {
+				color = { 219 32 176 }
+				b_temp_dynamic_stratus = {
+					color = { 182 173 87 }
+					province = 777
+				}
+				b_temp_emerald_dragon = {
+					color = { 227 178 124 }
+					province = 827
+				}
+				b_temp_immersive_cheetah = {
+					color = { 95 186 39 }
+					province = 889
+				}
+			}
+		}
+		d_temp_intransmutable_malachite = {
+			color = { 32 163 93 }
+			c_temp_apathetic_sulfur = {
+				color = { 32 163 35 }
+				b_temp_charcoal_trade_winds = {
+					color = { 135 49 0 }
+					province = 857
+				}
+				b_temp_captivating_kangaroo = {
+					color = { 76 198 147 }
+					province = 859
+				}
+				b_temp_unchanging_ruby = {
+					color = { 222 198 39 }
+					province = 892
+				}
+				b_temp_subdued_jade = {
+					color = { 168 213 58 }
+					province = 938
+				}
+			}
+			c_temp_indigo_water = {
+				color = { 88 163 32 }
+				b_temp_maroon_diamond = {
+					color = { 81 222 39 }
+					province = 901
+				}
+				b_temp_olive_plasma = {
+					color = { 106 132 80 }
+					province = 903
+				}
+				b_temp_optimistic_rhodochrosite = {
+					color = { 114 53 44 }
+					province = 922
+				}
+				b_temp_pristine_water = {
+					color = { 114 100 92 }
+					province = 941
+				}
+			}
+			c_temp_moonstone_sapphire = {
+				color = { 163 64 32 }
+				b_temp_mist_earth = {
+					color = { 67 143 102 }
+					province = 944
+				}
+				b_temp_inestimable_wolf = {
+					color = { 104 176 31 }
+					province = 953
+				}
+				b_temp_turmeric_agate = {
+					color = { 226 70 72 }
+					province = 986
+				}
+				b_temp_mist_tornado = {
+					color = { 227 124 124 }
+					province = 1003
+				}
+			}
+			c_temp_indifferent_peridot = {
+				color = { 146 163 32 }
+				b_temp_emerald_polecat = {
+					color = { 39 222 208 }
+					province = 958
+				}
+				b_temp_silver_sleet = {
+					color = { 135 189 80 }
+					province = 972
+				}
+				b_temp_stubborn_carnelian = {
+					color = { 224 40 42 }
+					province = 982
+				}
+				b_temp_topaz_serpentine = {
+					color = { 224 117 40 }
+					province = 1010
+				}
+			}
+			c_temp_unmanifest_gravity = {
+				color = { 163 117 32 }
+				b_temp_ruby_sardonyx = {
+					color = { 227 168 124 }
+					province = 1016
+				}
+				b_temp_energetic_elephant = {
+					color = { 75 95 54 }
+					province = 1019
+				}
+				b_temp_impatient_sulfur = {
+					color = { 153 133 47 }
+					province = 1028
+				}
+				b_temp_rust_wood = {
+					color = { 178 208 106 }
+					province = 1041
+				}
+			}
+		}
+	}
+	k_temp_formless_cobalt = {
+		color = { 0 167 44 }
+		d_temp_unchanging_ether = {
+			color = { 34 125 166 }
+			c_temp_pragmatic_sunstone = {
+				color = { 158 60 59 }
+				b_temp_mysterious_iolite = {
+					color = { 75 40 178 }
+					province = 599
+				}
+				b_temp_amethyst_windchill = {
+					color = { 247 95 175 }
+					province = 646
+				}
+				b_temp_intriguing_topaz = {
+					color = { 136 80 36 }
+					province = 693
+				}
+				b_temp_impatient_chrysocolla = {
+					color = { 137 100 67 }
+					province = 704
+				}
+			}
+			c_temp_detached_ruby = {
+				color = { 95 32 74 }
+				b_temp_nonchalant_capricorn = {
+					color = { 41 178 40 }
+					province = 600
+				}
+				b_temp_torrent_zephyr = {
+					color = { 189 63 46 }
+					province = 604
+				}
+				b_temp_cyclone_horse = {
+					color = { 91 40 237 }
+					province = 635
+				}
+				b_temp_salt_loris = {
+					color = { 115 21 8 }
+					province = 680
+				}
+			}
+			c_temp_frost_wood = {
+				color = { 156 158 59 }
+				b_temp_awe-inspiring_antelope = {
+					color = { 46 156 184 }
+					province = 628
+				}
+				b_temp_torrent_windstorm = {
+					color = { 92 41 74 }
+					province = 677
+				}
+				b_temp_invisible_sleet = {
+					color = { 85 67 137 }
+					province = 688
+				}
+				b_temp_timeless_moonlight = {
+					color = { 189 46 84 }
+					province = 708
+				}
+			}
+		}
+		d_temp_emerald_quokka = {
+			color = { 34 166 132 }
+			c_temp_pessimistic_nectar = {
+				color = { 59 158 84 }
+				b_temp_immutable_chital = {
+					color = { 1 79 0 }
+					province = 727
+				}
+				b_temp_timeless_leopard = {
+					color = { 224 130 158 }
+					province = 736
+				}
+				b_temp_moonlight_drizzle = {
+					color = { 203 132 70 }
+					province = 786
+				}
+				b_temp_ineluctable_sirocco = {
+					color = { 136 36 65 }
+					province = 788
+				}
+			}
+			c_temp_quartz_blizzard = {
+				color = { 59 138 158 }
+				b_temp_lavender_turquoise = {
+					color = { 97 247 95 }
+					province = 741
+				}
+				b_temp_charcoal_stone = {
+					color = { 247 123 95 }
+					province = 755
+				}
+				b_temp_fascinating_fennec_fox = {
+					color = { 189 109 46 }
+					province = 767
+				}
+				b_temp_untouchable_thunderbolt = {
+					color = { 246 130 28 }
+					province = 825
+				}
+			}
+			c_temp_confident_mongoose = {
+				color = { 158 59 134 }
+				b_temp_indigo_capricorn = {
+					color = { 184 110 46 }
+					province = 837
+				}
+				b_temp_dreamy_selenite = {
+					color = { 219 247 95 }
+					province = 872
+				}
+				b_temp_untouchable_malachite = {
+					color = { 46 184 109 }
+					province = 935
+				}
+			}
+		}
+		d_temp_immutable_aquamarine = {
+			color = { 97 166 34 }
+			c_temp_intricate_sirocco = {
+				color = { 59 80 158 }
+				b_temp_shadow_aquamarine = {
+					color = { 46 184 48 }
+					province = 801
+				}
+				b_temp_aether_cold_front = {
+					color = { 157 87 132 }
+					province = 811
+				}
+				b_temp_air_emerald = {
+					color = { 247 151 95 }
+					province = 861
+				}
+			}
+			c_temp_diamond_thunderstorm = {
+				color = { 212 107 14 }
+				b_temp_gold_dhole = {
+					color = { 215 102 174 }
+					province = 910
+				}
+				b_temp_crisp_drought = {
+					color = { 46 184 182 }
+					province = 931
+				}
+				b_temp_restless_aquamarine = {
+					color = { 222 168 118 }
+					province = 954
+				}
+				b_temp_lavender_frost = {
+					color = { 51 169 167 }
+					province = 987
+				}
+			}
+			c_temp_volcano_volcano = {
+				color = { 158 67 59 }
+				b_temp_magnetite_blaze = {
+					color = { 107 108 148 }
+					province = 929
+				}
+				b_temp_turmeric_lynx = {
+					color = { 222 118 160 }
+					province = 959
+				}
+				b_temp_spectacular_aquamarine = {
+					color = { 107 12 50 }
+					province = 963
+				}
+				b_temp_accepting_lapis_lazuli = {
+					color = { 19 222 219 }
+					province = 977
+				}
+			}
+			c_temp_lapis_lazuli_mercury = {
+				color = { 158 166 34 }
+				b_temp_obsidian_frost = {
+					color = { 172 106 45 }
+					province = 995
+				}
+				b_temp_tiger's_eye_magnetite = {
+					color = { 212 14 94 }
+					province = 996
+				}
+				b_temp_garnet_agate = {
+					color = { 212 19 14 }
+					province = 1021
+				}
+				b_temp_agate_breeze = {
+					color = { 186 9 152 }
+					province = 1023
+				}
+			}
+		}
+		d_temp_orange_quasar = {
+			color = { 166 97 34 }
+			c_temp_brick_cheetah = {
+				color = { 34 100 166 }
+				b_temp_sapphire_trade_winds = {
+					color = { 146 8 48 }
+					province = 928
+				}
+				b_temp_diamond_alexandrite = {
+					color = { 154 209 167 }
+					province = 930
+				}
+				b_temp_vibrant_rainbow = {
+					color = { 9 35 186 }
+					province = 960
+				}
+				b_temp_defiant_warm_front = {
+					color = { 172 60 45 }
+					province = 976
+				}
+			}
+			c_temp_cerulean_dog = {
+				color = { 81 34 166 }
+				b_temp_alexandrite_mist = {
+					color = { 51 68 169 }
+					province = 942
+				}
+				b_temp_zircon_mongoose = {
+					color = { 102 215 168 }
+					province = 965
+				}
+				b_temp_delicate_steam = {
+					color = { 172 110 34 }
+					province = 980
+				}
+				b_temp_cyclone_sunlight = {
+					color = { 34 172 72 }
+					province = 989
+				}
+			}
+			c_temp_time-defying_crystal = {
+				color = { 166 34 112 }
+				b_temp_sunlight_rainbow = {
+					color = { 34 114 80 }
+					province = 1000
+				}
+				b_temp_ruby_rain = {
+					color = { 71 186 9 }
+					province = 1025
+				}
+				b_temp_incomprehensible_blizzard = {
+					color = { 9 186 111 }
+					province = 1030
+				}
+				b_temp_lightning_dog = {
+					color = { 131 29 26 }
+					province = 1044
+				}
+				b_temp_cyclone_emerald = {
+					color = { 172 37 34 }
+					province = 1059
+				}
+			}
+			c_temp_sardonyx_owl = {
+				color = { 34 166 53 }
+				b_temp_apathetic_raindrop = {
+					color = { 207 154 209 }
+					province = 1017
+				}
+				b_temp_iolite_emerald = {
+					color = { 9 186 161 }
+					province = 1035
+				}
+				b_temp_minimalistic_turbulence = {
+					color = { 154 212 170 }
+					province = 1042
+				}
+			}
+		}
+	}
+	k_temp_lapis_lazuli_stratus = {
+		color = { 246 212 105 }
+		d_temp_sepia_moonstone = {
+			color = { 72 124 177 }
+			c_temp_whimsical_tapir = {
+				color = { 180 13 70 }
+				b_temp_photon_pangolin = {
+					color = { 157 38 141 }
+					province = 710
+				}
+				b_temp_aether_otter = {
+					color = { 172 160 0 }
+					province = 720
+				}
+				b_temp_respectful_steam = {
+					color = { 38 157 86 }
+					province = 742
+				}
+				b_temp_alexandrite_coral = {
+					color = { 157 38 43 }
+					province = 752
+				}
+			}
+			c_temp_carnelian_dhole = {
+				color = { 113 13 180 }
+				b_temp_intriguing_blizzard = {
+					color = { 111 67 0 }
+					province = 728
+				}
+				b_temp_moonstone_torrent = {
+					color = { 217 31 146 }
+					province = 748
+				}
+				b_temp_aether_cobalt = {
+					color = { 165 61 10 }
+					province = 796
+				}
+			}
+			c_temp_unseen_coral = {
+				color = { 180 55 13 }
+				b_temp_cyclone_ocelot = {
+					color = { 217 31 31 }
+					province = 775
+				}
+				b_temp_peach_fluorite = {
+					color = { 98 200 139 }
+					province = 792
+				}
+				b_temp_indivisible_moonstone = {
+					color = { 21 201 93 }
+					province = 817
+				}
+			}
+		}
+		d_temp_serene_sardonyx = {
+			color = { 177 94 72 }
+			c_temp_amber_markhor = {
+				color = { 180 131 13 }
+				b_temp_obsidian_kangaroo = {
+					color = { 229 211 42 }
+					province = 826
+				}
+				b_temp_teal_jade = {
+					color = { 31 217 52 }
+					province = 830
+				}
+				b_temp_frost_water = {
+					color = { 92 60 44 }
+					province = 882
+				}
+			}
+			c_temp_sapphire_serpentine = {
+				color = { 151 180 13 }
+				b_temp_gravity_cold_front = {
+					color = { 167 255 140 }
+					province = 842
+				}
+				b_temp_accepting_sardonyx = {
+					color = { 92 171 71 }
+					province = 844
+				}
+				b_temp_water_capricorn = {
+					color = { 145 209 235 }
+					province = 870
+				}
+				b_temp_modern_ruby = {
+					color = { 147 171 71 }
+					province = 877
+				}
+				b_temp_timeless_opal = {
+					color = { 96 192 66 }
+					province = 885
+				}
+			}
+			c_temp_incorporeal_quartz = {
+				color = { 13 180 31 }
+				b_temp_captivating_emerald = {
+					color = { 183 8 80 }
+					province = 871
+				}
+				b_temp_onyx_rain = {
+					color = { 154 53 47 }
+					province = 906
+				}
+				b_temp_magnetite_lynx = {
+					color = { 225 113 99 }
+					province = 914
+				}
+				b_temp_selenite_clear_sky = {
+					color = { 189 34 15 }
+					province = 952
+				}
+				b_temp_intricate_pearl = {
+					color = { 0 26 79 }
+					province = 957
+				}
+			}
+			c_temp_crisp_chital = {
+				color = { 13 180 147 }
+				b_temp_enthusiastic_squall = {
+					color = { 252 81 60 }
+					province = 919
+				}
+				b_temp_gravity_vortex = {
+					color = { 238 90 151 }
+					province = 924
+				}
+				b_temp_empathetic_wood = {
+					color = { 154 47 81 }
+					province = 956
+				}
+				b_temp_whimsical_cyclone = {
+					color = { 184 33 15 }
+					province = 962
+				}
+			}
+		}
+		d_temp_unworldly_cyclone = {
+			color = { 135 72 177 }
+			c_temp_transcendent_caracal = {
+				color = { 13 119 180 }
+				b_temp_boundless_jade = {
+					color = { 121 231 92 }
+					province = 992
+				}
+				b_temp_serpentine_diamond = {
+					color = { 38 130 14 }
+					province = 994
+				}
+				b_temp_minimalistic_garnet = {
+					color = { 70 79 0 }
+					province = 1014
+				}
+			}
+			c_temp_carnelian_aquamarine = {
+				color = { 51 13 180 }
+				b_temp_inconceivable_obsidian = {
+					color = { 194 88 81 }
+					province = 1020
+				}
+				b_temp_unattainable_stone = {
+					color = { 138 52 41 }
+					province = 1040
+				}
+				b_temp_ice_polecat = {
+					color = { 169 123 120 }
+					province = 1050
+				}
+			}
+			c_temp_red_dog = {
+				color = { 74 31 103 }
+				b_temp_intricate_emerald = {
+					color = { 49 144 24 }
+					province = 1046
+				}
+				b_temp_abstract_ruby = {
+					color = { 152 120 169 }
+					province = 1071
+				}
+				b_temp_callous_pangolin = {
+					color = { 0 63 79 }
+					province = 1075
+				}
+				b_temp_white_onyx = {
+					color = { 110 215 82 }
+					province = 1085
+				}
+			}
+		}
+	}
+	k_temp_adventurous_gazelle = {
+		color = { 0 63 57 }
+		d_temp_humble_panda = {
+			color = { 193 111 247 }
+			c_temp_ethereal_mercury = {
+				color = { 42 157 111 }
+				b_temp_tan_topaz = {
+					color = { 99 200 75 }
+					province = 724
+				}
+				b_temp_realistic_neutron = {
+					color = { 116 88 89 }
+					province = 749
+				}
+				b_temp_lapis_lazuli_emerald = {
+					color = { 136 110 17 }
+					province = 773
+				}
+				b_temp_sapphire_sleet = {
+					color = { 166 103 134 }
+					province = 785
+				}
+				b_temp_starlight_tornado = {
+					color = { 43 86 171 }
+					province = 818
+				}
+			}
+			c_temp_majestic_lapis_lazuli = {
+				color = { 26 0 197 }
+				b_temp_vibrant_metal = {
+					color = { 62 89 144 }
+					province = 731
+				}
+				b_temp_sand_air = {
+					color = { 41 136 17 }
+					province = 737
+				}
+				b_temp_stone_sapphire = {
+					color = { 8 86 7 }
+					province = 783
+				}
+				b_temp_altruistic_falcon = {
+					color = { 194 72 130 }
+					province = 798
+				}
+			}
+			c_temp_omniscient_camel = {
+				color = { 88 0 197 }
+				b_temp_fascinating_photon = {
+					color = { 103 166 110 }
+					province = 846
+				}
+				b_temp_steam_elephant = {
+					color = { 33 198 78 }
+					province = 858
+				}
+				b_temp_purple_panda = {
+					color = { 158 53 37 }
+					province = 886
+				}
+				b_temp_blue_microburst = {
+					color = { 141 168 242 }
+					province = 908
+				}
+			}
+			c_temp_stubborn_rhodochrosite = {
+				color = { 42 133 157 }
+				b_temp_judgmental_stratus = {
+					color = { 132 41 45 }
+					province = 867
+				}
+				b_temp_carnelian_dust_devil = {
+					color = { 166 142 103 }
+					province = 878
+				}
+				b_temp_sunstone_lightning = {
+					color = { 17 134 136 }
+					province = 916
+				}
+				b_temp_pearl_camel = {
+					color = { 104 47 38 }
+					province = 917
+				}
+				b_temp_bamboo_sapphire = {
+					color = { 171 43 101 }
+					province = 934
+				}
+			}
+		}
+		d_temp_transcendent_pika = {
+			color = { 247 131 111 }
+			c_temp_diamond_orangutan = {
+				color = { 122 108 13 }
+				b_temp_light_mercury = {
+					color = { 13 0 203 }
+					province = 729
+				}
+				b_temp_cyclone_tourmaline = {
+					color = { 60 56 118 }
+					province = 799
+				}
+				b_temp_glistening_quokka = {
+					color = { 56 118 117 }
+					province = 855
+				}
+				b_temp_fire_amethyst = {
+					color = { 209 43 198 }
+					province = 875
+				}
+			}
+			c_temp_serpentine_camel = {
+				color = { 122 13 71 }
+				b_temp_defiant_diamond = {
+					color = { 56 118 65 }
+					province = 853
+				}
+				b_temp_retro_plasma = {
+					color = { 209 39 81 }
+					province = 876
+				}
+				b_temp_carnelian_salt = {
+					color = { 145 35 138 }
+					province = 881
+				}
+				b_temp_diamond_salt = {
+					color = { 153 39 209 }
+					province = 887
+				}
+			}
+		}
+		d_temp_brick_rain = {
+			color = { 247 111 223 }
+			c_temp_rose_calm = {
+				color = { 247 167 111 }
+				b_temp_elegant_cheetah = {
+					color = { 88 157 71 }
+					province = 772
+				}
+				b_temp_soothing_ice = {
+					color = { 171 209 142 }
+					province = 839
+				}
+				b_temp_selfish_garnet = {
+					color = { 48 128 28 }
+					province = 891
+				}
+			}
+			c_temp_humble_gravity = {
+				color = { 247 231 111 }
+				b_temp_stingy_windchill = {
+					color = { 181 111 176 }
+					province = 781
+				}
+				b_temp_insecure_gaur = {
+					color = { 70 44 234 }
+					province = 782
+				}
+				b_temp_omnipresent_yak = {
+					color = { 144 99 62 }
+					province = 831
+				}
+				b_temp_ruby_thunderbolt = {
+					color = { 71 157 94 }
+					province = 860
+				}
+			}
+			c_temp_rhodochrosite_rain = {
+				color = { 157 143 42 }
+				b_temp_jasper_gaur = {
+					color = { 59 158 37 }
+					province = 793
+				}
+				b_temp_teal_peridot = {
+					color = { 153 145 39 }
+					province = 815
+				}
+				b_temp_untouchable_agate = {
+					color = { 142 209 174 }
+					province = 856
+				}
+			}
+		}
+		d_temp_aventurine_cyclone = {
+			color = { 247 111 159 }
+			c_temp_moonstone_panda = {
+				color = { 53 157 42 }
+				b_temp_chrysocolla_sapphire = {
+					color = { 107 19 101 }
+					province = 866
+				}
+				b_temp_mint_snowflake = {
+					color = { 108 118 56 }
+					province = 900
+				}
+				b_temp_salmon_precipitation = {
+					color = { 181 173 79 }
+					province = 907
+				}
+				b_temp_picturesque_leopard = {
+					color = { 209 197 39 }
+					province = 933
+				}
+			}
+			c_temp_unbounded_pangolin = {
+				color = { 117 157 42 }
+				b_temp_stone_quokka = {
+					color = { 82 71 157 }
+					province = 897
+				}
+				b_temp_mauve_dhole = {
+					color = { 217 141 77 }
+					province = 925
+				}
+				b_temp_incalculable_diamond = {
+					color = { 178 142 209 }
+					province = 943
+				}
+			}
+			c_temp_iolite_warm_front = {
+				color = { 177 0 197 }
+				b_temp_stubborn_caracal = {
+					color = { 142 155 209 }
+					province = 946
+				}
+				b_temp_jasper_volcano = {
+					color = { 71 110 157 }
+					province = 961
+				}
+				b_temp_engaged_tornado = {
+					color = { 119 198 33 }
+					province = 981
+				}
+				b_temp_incalculable_moonlight = {
+					color = { 198 108 33 }
+					province = 993
+				}
+				b_temp_bold_sand = {
+					color = { 211 79 85 }
+					province = 1004
+				}
+				b_temp_everlasting_serpentine = {
+					color = { 209 162 142 }
+					province = 1024
+				}
+			}
+		}
+	}
+	k_temp_transcendent_limestone = {
+		color = { 17 181 26 }
+		d_temp_otherworldly_azurite = {
+			color = { 142 109 24 }
+			c_temp_judgmental_aurora = {
+				color = { 81 150 38 }
+				b_temp_tiger's_eye_torrent = {
+					color = { 107 62 151 }
+					province = 756
+				}
+				b_temp_magma_hedgehog = {
+					color = { 129 90 26 }
+					province = 795
+				}
+				b_temp_peridot_turkish_angora_cat = {
+					color = { 169 162 115 }
+					province = 809
+				}
+				b_temp_imperceptible_aquamarine = {
+					color = { 226 164 64 }
+					province = 828
+				}
+			}
+			c_temp_crimson_bamboo = {
+				color = { 88 207 139 }
+				b_temp_indigo_tornado = {
+					color = { 12 93 60 }
+					province = 787
+				}
+				b_temp_altruistic_leopard = {
+					color = { 148 25 80 }
+					province = 821
+				}
+				b_temp_obsidian_orangutan = {
+					color = { 219 38 120 }
+					province = 843
+				}
+				b_temp_green_selenite = {
+					color = { 248 232 82 }
+					province = 868
+				}
+			}
+			c_temp_dramatic_gharial = {
+				color = { 38 94 150 }
+				b_temp_aesthetic_quokka = {
+					color = { 93 62 12 }
+					province = 840
+				}
+				b_temp_symmetrical_cyclone = {
+					color = { 121 219 132 }
+					province = 854
+				}
+				b_temp_nonchalant_precipitation = {
+					color = { 18 158 120 }
+					province = 888
+				}
+				b_temp_immersive_volcano = {
+					color = { 107 87 54 }
+					province = 905
+				}
+				b_temp_violet_snow = {
+					color = { 99 243 203 }
+					province = 913
+				}
+			}
+			c_temp_cautious_ruby = {
+				color = { 142 207 88 }
+				b_temp_mint_zircon = {
+					color = { 152 89 117 }
+					province = 863
+				}
+				b_temp_flexible_snowflake = {
+					color = { 0 108 209 }
+					province = 895
+				}
+				b_temp_maroon_fox = {
+					color = { 152 113 89 }
+					province = 902
+				}
+				b_temp_chartreuse_aventurine = {
+					color = { 133 21 4 }
+					province = 923
+				}
+			}
+		}
+		d_temp_sapphire_neutron = {
+			color = { 24 109 142 }
+			c_temp_omnipresent_pearl = {
+				color = { 40 38 150 }
+				b_temp_brown_cold_front = {
+					color = { 115 169 115 }
+					province = 890
+				}
+				b_temp_navy_clear_sky = {
+					color = { 5 218 229 }
+					province = 940
+				}
+				b_temp_omnipresent_crystal = {
+					color = { 216 79 123 }
+					province = 951
+				}
+				b_temp_ineffable_pika = {
+					color = { 243 99 115 }
+					province = 978
+				}
+			}
+			c_temp_sapphire_nor'easter = {
+				color = { 149 150 38 }
+				b_temp_citrine_emerald = {
+					color = { 151 61 150 }
+					province = 970
+				}
+				b_temp_ruby_tourmaline = {
+					color = { 229 193 5 }
+					province = 1001
+				}
+				b_temp_intangible_gale = {
+					color = { 119 128 141 }
+					province = 1018
+				}
+			}
+			c_temp_unseen_gaur = {
+				color = { 94 219 90 }
+				b_temp_awe-inspiring_sardonyx = {
+					color = { 216 111 79 }
+					province = 1011
+				}
+				b_temp_humble_ruby = {
+					color = { 79 216 160 }
+					province = 1054
+				}
+				b_temp_green_hail = {
+					color = { 5 229 23 }
+					province = 1056
+				}
+			}
+		}
+		d_temp_obsidian_hurricane = {
+			color = { 142 25 24 }
+			c_temp_unfathomable_sardonyx = {
+				color = { 38 150 120 }
+				b_temp_unutterable_shadow = {
+					color = { 123 174 187 }
+					province = 947
+				}
+				b_temp_ruby_jerboa = {
+					color = { 192 94 79 }
+					province = 973
+				}
+				b_temp_neutron_obsidian = {
+					color = { 109 117 120 }
+					province = 1052
+				}
+			}
+			c_temp_navy_tapir = {
+				color = { 207 129 88 }
+				b_temp_grateful_otter = {
+					color = { 82 160 180 }
+					province = 975
+				}
+				b_temp_restless_gravity = {
+					color = { 52 93 103 }
+					province = 979
+				}
+				b_temp_ivory_aventurine = {
+					color = { 252 140 90 }
+					province = 1008
+				}
+				b_temp_ruby_cirrus = {
+					color = { 104 166 88 }
+					province = 1034
+				}
+			}
+			c_temp_intransmutable_aquamarine = {
+				color = { 207 88 203 }
+				b_temp_immutable_deer = {
+					color = { 225 160 98 }
+					province = 1057
+				}
+				b_temp_violet_moonlight = {
+					color = { 103 206 232 }
+					province = 1061
+				}
+				b_temp_silver_coral = {
+					color = { 150 166 88 }
+					province = 1074
+				}
+				b_temp_ephemeral_muntjac = {
+					color = { 20 115 140 }
+					province = 1086
+				}
+			}
+			c_temp_chrysocolla_drizzle = {
+				color = { 142 79 137 }
+				b_temp_onyx_ruby = {
+					color = { 133 153 159 }
+					province = 1070
+				}
+				b_temp_incorporeal_neutron = {
+					color = { 166 88 151 }
+					province = 1073
+				}
+				b_temp_azure_dust_devil = {
+					color = { 122 51 14 }
+					province = 1088
+				}
+				b_temp_tornado_turquoise = {
+					color = { 226 84 9 }
+					province = 1092
+				}
+			}
+		}
+		d_temp_indivisible_thunderbolt = {
+			color = { 24 142 35 }
+			c_temp_inexhaustible_frost = {
+				color = { 76 150 38 }
+				b_temp_torrent_fox = {
+					color = { 29 113 135 }
+					province = 1037
+				}
+				b_temp_intransmutable_tourmaline = {
+					color = { 7 108 67 }
+					province = 1064
+				}
+				b_temp_generous_gravity = {
+					color = { 17 181 115 }
+					province = 1065
+				}
+				b_temp_rose_obsidian = {
+					color = { 66 151 126 }
+					province = 1080
+				}
+			}
+			c_temp_sand_earth = {
+				color = { 104 88 207 }
+				b_temp_peridot_pika = {
+					color = { 114 107 87 }
+					province = 1047
+				}
+				b_temp_sapphire_magma = {
+					color = { 135 108 24 }
+					province = 1049
+				}
+				b_temp_judgmental_ruby = {
+					color = { 99 120 50 }
+					province = 1066
+				}
+				b_temp_muted_cold_front = {
+					color = { 114 87 87 }
+					province = 1079
+				}
+			}
+			c_temp_dramatic_zephyr = {
+				color = { 38 150 114 }
+				b_temp_lethargic_stratus = {
+					color = { 86 50 120 }
+					province = 1063
+				}
+				b_temp_awe-inspiring_capricorn = {
+					color = { 148 17 18 }
+					province = 1078
+				}
+				b_temp_defiant_jasper = {
+					color = { 50 104 120 }
+					province = 1089
+				}
+				b_temp_dreamy_windchill = {
+					color = { 75 45 29 }
+					province = 1093
+				}
+			}
+			c_temp_chartreuse_cyclone = {
+				color = { 150 38 140 }
+				b_temp_metal_jerboa = {
+					color = { 146 20 94 }
+					province = 1069
+				}
+				b_temp_otherworldly_warm_front = {
+					color = { 119 141 135 }
+					province = 1082
+				}
+				b_temp_incomprehensible_pearl = {
+					color = { 148 62 17 }
+					province = 1083
+				}
+				b_temp_photon_nor'easter = {
+					color = { 81 120 50 }
+					province = 1084
+				}
+			}
+		}
+		d_temp_fluorite_hedgehog = {
+			color = { 150 38 53 }
+			c_temp_azure_drizzle = {
+				color = { 150 38 53 }
+				b_temp_illusory_hail = {
+					color = { 135 29 40 }
+					province = 1045
+				}
+				b_temp_plasma_citrine = {
+					color = { 43 107 124 }
+					province = 1060
+				}
+				b_temp_soft_rhodonite = {
+					color = { 66 81 151 }
+					province = 1067
+				}
+				b_temp_water_owl = {
+					color = { 48 61 64 }
+					province = 1077
+				}
+			}
+		}
+		d_temp_orange_dog = {
+			color = { 101 138 220 }
+			c_temp_wood_bamboo = {
+				color = { 220 102 101 }
+				b_temp_indigo_starlight = {
+					color = { 178 35 39 }
+					province = 1090
+				}
+				b_temp_amber_dust_devil = {
+					color = { 230 216 31 }
+					province = 1100
+				}
+				b_temp_unchanging_aurora = {
+					color = { 116 50 15 }
+					province = 1101
+				}
+			}
+			c_temp_air_whirlwind = {
+				color = { 218 220 101 }
+				b_temp_jade_wood = {
+					color = { 232 136 85 }
+					province = 1097
+				}
+				b_temp_aloof_sardonyx = {
+					color = { 230 31 229 }
+					province = 1102
+				}
+				b_temp_auburn_tapir = {
+					color = { 232 85 89 }
+					province = 1106
+				}
+			}
+		}
+	}
+	k_temp_accepting_jerboa = {
+		color = { 112 207 137 }
+		d_temp_enchanting_bamboo = {
+			color = { 72 177 103 }
+			c_temp_brick_blizzard = {
+				color = { 177 72 81 }
+				b_temp_omnipresent_cirrus = {
+					color = { 148 62 151 }
+					province = 1094
+				}
+				b_temp_wood_ocelot = {
+					color = { 41 163 115 }
+					province = 1095
+				}
+			}
+			c_temp_vortex_sand = {
+				color = { 160 72 177 }
+				b_temp_captivating_nor'easter = {
+					color = { 115 151 62 }
+					province = 1096
+				}
+				b_temp_dynamic_hail = {
+					color = { 62 119 151 }
+					province = 1099
+				}
+				b_temp_unrestricted_horse = {
+					color = { 130 68 4 }
+					province = 1103
+				}
+			}
+		}
+		d_temp_intransmutable_rain = {
+			color = { 151 177 72 }
+			c_temp_frost_turquoise = {
+				color = { 98 72 177 }
+				b_temp_vibrant_air = {
+					color = { 134 98 69 }
+					province = 1105
+				}
+				b_temp_jasper_selenite = {
+					color = { 62 146 151 }
+					province = 1108
+				}
+				b_temp_arrogant_tourmaline = {
+					color = { 75 134 69 }
+					province = 1113
+				}
+			}
+			c_temp_untouchable_zephyr = {
+				color = { 177 72 130 }
+				b_temp_inconceivable_heat_index = {
+					color = { 97 106 35 }
+					province = 1107
+				}
+				b_temp_tan_antelope = {
+					color = { 148 164 27 }
+					province = 1109
+				}
+				b_temp_harmonious_clay = {
+					color = { 93 62 151 }
+					province = 1112
+				}
+				b_temp_delicate_pearl = {
+					color = { 127 134 69 }
+					province = 1115
+				}
+			}
+			c_temp_turquoise_otter = {
+				color = { 72 147 177 }
+				b_temp_lapis_lazuli_cyclone = {
+					color = { 235 69 106 }
+					province = 1110
+				}
+				b_temp_kunzite_bear = {
+					color = { 63 130 4 }
+					province = 1114
+				}
 			}
 		}
 	}
 }
+
 
 # These titles cut hundreds of errors from logs. 
 e_hre = { landless = yes }

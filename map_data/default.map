@@ -16,18 +16,18 @@ seasons = "seasons.txt"
 # SEA ZONES
 #############
 
-sea_zones = LIST { 5 12 21 45 63 92 158 255 288 291 304 315 } # Great Western Ocean
-sea_zones = LIST { 1 3 4 7 9 10 13 48 123 131 202 274 309 321 326 327 329 335 338 340 343 348 350 354} # Inland Sea
-sea_zones = LIST { 219 224 233 } # Gulf of Daana'd
-sea_zones = LIST { 136 137 138 161 } # Mistral Bay
+sea_zones = LIST { 5 15 37 94 143 215 439 776 899 909 950 1015 } # Great Western Ocean
+sea_zones = LIST { 3 4 7 10 11 16 106 342 590 847 990 1031 1048 1053 1058 1068 1081 1087 1091 1098 1104 1111 1116 } # Inland Sea
+sea_zones = LIST { 667 686 716 } # Gulf of Daana'd
+sea_zones = LIST { 352 353 360 447 } # Mistral Bay
 
 ###############
 # MAJOR RIVERS
 ###############
 
-river_provinces = LIST { 112 117 122 125 130 } # Imperial River
-river_provinces = LIST { 178 186 204 } # Serpentine River
-river_provinces = LIST { 256 268 290 311 } # Caracal River
+river_provinces = LIST { 283 293 304 319 334 } # Imperial River
+river_provinces = LIST { 514 538 597 } # Serpentine River
+river_provinces = LIST { 780 834 904 998 } # Caracal River
 
 ########
 # LAKES
@@ -39,7 +39,7 @@ river_provinces = LIST { 256 268 290 311 } # Caracal River
 # Can be colored by whoever owns the most of the province's neighbours.
 # Blocks unit movement.
 
-impassable_mountains = LIST { 132 168 } # Realm Mountains
+impassable_mountains = LIST { 423 216 249 733 153 733 403 } # Realm Mountains
 
 ############
 # WASTELAND
@@ -47,9 +47,11 @@ impassable_mountains = LIST { 132 168 } # Realm Mountains
 # These are actually supposed to be Wasteland:
 # Cannot be colored. Blocks unit movement, used for things like Sahara desert. 
 
+impassable_mountains = LIST { 936 }
+
 # IMPASSABLE SEA ZONES
 # These sea provinces cannot be crossed/sailed
-impassable_seas = LIST { 2 }
+impassable_seas = LIST { 1 }
 
 # UNUSED PROVINCES
 # These provinces cause issues because they are passable land, but not part of any title.

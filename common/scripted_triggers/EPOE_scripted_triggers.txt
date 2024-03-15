@@ -1,0 +1,16 @@
+is_charm_known = {
+	$CHARACTER$ = {
+		any_in_list = {
+			variable = known_charms
+			story_type = EPOE_story_charm_$CHARM$
+		}
+	}
+}
+
+epoe_charm_trigger_injector = {
+	switch = {
+		trigger = $SCOPE$
+		flag:ox_body_technique = { $TRIGGER$ = { CHARACTER = $CHARACTER$ CHARM = ox_body_technique } }
+		flag:melee_excellency = { $TRIGGER$ = { CHARACTER = $CHARACTER$ CHARM = melee_excellency } }
+	}
+}

@@ -1,0 +1,23 @@
+﻿charms_is_exalted_gui = {
+	scope = character
+
+	is_shown = {
+		has_trait_with_flag = exaltation
+	}
+}
+
+charms_purchaseable_gui = {
+	scope = character
+	saved_scopes = { charm_name }
+
+	effect = {
+		epoe_charm_action_injector = { SCOPE = scope:charm_name CHARACTER = this ACTION = purchase_charm }
+	}
+
+	is_valid = {
+		NOT = { 
+			epoe_charm_trigger_injector = { SCOPE = scope:charm_name CHARACTER = this TRIGGER = is_charm_known }
+			charms_remaining_purchases <= 0
+		}
+	}
+}

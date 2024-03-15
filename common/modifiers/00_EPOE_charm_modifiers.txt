@@ -1,0 +1,4 @@
+﻿ox_body_technique_modifier = {
+	icon = health_positive
+	health = 1
+}

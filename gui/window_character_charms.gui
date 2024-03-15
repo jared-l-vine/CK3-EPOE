@@ -1,0 +1,130 @@
+﻿######################################################
+################### CHARMS #######################
+######################################################
+
+window = {
+	name = "character_charm_window"
+	#position = { 0 0 }
+	parentanchor = center
+	movable = no
+	filter_mouse = all
+	layer = windows_layer
+
+	visible = "[GetVariableSystem.Exists( 'show_character_charm_window' )]"
+
+	size = { 1440 800 }
+
+	datacontext = "[GetPlayer]"
+
+	using = Window_Background_Popup
+
+	state = {
+		name = _show
+		using = Animation_FadeIn_Quick
+		using = Sound_WindowShow_Standard
+
+		on_start = "[ScriptedGui('charms_max_purchases_gui').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+	}
+
+	state = {
+		name = _hide
+		using = Animation_FadeOut_Quick
+		using = Sound_WindowHide_Standard
+	}
+
+	background = {
+		using = Background_Area_Dark
+		margin_top = 1
+		margin_bottom = 5
+
+		modify_texture = {
+			texture = "gfx/interface/component_masks/mask_fade_horizontal_middle_thick.dds"
+			blend_mode = alphamultiply
+		}
+	}
+
+	text_single = {
+		position = { 20 20 }
+		text = "charm_purchases"
+		align = left
+		using = Font_Size_Medium
+	}
+	
+
+	vbox = {
+		datamodel = "[GetGlobalList('master_ability_list')]"
+
+		item = {
+			charm_set = {
+				blockoverride "ability_name"
+				{
+					text = "[Localize(Concatenate(Scope.GetFlagName, '_charms_header'))]"
+				}
+				blockoverride "charm_list"
+				{
+					datamodel = "[GetGlobalList(Concatenate(Scope.GetFlagName, '_charm_list'))]"
+				}
+			}
+		}
+	}
+}
+
+types CharmTypes
+{
+	type charm_set = vbox
+	{
+		size = { 100% 100 }
+		text_multi = {
+			text = charms_test
+			align = center
+			using = Font_Size_Big
+			minimumsize = { 1000 -1 }
+			maximumsize = { 1400 -1 }
+			autoresize = yes
+
+			block "ability_name"
+			{
+				text = "ability_name_undefined"
+			}
+		}
+
+		hbox = {
+			block "charm_list"
+			{
+				datamodel = "[GetGlobalList('global_charm_type_list')]"
+			}
+			margin_bottom = 15
+			margin_top = 15
+
+			item = {
+				charm_icon = {
+					datacontext = "[Scope.Story]"
+				}
+			}
+		}
+	}
+
+	type charm_icon = vbox
+	{
+		datacontext = "[GetScriptedGui('charms_purchaseable_gui')]"
+		size = {200 200}
+		margin = { 30 0 }
+
+		button_round  = {
+			size = {100 100}
+			onclick = "[ScriptedGui.Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).AddScope( 'charm_name', MakeScopeFlag(Story.MakeScope.Var('charm_name').GetFlagName)).End)]"
+			enabled = "[ScriptedGui.IsValid( GuiScope.SetRoot( GetPlayer.MakeScope ).AddScope( 'charm_name', MakeScopeFlag(Story.MakeScope.Var('charm_name').GetFlagName)).End)]"
+			tooltip = "[Localize(Concatenate(Story.MakeScope.Var('charm_name').GetFlagName, '_desc'))]"
+		}
+
+		text_single = {
+			text = "[Localize(Concatenate(Story.MakeScope.Var('charm_name').GetFlagName, '_name'))]"
+			position = { 0 30 }
+			max_width = 150
+
+			background = {
+				using = Background_Area
+			}
+		}
+	}
+}

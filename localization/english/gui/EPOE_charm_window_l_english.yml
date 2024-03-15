@@ -1,0 +1,12 @@
+﻿l_english:
+ CHARM_WINDOW_DESCRIPTION:1 "TEST!"
+ charm_purchases:0 "[GetPlayer.MakeScope.ScriptValue('charms_remaining_purchases')] / [GetPlayer.MakeScope.ScriptValue('charms_max_purchases')] charms available"
+
+ melee_excellency_name:0 "Melee Excellency"
+ melee_excellency_desc:0 "The Dragon-Blood’s aggression stokes her Essence hotter and higher as she strikes relentlessly at her opponent, until he finally falls before her onslaught."
+
+ ox_body_technique_name:0 "Ox-Body Technique"
+ ox_body_technique_desc:0 "The bodies of the Exalted are much more durable than those of mere mortals. Permanently grants the [GetModifier('ox_body_technique_modifier').GetNameWithTooltip] modifier upon purchase."
+ 
+ melee_ability_charms_header:0 "Melee Charms"
+ resistance_ability_charms_header:0 "Resistance Charms"

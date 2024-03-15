@@ -1,0 +1,21 @@
+﻿namespace = charm_setup_event
+
+charm_setup_event.1000 = {
+	scope = none
+	hidden = yes
+
+	immediate = {
+		every_in_global_list = {
+			variable = global_charm_type_list
+
+			switch = {
+				trigger = var:charm_ability
+				flag:melee_ability = { add_to_global_variable_list = { name = melee_ability_charm_list target = this } }
+				flag:resistance_ability = { add_to_global_variable_list = { name = resistance_ability_charm_list target = this } }
+			}
+		}
+
+		add_to_global_variable_list = { name = master_ability_list target = flag:melee_ability }
+		add_to_global_variable_list = { name = master_ability_list target = flag:resistance_ability }
+	}
+}

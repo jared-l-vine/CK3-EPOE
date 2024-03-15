@@ -931,6 +931,8 @@ on_game_start = {
 				}
 			}
 		}
+
+		add_to_global_variable_list = {name = global_charm_list target = EPOE_story_charm_ox_body_technique}
 	}
 }
 
@@ -2259,11 +2261,21 @@ on_game_start_after_lobby = {
 				}
 			}
 		}
+
+		random_player = {
+			create_story = {
+				type = EPOE_story_charm_type_ox_body_technique
+			}
+			create_story = {
+				type = EPOE_story_charm_type_melee_excellency
+			}
+		}
 	}
 
 	events = {
 		game_rule.1000	#Autopopulate families.
 		game_rule.1011	#Hungarian Migration management.
 		historical_artifacts.0023			# Historical Artifacts Generator
+		charm_setup_event.1000
 	}
 }

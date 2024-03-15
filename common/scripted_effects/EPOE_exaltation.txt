@@ -19,3 +19,41 @@ gain_exaltation_xp = {
 		}
 	}
 }
+
+epoe_charm_action_injector = {
+	switch = {
+		trigger = $SCOPE$
+		flag:ox_body_technique = { $ACTION$ = { CHARACTER = $CHARACTER$ CHARM = ox_body_technique } }
+		flag:melee_excellency = { $ACTION$ = { CHARACTER = $CHARACTER$ CHARM = melee_excellency } }
+	}
+}
+
+purchase_charm = {
+	$CHARACTER$ = {
+		create_story = {
+			type = EPOE_story_charm_$CHARM$
+			save_scope_as = new_charm
+		}
+		add_to_variable_list = {
+			name = purchased_charms
+			target = scope:new_charm
+		}
+		add_to_variable_list = {
+			name = known_charms
+			target = scope:new_charm
+		}
+	}
+}
+
+learn_bonus_charm = {
+	$CHARACTER$ = {
+		create_story = {
+			type = EPOE_story_charm_$CHARM$
+			save_scope_as = new_charm
+		}
+		add_to_variable_list = {
+			name = known_charms
+			target = scope:new_charm
+		}
+	}
+}
