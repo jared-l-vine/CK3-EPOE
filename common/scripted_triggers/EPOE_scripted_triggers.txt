@@ -7,6 +7,15 @@ is_charm_known = {
 	}
 }
 
+is_charm_active = {
+	$CHARACTER$ = {
+		any_in_list = {
+			variable = active_charms
+			story_type = EPOE_story_charm_$CHARM$_active
+		}
+	}
+}
+
 epoe_charm_trigger_injector = {
 	switch = {
 		trigger = $SCOPE$

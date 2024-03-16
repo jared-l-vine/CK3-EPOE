@@ -1,0 +1,4 @@
+﻿mote = {
+	texture = "gfx/interface/icons/message_feed/dynasty.dds"
+	alias = { motes }
+}

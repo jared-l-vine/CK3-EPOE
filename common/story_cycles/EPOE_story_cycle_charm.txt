@@ -29,8 +29,42 @@ EPOE_story_charm_type_ox_body_technique = {
 	}
 }
 
+EPOE_story_charm_melee_excellency_active = {
+	on_setup = {
+		story_owner = {
+			add_character_modifier = melee_excellency_modifier
+		}
+	}
+	on_end = {
+		story_owner = {
+			remove_character_modifier = melee_excellency_modifier
+		}
+	}
+	on_owner_death = {}
+}
+
 EPOE_story_charm_melee_excellency = {
 	on_setup = {
+		set_variable = {
+			name  = charm_name
+			value = flag:melee_excellency
+		}
+		set_variable = {
+			name  = charm_ability
+			value = flag:melee_ability
+		}
+		set_variable = {
+			name  = usage
+			value = flag:committed
+		}
+		set_variable = {
+			name  = cost
+			value = 1
+		}
+		set_variable = {
+			name  = active
+			value = no
+		}
 	}
 	on_end = {
 	}
@@ -46,6 +80,10 @@ EPOE_story_charm_type_melee_excellency = {
 		set_variable = {
 			name  = charm_ability
 			value = flag:melee_ability
+		}
+		set_variable = {
+			name  = usage
+			value = flag:committed
 		}
 		add_to_global_variable_list = {
 		   name = global_charm_type_list

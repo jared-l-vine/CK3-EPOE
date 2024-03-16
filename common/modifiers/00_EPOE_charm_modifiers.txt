@@ -2,3 +2,8 @@
 	icon = health_positive
 	health = 1
 }
+
+melee_excellency_modifier = {
+	icon = prowess_positive
+	prowess_no_portrait = 10
+}

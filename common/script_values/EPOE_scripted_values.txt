@@ -30,28 +30,101 @@ charms_max_purchases = {
 				limit = {
 					has_trait_xp = { trait = prev track = essence value >= 25 }
 				}
-				add = 5
+				add = 4
 			}
 
 			if = {
 				limit = {
 					has_trait_xp = { trait = prev track = essence value >= 50 }
 				}
-				add = 5
+				add = 4
 			}
 
 			if = {
 				limit = {
 					has_trait_xp = { trait = prev track = essence value >= 75 }
 				}
-				add = 5
+				add = 4
 			}
 
 			if = {
 				limit = {
 					has_trait_xp = { trait = prev track = essence value >= 100 }
 				}
-				add = 5
+				add = 3
+			}
+		}
+	}
+}
+
+motes_available = {
+	scope = character
+
+	if = {
+		limit = {
+			has_variable = motes
+		}
+		value = var:motes
+	}
+	else = {
+		value = 0
+	}
+}
+
+motes_available_maximum = {
+	scope = character
+	value = motes_maximum
+	subtract = motes_committed
+}
+
+motes_committed = {
+	scope = character
+	value = 0
+
+	every_in_list = {
+		variable = known_charms
+		limit = { var:active = yes }
+		add = var:cost
+	}
+}
+
+motes_maximum = {
+	scope = character
+	value = 0
+
+	every_character_trait = {
+		limit = {
+			has_trait_flag = exaltation
+		}
+		add = 5
+
+		prev = {
+			if = {
+				limit = {
+					has_trait_xp = { trait = prev track = essence value >= 25 }
+				}
+				add = 2
+			}
+
+			if = {
+				limit = {
+					has_trait_xp = { trait = prev track = essence value >= 50 }
+				}
+				add = 3
+			}
+
+			if = {
+				limit = {
+					has_trait_xp = { trait = prev track = essence value >= 75 }
+				}
+				add = 2
+			}
+
+			if = {
+				limit = {
+					has_trait_xp = { trait = prev track = essence value >= 100 }
+				}
+				add = 3
 			}
 		}
 	}

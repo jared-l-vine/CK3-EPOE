@@ -22,8 +22,6 @@ window = {
 		name = _show
 		using = Animation_FadeIn_Quick
 		using = Sound_WindowShow_Standard
-
-		on_start = "[ScriptedGui('charms_max_purchases_gui').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
 	}
 
 	state = {
@@ -58,7 +56,7 @@ window = {
 			charm_set = {
 				blockoverride "ability_name"
 				{
-					text = "[Localize(Concatenate(Scope.GetFlagName, '_charms_header'))]"
+					text = "[Localize(Concatenate(Scope.GetFlagName, '_charm_name_plural'))]"
 				}
 				blockoverride "charm_list"
 				{

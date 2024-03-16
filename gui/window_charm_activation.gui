@@ -1,0 +1,442 @@
+window = {
+	name = "charm_activation_window"
+	widgetid = "charm_activation_window"
+	movable = no
+	layer = windows_layer
+
+	visible = "[GetVariableSystem.Exists( 'show_character_charm_activation_window' )]"
+
+	using = Window_Size_Sidebar
+	using = Window_Background_Sidebar
+
+	state = {
+		name = _show
+		position = { 0 0 }
+
+		using = Animation_FadeIn_Quick
+		using = Sound_WindowShow_Standard
+
+		on_start = "[GetVariableSystem.Set( 'hide_bottom_left_HUD', 'true' )]"
+		on_start = "[GetScriptedGui('charms_refresh_character_gui').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+	}
+
+	state = {
+		name = _hide
+		position = { -90 0 }
+
+		using = Animation_FadeOut_Quick
+		using = Sound_WindowHide_Standard
+		using = Window_Position_MainTab_Hide
+
+		on_start = "[GetVariableSystem.Clear( 'hide_bottom_left_HUD' )]"
+	}
+
+	vbox = {
+		using = Window_Margins_Sidebar
+
+		header_pattern = {
+			layoutpolicy_horizontal = expanding
+
+			blockoverride "header_text"
+			{
+				text = "CHARM_ACTIVATION_TITLE"
+			}
+
+			blockoverride "button_close"
+			{
+				onclick = "[GetVariableSystem.Clear('show_character_charm_activation_window')]"
+			}
+
+			blockoverride "button_back"
+			{
+				visible = "[HasViewHistory]"
+				onclick = "[OpenFromViewHistory]"
+				tooltip = "[GetViewHistoryTooltip]"
+			}
+
+			blockoverride "button_me"
+			{
+				onclick = "[DefaultOnCharacterClick( GetPlayer.GetID )]"
+			}
+		}
+
+		button_standard = {
+			text = "learn_new_charms"
+			onclick = "[GetVariableSystem.Toggle('show_character_charm_window')]"
+		}
+
+		vbox = {
+			name = "contents"
+
+			oncreate = "[BindTabsContext]"
+			oncreate = "[PdxGuiTabs.AddTab( 'committed' )]"
+			oncreate = "[PdxGuiTabs.AddTab( 'instant' )]"
+
+			# Code can send an event which we can listen for to switch tabs
+			oncreate = "[PdxGuiTabs.ListenFor( 'focused_changed' )]"
+
+			datacontext = "[GetPlayer]"
+
+			layoutpolicy_horizontal = expanding
+			layoutpolicy_vertical = expanding
+
+			using = Animation_Tab_Switch
+
+			vbox = {
+				name = "special_cards"
+
+				layoutpolicy_horizontal = expanding
+				spacing = 12
+				margin = { 10 0 }
+				margin_bottom = 15
+
+				text_single = { text = "motes_committed"}
+			}
+
+			hbox_tab_buttons = {
+				name = "tab_buttons"
+
+				blockoverride "tab_name"
+				{
+					text = "[PdxGuiTabItem.LocalizeTab( 'charm_activation_tab' )]"
+				}
+			}
+
+			scrollbox = {
+				name = "committed_charms_scrollbox"
+				layoutpolicy_horizontal = expanding
+				layoutpolicy_vertical = expanding
+
+				using = Animation_Tab_Switch
+
+				visible = "[PdxGuiTabs.IsTabSet( 'committed' )]"
+
+				blockoverride "scrollbox_content"
+				{
+					margin = { 4 4 }
+					spacing = 8
+
+					charms_vbox = {
+						name = "committed_charms"
+					}
+				}
+			}
+
+			scrollbox = {
+				name = "instant_charms_scrollbox"
+				layoutpolicy_horizontal = expanding
+				layoutpolicy_vertical = expanding
+
+				using = Animation_Tab_Switch
+
+				visible = "[PdxGuiTabs.IsTabSet( 'instant' )]"
+
+				blockoverride "scrollbox_content"
+				{
+					margin = { 4 4 }
+					spacing = 8
+
+				}
+			}
+		}
+	}
+}
+
+types LegendTypes
+{
+	type legend_chronicles_round_button = button_round
+	{
+		onclick = "[ToggleGameViewData( 'legend_chronicle', Legend.Self )]"
+		tooltip = "OPEN_CHRONICLE_BUTTON_TT"
+
+		button_history = {
+			parentanchor = center
+			alwaystransparent = yes
+		}
+	}
+
+	type legend_modifiers_hbox = hbox
+	{
+		layoutpolicy_horizontal = expanding
+		layoutpolicy_vertical = expanding
+
+		icon_modifier_legend_owner = {
+			visible = "[And(Legend.HasImpactModifiers( 'owner' ), Not( Legend.IsCompleted ))]"
+			tooltip = "LEGEND_OWNER_MODIFIERS_TOOLTIP"
+		}
+
+		icon_modifier_legend_promoter = {
+			visible = "[And(Legend.HasImpactModifiers( 'promoter' ), Not( Legend.IsCompleted ))]"
+			tooltip = "LEGEND_PROMOTER_MODIFIERS_TOOLTIP"
+		}
+
+		icon_modifier_legend_province_and_county = {
+			visible = "[Or( Legend.HasImpactModifiers( 'province' ), Legend.HasImpactModifiers( 'county' ) )]"
+			tooltip = "LEGEND_PROVINCE_AND_COUNTY_MODIFIERS_TOOLTIP"
+		}
+		expand = {}
+	}
+
+	type legend_promoters_tooltip = object_tooltip_pop_out
+	{
+		blockoverride "title_text"
+		{
+			margin = { 0 8 }
+			text = "LEGEND_PROMOTERS_LABEL"
+			default_format = "#T"
+		}
+
+		blockoverride "concept_link"
+		{
+			visible = no
+		}
+
+		blockoverride "main_description"
+		{
+			vbox = {
+				layoutpolicy_horizontal = expanding
+				datamodel = "[Legend.GetPromoters]"
+
+				item = {
+					cooltip_paragraph = {
+						text = "[Character.GetUIName|U]"
+					}
+				}
+			}
+		}
+	}
+
+	type legend_summary_vbox = vbox
+	{
+		layoutpolicy_horizontal = expanding
+
+		text_single = {
+			name = "no_promoters"
+			max_width = 214
+			layoutpolicy_horizontal = expanding
+			visible = "[IsDataModelEmpty( Legend.GetPromoters )]"
+			text = LEGEND_PROMOTERS
+		}
+
+		text_single = {
+			name = "promoters"
+			max_width = 214
+			layoutpolicy_horizontal = expanding
+			visible = "[DataModelHasItems( Legend.GetPromoters )]"
+
+			text = LEGEND_PROMOTERS
+
+			tooltipwidget = {
+				legend_promoters_tooltip = {}
+			}
+		}
+
+		text_single = {
+			name = "spread"
+			max_width = 214
+			layoutpolicy_horizontal = expanding
+			text = "LEGEND_SPREAD"
+		}
+
+		text_single = {
+			name = "owner"
+			max_width = 214
+			layoutpolicy_horizontal = expanding
+			text = "LEGEND_OWNER_DESCRIPTION"
+		}
+	}
+
+	type charm_entry_vbox = vbox_generic_object_card
+	{
+		datacontext = "[Scope.Story]"
+
+		layoutpolicy_horizontal = expanding
+		using = Legend_Mouse_Entry
+		alwaystransparent = no
+
+		blockoverride "header_properties"
+		{
+			layoutpolicy_horizontal = expanding
+			margin = { 10 10 }
+		}
+		blockoverride "header_tooltip"
+		{
+			tooltip = "CHARM_HEADER_TT"
+		}
+
+		blockoverride "header_pre_contents"
+		{
+			icon_legend = {
+			}
+		}
+		blockoverride "header_top_contents"
+		{
+			text_single = {
+				text = "[Localize(Concatenate(Story.MakeScope.Var('charm_name').GetFlagName, '_name'))]"
+				default_format = "#high"
+
+				using = Font_Size_Medium
+				align = nobaseline
+				max_width = 350
+
+				parentanchor = vcenter|left
+			}
+		}
+		blockoverride "header_bottom_contents"
+		{
+			text_single = {
+				text = "[Localize(Concatenate(Story.MakeScope.Var('charm_ability').GetFlagName, '_charm_name'))]"
+				default_format = "#weak"
+				align = nobaseline
+				parentanchor = vcenter|left
+			}
+		}
+		blockoverride "card_contents"
+		{
+			hbox = {
+				layoutpolicy_horizontal = expanding
+				layoutpolicy_vertical = expanding
+
+				Background = {
+					spriteType = Corneredtiled
+					alpha = 0.15
+					using = Mask_Rough_Edges
+				}
+
+				text_multi = {
+					layoutpolicy_horizontal = expanding
+					text = "[Localize(Concatenate(Story.MakeScope.Var('charm_name').GetFlagName, '_desc'))]"
+					autoresize = yes
+					fontsize = 14
+					min_width = 200
+					max_width = 400
+					margin = { 15 15 }
+				}
+
+				expand = {}
+
+				divider_light = {
+					layoutpolicy_vertical = expanding
+					modify_texture = {
+						texture = "gfx/interface/component_masks/mask_fade_horizontal_middle_thick_vertical.dds"
+						blend_mode = alphamultiply
+					}
+				}
+
+				vbox = {
+					min_width = 200
+
+					text_single = {
+					}
+
+					expand = {}
+
+					button_standard = {
+						datacontext = "[GetScriptedGui('charms_activate_gui')]"
+
+						text = "activate_charm"
+						enabled = "[ScriptedGui.IsValid( GuiScope.SetRoot( GetPlayer.MakeScope ).AddScope( 'charm_story', Story.MakeScope).End)]"
+						onclick = "[ScriptedGui.Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).AddScope( 'charm_story', Story.MakeScope).End)]"
+					}
+				}
+			}
+		}
+	}
+
+	type vbox_labelled_legend = vbox
+	{
+		layoutpolicy_horizontal = expanding
+		spacing = 5
+
+		text_label_center = {
+			block "label_text" {}
+		}
+
+		vbox = {
+			name = "no_legend"
+			visible = "[Not( LegendItem.GetLegend.IsValid )]"
+
+			block "no_legend" {}
+		}
+
+		legend_entry_vbox = {}
+	}
+
+	type charms_vbox = vbox {
+		layoutpolicy_horizontal = expanding
+		spacing = 4
+
+		vbox = {
+			name = "legends_in_world"
+			layoutpolicy_horizontal = expanding
+
+			margin_left = 7 # Lines up with focussed legend box this way
+
+			text_single = {
+				visible = "[IsDataModelEmpty( GetPlayer.MakeScope.GetList('committed_charms') )]"
+				text = "NO_CHARMS_KNOWN"
+				default_format = "#low;italic"
+			}
+
+			fixedgridbox = {
+				name = "charm_entries"
+				layoutpolicy_horizontal = expanding
+
+				addcolumn = 570
+				addrow = 210
+
+				datamodel = "[GetPlayer.MakeScope.GetList('committed_charms')]"
+
+				item = {
+					widget = {
+						size = { 570 200 }
+						charm_entry_vbox = {}
+					}
+				}
+			}
+		}
+	}
+
+	type completed_legends_vbox = vbox
+	{
+		layoutpolicy_horizontal = expanding
+		spacing = 4
+
+		using = Create_Resetting_Fold_Out
+
+		hbox_expandable_toggle_field = {}
+
+		vbox = {
+			name = "legends_in_world"
+			layoutpolicy_horizontal = expanding
+
+			visible = "[PdxGuiFoldOut.IsUnfolded]"
+
+			text_single = {
+				block "empty_text"
+				{
+				}
+				default_format = "#low;italic"
+			}
+
+			fixedgridbox = {
+				name = "legend_entries"
+				layoutpolicy_horizontal = expanding
+
+				addcolumn = 570
+				addrow = 170
+
+				block "datamodel"
+				{
+				}
+
+				item = {
+					widget = {
+						size = { 570 160 }
+						legend_entry_vbox = {}
+					}
+				}
+			}
+		}
+	}
+}

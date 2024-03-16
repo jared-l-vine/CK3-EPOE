@@ -28,6 +28,57 @@ epoe_charm_action_injector = {
 	}
 }
 
+epoe_active_charm_action_injector = {
+	switch = {
+		trigger = $SCOPE$
+		flag:melee_excellency = { $ACTION$ = { CHARACTER = $CHARACTER$ CHARM = melee_excellency } }
+	}
+}
+
+activate_charm = {
+	$CHARACTER$ = {
+		every_in_list = {
+			variable = known_charms
+			limit = { var:charm_name = flag:$CHARM$ }
+			set_variable = {
+				name = active
+				value = yes
+			}
+		}
+		create_story = {
+			type = EPOE_story_charm_$CHARM$_active
+			save_scope_as = new_charm
+		}
+		add_to_variable_list = {
+			name = active_charms
+			target = scope:new_charm
+		}
+	}
+}
+
+deactivate_charm = {
+	$CHARACTER$ = {
+		every_in_list = {
+			variable = known_charms
+			limit = { var:charm_name = flag:$CHARM$ }
+			set_variable = {
+				name = active
+				value = no
+			}
+		}
+		every_in_list = {
+			variable = active_charms
+			limit = {
+				story_type = EPOE_story_charm_$CHARM$_active
+			}
+			prev = {
+				remove_list_variable = { name = active_charms target = prev }
+			}
+			end_story = yes
+		}
+	}
+}
+
 purchase_charm = {
 	$CHARACTER$ = {
 		create_story = {
@@ -54,6 +105,22 @@ learn_bonus_charm = {
 		add_to_variable_list = {
 			name = known_charms
 			target = scope:new_charm
+		}
+	}
+}
+
+charms_refresh_available = {
+	$CHARACTER$ = {
+		clear_variable_list = committed_charms
+
+		every_in_list = {
+			variable = known_charms
+			prev = {
+				add_to_variable_list = {
+					name = committed_charms
+					target = prev
+				}
+			}
 		}
 	}
 }

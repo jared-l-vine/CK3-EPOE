@@ -1,12 +1,15 @@
 ﻿l_english:
  CHARM_WINDOW_DESCRIPTION:1 "TEST!"
  charm_purchases:0 "[GetPlayer.MakeScope.ScriptValue('charms_remaining_purchases')] / [GetPlayer.MakeScope.ScriptValue('charms_max_purchases')] charms available"
+ motes_committed:0 "[GetPlayer.MakeScope.ScriptValue('motes_committed')] motes committed to active charms"
 
  melee_excellency_name:0 "Melee Excellency"
- melee_excellency_desc:0 "The Dragon-Blood’s aggression stokes her Essence hotter and higher as she strikes relentlessly at her opponent, until he finally falls before her onslaught."
+ melee_excellency_desc:0 "#weak The Dragon-Blood’s aggression stokes her Essence hotter and higher as she strikes relentlessly at her opponent, until he finally falls before her onslaught.#! \n\nCommit 1 [mote|El]: Grants the [GetModifier('melee_excellency_modifier').GetNameWithTooltip] modifier while active."
 
  ox_body_technique_name:0 "Ox-Body Technique"
- ox_body_technique_desc:0 "The bodies of the Exalted are much more durable than those of mere mortals. Permanently grants the [GetModifier('ox_body_technique_modifier').GetNameWithTooltip] modifier upon purchase."
+ ox_body_technique_desc:0 "#weak The bodies of the Exalted are much more durable than those of mere mortals.#! \n\nPermanently grants the [GetModifier('ox_body_technique_modifier').GetNameWithTooltip] modifier upon purchase."
  
- melee_ability_charms_header:0 "Melee Charms"
- resistance_ability_charms_header:0 "Resistance Charms"
+ melee_ability_charm_name:0 "Melee Charm"
+ melee_ability_charm_name_plural:0 "Melee Charms"
+ resistance_ability_charm_name:0 "Resistance Charm"
+ resistance_ability_charm_name_plural:0 "Resistance Charms"

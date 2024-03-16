@@ -12,6 +12,7 @@ charms_purchaseable_gui = {
 
 	effect = {
 		epoe_charm_action_injector = { SCOPE = scope:charm_name CHARACTER = this ACTION = purchase_charm }
+		charms_refresh_available = { CHARACTER = this }
 	}
 
 	is_valid = {
@@ -19,5 +20,34 @@ charms_purchaseable_gui = {
 			epoe_charm_trigger_injector = { SCOPE = scope:charm_name CHARACTER = this TRIGGER = is_charm_known }
 			charms_remaining_purchases <= 0
 		}
+	}
+}
+
+charms_refresh_character_gui = {
+	scope = character
+
+	effect = {
+		charms_refresh_available = { CHARACTER = this }
+	}
+}
+
+charms_activate_gui = {
+	scope = character
+	saved_scopes = { charm_story }
+
+	effect = {
+		if = {
+			limit = {
+				epoe_charm_trigger_injector = { SCOPE = scope:charm_story.var:charm_name CHARACTER = this TRIGGER = is_charm_active }
+			}
+			epoe_active_charm_action_injector = { SCOPE = scope:charm_story.var:charm_name CHARACTER = this ACTION = deactivate_charm }
+		}
+		else = {
+			epoe_active_charm_action_injector = { SCOPE = scope:charm_story.var:charm_name CHARACTER = this ACTION = activate_charm }
+		}
+	}
+
+	is_valid = {
+		this.motes_committed == 0
 	}
 }

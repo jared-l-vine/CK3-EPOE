@@ -1,1 +1,2 @@
 gui/window_character_charms.gui = character_charm_window
+gui/window_charm_activation.gui = charm_activation_window
