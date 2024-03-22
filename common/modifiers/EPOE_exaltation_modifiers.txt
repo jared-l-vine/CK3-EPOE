@@ -1,0 +1,11 @@
+﻿dragonblooded_expectations_modifier = {
+	icon = prestige_positive
+	stress_gain_mult = 0.15
+	monthly_prestige = 0.25
+}
+
+dragonblooded_great_expectations_modifier = {
+	icon = prestige_positive
+	stress_gain_mult = 0.3
+	monthly_prestige = 0.5
+}

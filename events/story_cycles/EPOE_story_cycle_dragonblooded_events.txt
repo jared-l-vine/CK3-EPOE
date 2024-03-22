@@ -1,0 +1,342 @@
+﻿namespace = dragonblooded_event
+
+dragonblooded_event.1000 = { # Hidden event, defer to a parent to decide what expectations to put on the child
+	type = character_event
+	hidden = yes
+
+	immediate = {
+		save_scope_as = child
+		get_guardian_scope_effect = yes
+
+		if = {
+			limit = {
+				any_parent = {
+					has_trait_with_flag = dragon_blooded
+					is_available = yes
+				}
+			}
+
+			random_parent = {
+				limit = {
+					has_trait_with_flag = dragon_blooded
+					is_available = yes
+				}
+				save_scope_as = parent
+				trigger_event = dragonblooded_event.1001
+			}
+		}
+		else_if = {
+			limit = {
+				any_ancestor = {
+					has_trait_with_flag = dragon_blooded
+				}
+			}
+			random_ancestor = {
+				limit = {
+					has_trait_with_flag = dragon_blooded
+				}
+				save_scope_as = db_ancestor
+			}
+			random_parent = {
+				save_scope_as = parent
+				trigger_event = dragonblooded_event.1001
+			}
+		}
+		else = {
+			random_parent = {
+				save_scope_as = parent
+				trigger_event = dragonblooded_event.1001
+			}
+		}
+	}
+
+	trigger = {
+		NOT = {
+			has_trait_with_flag = exaltation
+		}
+	}
+}
+
+dragonblooded_event.1001 = { # A Dragon-blooded parent considers their child.
+	type = character_event
+	title = dragonblooded_event.1001.t
+	theme = education
+	left_portrait = {
+		character = scope:parent
+		animation = personality_cynical
+	}
+	right_portrait = {
+		character = scope:child
+		animation = personality_rational
+	}
+
+	desc = {
+		desc = dragonblooded_event.1001.desc
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					scope:child.var:dragonblooded_potency >= 10000
+				}
+				desc = dragonblooded_event.1001.desc_large_chance
+			}
+			triggered_desc = {
+				trigger = {
+					scope:child.var:dragonblooded_potency >= 5000
+				}
+				desc = dragonblooded_event.1001.desc_medium_chance
+			}
+			desc = dragonblooded_event.1001.desc_small_chance
+		}
+		desc = dragonblooded_event.1001.desc_mid
+	}
+
+	option = {
+		trigger = {
+			scope:child.var:dragonblooded_potency < 5000
+		}
+
+		name = dragonblooded_event.1001.no_expectations
+	}
+
+	option = {
+		name = dragonblooded_event.1001.minor_expectations
+	}
+
+	option = {
+		name = dragonblooded_event.1001.some_expectations
+
+		scope:child = {
+			add_character_modifier = dragonblooded_expectations_modifier
+		}
+	}
+
+	option = {
+		trigger = {
+			scope:child.var:dragonblooded_potency >= 5000
+		}
+
+		name = dragonblooded_event.1001.great_expectations
+
+		scope:child = {
+			add_character_modifier = dragonblooded_great_expectations_modifier
+		}
+	}
+}
+
+dragonblooded_event.1002 = { # 
+	type = character_event
+	title = dragonblooded_event.1002.t
+	theme = education
+	left_portrait = {
+		character = scope:child
+		animation = personality_cynical
+	}
+	right_portrait = {
+		character = scope:parent
+		animation = personality_rational
+	}
+
+	desc = {
+		desc = dragonblooded_event.1002.desc
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					scope:db_ancestor = yes
+				}
+				desc = dragonblooded_event.1002.desc_db_ancestor
+			}
+			triggered_desc = {
+				trigger = {
+					scope:parent = yes
+				}
+				desc = dragonblooded_event.1002.desc_parent
+			}
+			desc = dragonblooded_event.1002.desc_mid
+		}
+	}
+
+	immediate = {
+		save_scope_as = child
+		get_guardian_scope_effect = yes
+
+		 if = {
+			limit = {
+				any_parent = {
+					has_trait_with_flag = dragon_blooded
+				}
+			}
+			random_parent = {
+				limit = {
+					has_trait_with_flag = dragon_blooded
+				}
+				save_scope_as = db_ancestor
+			}
+		 }
+		 else_if = {
+			limit = {
+				any_ancestor = {
+					has_trait_with_flag = dragon_blooded
+				}
+			}
+			random_ancestor = {
+				limit = {
+					has_trait_with_flag = dragon_blooded
+				}
+				save_scope_as = db_ancestor
+			}
+		 }
+		 else = {
+			random_parent = {
+				save_scope_as = parent
+			}
+		 }
+	}
+
+	option = {
+		name = dragonblooded_event.1002.excited
+	}
+
+	trigger = {
+		NOT = {
+			has_trait_with_flag = exaltation
+		}
+	}
+}
+
+dragonblooded_event.1002 = { # Exaltation is common
+	type = character_event
+	title = dragonblooded_event.1002.t
+	theme = education
+
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					has_variable = dragonblooded_potency
+					var:dragonblooded_potency > 1000
+				}
+			}
+		}
+	}
+
+	trigger = {
+		NOT = {
+			has_trait_with_flag = exaltation
+		}
+	}
+}
+
+dragonblooded_event.1003 = { # Exaltation is expected
+	type = character_event
+	title = dragonblooded_event.1003.t
+	theme = education
+
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					has_variable = dragonblooded_potency
+					var:dragonblooded_potency > 1000
+				}
+			}
+		}
+	}
+
+	trigger = {
+		NOT = {
+			has_trait_with_flag = exaltation
+		}
+	}
+}
+
+dragonblooded_event.2000 = { # Early Exaltation! Between 9 and 11 years old
+	type = character_event
+	title = dragonblooded_event.2000.t
+	theme = education
+
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					has_variable = dragonblooded_potency
+					var:dragonblooded_potency > 1000
+				}
+			}
+		}
+	}
+
+	trigger = {
+		NOT = {
+			has_trait_with_flag = exaltation
+		}
+	}
+}
+
+dragonblooded_event.2001 = { # Exaltation! Between 12 and 14 years old
+	type = character_event
+	title = dragonblooded_event.2001.t
+	theme = education
+
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					has_variable = dragonblooded_potency
+					var:dragonblooded_potency > 1000
+				}
+			}
+		}
+	}
+
+	trigger = {
+		NOT = {
+			has_trait_with_flag = exaltation
+		}
+	}
+}
+
+dragonblooded_event.2002 = { # Late Exaltation! Between 15 and 17 years old
+	type = character_event
+	title = dragonblooded_event.2002.t
+	theme = education
+
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					has_variable = dragonblooded_potency
+					var:dragonblooded_potency > 1000
+				}
+			}
+		}
+	}
+
+	trigger = {
+		NOT = {
+			has_trait_with_flag = exaltation
+		}
+	}
+}
+
+dragonblooded_event.2003 = { # Very late Exaltation! Between 18 and 20 years old
+	type = character_event
+	title = dragonblooded_event.2003.t
+	theme = education
+
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					has_variable = dragonblooded_potency
+					var:dragonblooded_potency > 1000
+				}
+			}
+		}
+	}
+
+	trigger = {
+		NOT = {
+			has_trait_with_flag = exaltation
+		}
+	}
+}

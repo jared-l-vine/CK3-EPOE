@@ -17,7 +17,7 @@ seasons = "seasons.txt"
 #############
 
 sea_zones = LIST { 5 15 37 94 143 215 439 776 899 909 950 1015 } # Great Western Ocean
-sea_zones = LIST { 3 4 7 10 11 16 106 342 590 847 990 1031 1048 1053 1058 1068 1081 1087 1091 1098 1104 1111 1116 } # Inland Sea
+sea_zones = LIST { 2 3 4 7 10 11 16 106 307 342 590 847 990 1031 1048 1053 1058 1068 1081 1087 1091 1098 1104 1111 } # Inland Sea
 sea_zones = LIST { 667 686 716 } # Gulf of Daana'd
 sea_zones = LIST { 352 353 360 447 } # Mistral Bay
 
@@ -39,7 +39,7 @@ river_provinces = LIST { 780 834 904 998 } # Caracal River
 # Can be colored by whoever owns the most of the province's neighbours.
 # Blocks unit movement.
 
-impassable_mountains = LIST { 423 216 249 733 153 733 403 } # Realm Mountains
+impassable_mountains = LIST { 423 216 249 733 153 403 } # Realm Mountains
 
 ############
 # WASTELAND

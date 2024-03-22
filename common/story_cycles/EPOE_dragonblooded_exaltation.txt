@@ -1,0 +1,215 @@
+﻿EPOE_story_dragonblooded_exaltation = {
+	on_setup = {
+		story_owner = {
+			if = { # Figure out what the expectations are on this character to become Dragon-blooded. This has *nothing* to do with whether or not they actually will, though higher chances correspond to higher expectations.
+				limit = { # If we have any level of Well-Bred, or we have enough Dragon-blooded ancestry, we're aware that Exaltation is a possibility, even if it's a small one.
+					OR = {
+						has_trait = dragonblooded_wellbred_1
+						has_trait = dragonblooded_wellbred_2
+						has_trait = dragonblooded_wellbred_3
+						AND = {
+							has_variable = dragonblooded_potency
+							var:dragonblooded_potency > 1000
+						}
+					}
+				}
+				random_list = {
+					10 = {
+						trigger_event = {
+							id = dragonblooded_event.1001
+							days = { 3 730 }
+						}
+						prev = {
+							set_variable = {
+								name = expectation
+								value = flag:small
+							}
+						}
+					}
+					3 = {
+						modifier = {
+							add = 3
+							has_trait = dragonblooded_wellbred_3
+						}
+						modifier = {
+							add = 2
+							has_trait = dragonblooded_wellbred_2
+						}
+						modifier = {
+							add = 1
+							has_trait = dragonblooded_wellbred_1
+						}
+						modifier = {
+							add = 1
+							var:dragonblooded_potency > 10000
+						}
+						modifier = {
+							add = 2
+							var:dragonblooded_potency > 20000
+						}
+						modifier = {
+							add = 2
+							var:dragonblooded_potency > 30000
+						}
+						trigger_event = {
+							id = dragonblooded_event.1001
+							days = { 3 730 }
+						}
+						prev = {
+							set_variable = {
+								name = expectation
+								value = flag:medium
+							}
+						}
+					}
+					0 = {
+						modifier = {
+							add = 6
+							has_trait = dragonblooded_wellbred_3
+						}
+						modifier = {
+							add = 4
+							has_trait = dragonblooded_wellbred_2
+						}
+						modifier = {
+							add = 2
+							has_trait = dragonblooded_wellbred_1
+						}
+						modifier = {
+							add = 1
+							var:dragonblooded_potency > 10000
+						}
+						modifier = {
+							add = 1
+							var:dragonblooded_potency > 20000
+						}
+						modifier = {
+							add = 1
+							var:dragonblooded_potency > 30000
+						}
+						modifier = {
+							add = 2
+							var:dragonblooded_potency > 40000
+						}
+						modifier = {
+							add = 2
+							var:dragonblooded_potency > 50000
+						}
+						trigger_event = {
+							id = dragonblooded_event.1001
+							days = { 3 730 }
+						}
+						prev = {
+							set_variable = {
+								name = expectation
+								value = flag:large
+							}
+						}
+					}
+				}
+			}
+
+			random_list = { # Figure out when we're going to Exalt, if at all
+			0 = {
+				modifier = {
+					has_variable = dragonblooded_potency
+					add = var:dragonblooded_potency
+				}
+				random_list = {
+					1 = {
+						modifier = {
+							add = 3
+							has_trait = dragonblooded_wellbred_3
+						}
+						modifier = {
+							add = 2
+							has_trait = dragonblooded_wellbred_2
+						}
+						modifier = {
+							add = 1
+							has_trait = dragonblooded_wellbred_1
+						}
+						modifier = {
+							add = 1
+							var:dragonblooded_potency > 10000
+						}
+						modifier = {
+							add = 1
+							var:dragonblooded_potency > 20000
+						}
+						trigger_event = {
+							id = dragonblooded_event.2000
+							days = { 30 1095 }
+						}
+						prev = {
+							set_variable = {
+								name = timing
+								value = flag:early
+							}
+						}
+					}
+					10 = {
+						trigger_event = {
+							id = dragonblooded_event.2001
+							days = { 1096 2190 }
+						}
+						prev = {
+							set_variable = {
+								name = timing
+								value = flag:normal
+							}
+						}
+					}
+					8 = {
+						trigger_event = {
+							id = dragonblooded_event.2002
+							days = { 2191 3285 }
+						}
+						prev = {
+							set_variable = {
+								name = timing
+								value = flag:late
+							}
+						}
+					}
+					1 = {
+						trigger_event = {
+							id = dragonblooded_event.2003
+							days = { 3286 4380 }
+						}
+						prev = {
+							set_variable = {
+								name = timing
+								value = flag:very_late
+							}
+						}
+					}
+				}
+			}
+
+			10000 = {
+				# No Exaltation! Womp womp
+
+				if = { 
+					limit = {
+						prev = {
+							NOT = {
+								has_variable = expectation
+							}
+						}
+					}
+
+					prev = {
+						end_story = yes # If we aren't going to Exalt, and we don't expect to Exalt, just clean this up, no reason to keep it around.
+					}
+				}
+			}
+		}
+		}
+	}
+	on_end = {
+		story_owner = {
+		}
+	}
+	on_owner_death = {}
+}

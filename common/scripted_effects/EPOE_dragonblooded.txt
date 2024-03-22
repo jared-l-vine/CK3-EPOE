@@ -1,0 +1,201 @@
+calculate_dragonblooded_potency = { # Calculate the odds of a given character becoming Dragon-blooded during their life.
+	$CHARACTER$ = {
+		save_temporary_scope_as = calc_target
+
+		if = {
+			limit = {
+				has_trait = dragonblooded_wellbred_3
+			}
+			set_variable = {
+				name = dragonblooded_potency
+				value = 1000
+			}
+		}
+		else_if = {
+			limit = {
+				has_trait = dragonblooded_wellbred_2
+			}
+			set_variable = {
+				name = dragonblooded_potency
+				value = 100
+			}
+		}
+		else_if = {
+			limit = {
+				has_trait = dragonblooded_wellbred_1
+			}
+			set_variable = {
+				name = dragonblooded_potency
+				value = 10
+			}
+		}
+		else = {
+			set_variable = {
+				name = dragonblooded_potency
+				value = 1 # The base chance of all characters to be Dragon-blooded, 1 in 10000
+			}
+		}
+
+		set_variable = {
+			name = fire_aspect_bias
+			value = 0
+		}
+
+		set_variable = {
+			name = earth_aspect_bias
+			value = 0
+		}
+
+		set_variable = {
+			name = air_aspect_bias
+			value = 0
+		}
+
+		set_variable = {
+			name = water_aspect_bias
+			value = 0
+		}
+
+		set_variable = {
+			name = wood_aspect_bias
+			value = 0
+		}
+
+		every_ancestor = {
+			even_if_dead = yes
+			limit = {
+				has_trait_with_flag = dragon_blooded
+			}
+
+			if = {
+				limit = {
+					is_parent_of = scope:calc_target
+				}
+				scope:calc_target = {
+					change_variable = {
+						name = dragonblooded_potency
+						add = 1000
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					is_grandparent_of = scope:calc_target
+				}
+				scope:calc_target = {
+					change_variable = {
+						name = dragonblooded_potency
+						add = 500
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					is_great_grandparent_of = scope:calc_target
+				}
+				scope:calc_target = {
+					change_variable = {
+						name = dragonblooded_potency
+						add = 250
+					}
+				}
+			}
+			else = {
+				scope:calc_target = {
+					change_variable = {
+						name = dragonblooded_potency
+						add = 125
+					}
+				}
+			}
+
+			if = {
+				limit = {
+					has_trait = lifestyle_fire_aspect
+				}
+				scope:calc_target = {
+					change_variable = {
+						name = fire_aspect_bias
+						add = 100
+					}
+				}
+			}
+
+			if = {
+				limit = {
+					has_trait = lifestyle_earth_aspect
+				}
+				scope:calc_target = {
+					change_variable = {
+						name = earth_aspect_bias
+						add = 100
+					}
+				}
+			}
+
+			if = {
+				limit = {
+					has_trait = lifestyle_air_aspect
+				}
+				scope:calc_target = {
+					change_variable = {
+						name = air_aspect_bias
+						add = 100
+					}
+				}
+			}
+
+			if = {
+				limit = {
+					has_trait = lifestyle_water_aspect
+				}
+				scope:calc_target = {
+					change_variable = {
+						name = water_aspect_bias
+						add = 100
+					}
+				}
+			}
+
+			if = {
+				limit = {
+					has_trait = lifestyle_wood_aspect
+				}
+				scope:calc_target = {
+					change_variable = {
+						name = wood_aspect_bias
+						add = 100
+					}
+				}
+			}
+		}
+
+		if = {
+			limit = {
+				has_trait = dragonblooded_wellbred_3
+			}
+			change_variable = {
+				name = dragonblooded_potency
+				multiply = 4
+			}
+		}
+		else_if = {
+			limit = {
+				has_trait = dragonblooded_wellbred_2
+			}
+			change_variable = {
+				name = dragonblooded_potency
+				multiply = 3
+			}
+		}
+		else_if = {
+			limit = {
+				has_trait = dragonblooded_wellbred_1
+			}
+			change_variable = {
+				name = dragonblooded_potency
+				multiply = 2
+			}
+		}
+	}
+}

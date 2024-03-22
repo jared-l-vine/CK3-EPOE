@@ -8,6 +8,7 @@
 	trait = brave
 	trait = lustful
 	trait = impatient
+	trait = dragonblooded_wellbred_3
 
 	741.1.1 = {
 		birth = "741.1.1"
@@ -161,6 +162,8 @@
 	religion = "immaculate_philosophy"
 	culture = realm
 	father = 166431
+	trait = dragonblooded_wellbred_3
+	trait = lifestyle_fire_aspect
 	719.1.1 = {
 		birth = "719.1.1"
 	}

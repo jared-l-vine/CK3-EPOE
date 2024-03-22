@@ -1,0 +1,21 @@
+﻿l_english:
+##############
+## EXPECTATIONS
+##############
+ dragonblooded_event.1001.t:0 "One of the Chosen?"
+ dragonblooded_event.1001.desc:0 "As my [ROOT.Char.Custom2('RelationToMe', SCOPE.sC('child'))] [child.GetFirstName] gets older, I am reminded more and more that the blood of the Dragons flows within [child.GetHerHis] veins, and may reveal itself at any moment."
+ dragonblooded_event.1001.desc_small_chance:0 "\n\nThough the chance is slight, the Second Breath would set my [ROOT.Char.Custom2('RelationToMe', SCOPE.sC('child'))] apart from those around [child.GetHerHim]."
+ dragonblooded_event.1001.desc_medium_chance:0 "\n\nThough not all who share the Dragons' blood will take their Second Breath, my [ROOT.Char.Custom2('RelationToMe', SCOPE.sC('child'))] is of no average stock."
+ dragonblooded_event.1001.desc_large_chance:0 "\n\nOur bloodline is strong, and my [ROOT.Char.Custom2('RelationToMe', SCOPE.sC('child'))] will no doubt rise to become a mighty Dragon-blooded in [child.GetHerHis] own right."
+ dragonblooded_event.1001.desc_mid:0 "\n\nThe question is, how shall I speak to [child.GetFirstName] about this?"
+ dragonblooded_event.1001.no_expectations:0 "[child.GetFirstName] doesn't need to be burdened by this knowledge."
+ dragonblooded_event.1001.minor_expectations:0 "I will tell [child.GetHerHim] of [child.GetHerHis] potential, but no more than that."
+ dragonblooded_event.1001.some_expectations:0 "I will prepare [child.GetHerHim] for [child.GetHerHis] coming power."
+ dragonblooded_event.1001.great_expectations:0 "All of [GetPlayer.GetPrimaryTitle.GetTierAsNameNoTooltip] will know of their future scion!" 
+
+ dragonblooded_event.1002.t:0 "One of the Chosen?"
+ dragonblooded_event.1002.desc:0 "As I get older, I begin to hear my [ROOT.Char.Custom2('RelationToMe', SCOPE.sC('guardian'))] [guardian.GetTitledFirstName] talk to me of 'Dragon-blooded', describing great and powerful heroes and warriors, and their control over the five elements."
+ dragonblooded_event.1002.desc_db_ancestor:0 "I realize, as I'm listening, that my [ROOT.GetCharacter.Custom2('RelationToMeShort', SCOPE.sC('db_ancestor'))] is one of those very heroes, and I might be, too!"
+ dragonblooded_event.1002.desc_parent:0 "My [ROOT.GetCharacter.Custom2('RelationToMeShort', SCOPE.sC('guardian'))] tells me that one day I might become just like them!"
+ dragonblooded_event.1002.desc_mid:0 "\n\nApparently, the blood of the Dragons might flow in my veins. There's a small chance that I too might become one of the Chosen."
+ dragonblooded_event.1002.excited:0 "Will I be a great hero one day?"

@@ -865,3 +865,90 @@ lifestyle_wood_aspect = {
 		}
 	}
 }
+
+dragonblooded_wellbred_1 = {
+	physical = yes
+	fertility = 0.1
+	health = 0.1
+	
+	birth = 0.1
+	random_creation = 0.1
+	
+	group = dragonblooded_wellbred
+	level = 1
+	
+	genetic = yes
+	good = yes
+	
+	ruler_designer_cost = 30
+
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = { exists = this }
+				}
+				desc = trait_dragonblooded_wellbred_1_desc
+			}
+			desc = trait_dragonblooded_wellbred_1_character_desc
+		}
+	}
+}
+
+dragonblooded_wellbred_2 = {
+	physical = yes
+	fertility = 0.2
+	health = 0.2
+	
+	birth = 0.05
+	random_creation = 0.05
+	
+	group = dragonblooded_wellbred
+	level = 2
+	
+	genetic = yes
+	good = yes
+	
+	ruler_designer_cost = 60
+
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = { exists = this }
+				}
+				desc = trait_dragonblooded_wellbred_2_desc
+			}
+			desc = trait_dragonblooded_wellbred_2_character_desc
+		}
+	}
+}
+
+dragonblooded_wellbred_3 = {
+	physical = yes
+	fertility = 0.3
+	health = 0.3
+	
+	birth = 0.025
+	random_creation = 0.025
+	
+	group = dragonblooded_wellbred
+	level = 3
+	
+	genetic = yes
+	good = yes
+	
+	ruler_designer_cost = 90
+
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = { exists = this }
+				}
+				desc = trait_dragonblooded_wellbred_3_desc
+			}
+			desc = trait_dragonblooded_wellbred_3_character_desc
+		}
+	}
+}

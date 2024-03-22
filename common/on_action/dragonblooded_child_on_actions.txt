@@ -1,0 +1,31 @@
+﻿# called for the newborn child
+# scope:child is the new born character
+# scope:mother is the pregnant mother
+# scope:father is the family father (not the biological)
+# scope:real_father is the biological father
+# scope:is_bastard, true if a known bastard
+on_birth_child = {
+	on_actions = {
+		on_dragonblooded_birth_child
+	}
+}
+
+on_dragonblooded_birth_child = {
+	effect = {
+		calculate_dragonblooded_potency = { CHARACTER = scope:child }
+	}
+}
+
+on_birthday = {
+	on_actions = {
+		on_9th_birthday
+	}
+}
+
+on_9th_birthday = {
+	trigger = { age = 9 }
+
+	effect = {
+		create_story = EPOE_story_dragonblooded_exaltation
+	}
+}

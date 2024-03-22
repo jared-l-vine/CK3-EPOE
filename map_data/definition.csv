@@ -1,5 +1,6 @@
 0;0;0;0;b_x;x
 1;62;62;62;sea_outer;x # impassable
+2;94;237;105;sea_inland;x
 3;58;221;61;sea_inland;x
 4;116;73;169;sea_inland;x
 5;107;35;209;sea_great_western_ocean;x
@@ -1113,4 +1114,3 @@
 1113;75;134;69;b_temp_arrogant_tourmaline;x
 1114;63;130;4;b_temp_kunzite_bear;x
 1115;127;134;69;b_temp_delicate_pearl;x
-1116;94;237;105;sea_inland;x
